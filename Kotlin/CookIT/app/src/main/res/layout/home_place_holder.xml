@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/home_place_holder"
+    android:layout_margin="8dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_place_holder"
+        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/placeholder"
+        app:cardCornerRadius="8dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/title_place_holder"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/image_place_holder"
+        android:backgroundTint="@color/placeholder"
+        app:cardCornerRadius="8dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/op1_place_holder"
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/placeholder"
+        android:layout_below="@+id/title_place_holder"
+        app:cardCornerRadius="8dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/op2_place_holder"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="@color/placeholder"
+        android:layout_below="@+id/op1_place_holder"
+        app:cardCornerRadius="8dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        android:layout_below="@+id/op2_place_holder"
+        android:backgroundTint="@color/placeholder"
+        app:cardCornerRadius="8dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_conf"
+    style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="96dp"
+    android:background="@color/textBackground"
+    android:backgroundTintMode="screen"
+    android:clickable="false"
+    android:elegantTextHeight="false"
+    android:gravity="center"
+    android:padding="5dp"
+    android:textAlignment="center"
+    android:textColor="@color/textColor"
+    android:textSize="25sp"></TextView>

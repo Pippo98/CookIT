@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CookIT</string>
+    <string name="nav_random">Random</string>
+    <string name="nav_search">Search</string>
+
+    <string name="search_hint">Inserisci gli ingredienti</string>
+    <string name="ingredients_label">Ingredienti</string>
+    <string name="instructions_label">Preparazione</string>
+
+    <string name="recipt_unvailable">Non ci sono ricette precedenti</string>
+    <string name="host_unreachable">
+        404 Error\nHost Unreachable
+    </string>
+
+</resources>
