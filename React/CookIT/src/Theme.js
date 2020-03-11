@@ -16,14 +16,10 @@ export const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
     },
-    imageContainer: {
-        flex: 1,
-        margin: 8,
-        backgroundColor: colors.cardBackground
-    },
     card: {
         flex: 1,
-        margin: 8,
+        marginHorizontal: 8,
+        marginVertical: 4,
         backgroundColor: colors.cardBackground
     },
     image: {
@@ -36,6 +32,7 @@ export const styles = StyleSheet.create({
         fontWeight: '600',
         color: Colors.black,
         textAlign: "center",
+        marginHorizontal: 8,
         marginBottom: 16
     },
     title2: {
@@ -43,12 +40,14 @@ export const styles = StyleSheet.create({
         fontWeight: '600',
         color: Colors.black,
         textAlign: "center",
+        marginHorizontal: 8,
         marginTop: 8
     },
     paragraph1: {
         fontSize: 24,
         fontWeight: '600',
         color: Colors.black,
+        marginHorizontal: 8,
         textAlign: "center"
     },
     link: {
@@ -60,6 +59,9 @@ export const styles = StyleSheet.create({
     picker: {
         fontSize: 40,
         alignItems: "center",
+        textAlign: "center"
+    },
+    pickerItem: {
         textAlign: "center"
     },
     divider: {
@@ -75,11 +77,12 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
+        opacity: 6,
         bottom: 10,
         right: 10,
         width: 70,
         height: 70,
-        borderRadius: 100,
+        borderRadius: 100
     },
     floatingIcon: {
         color: colors.pallette2.c3

@@ -1,10 +1,12 @@
 import RNFetchBlob from 'react-native-fetch-blob'
+import { Image } from 'react-native';
 
 export class RecipeOperation {
 
     constructor() {
         this.state = {
             queue: [],
+            preloadedImages: [],
             future_len: 10,
             past_len: 5,
             index: 0,
@@ -42,6 +44,23 @@ export class RecipeOperation {
                 callback(func, this.state.queue[this.state.index])
             }
         }
+    }
+
+    async preloadImages() {
+        this.state.queue.forEach(recipe => {
+            this.state.preloadedImages.push(Image.prefetch(recipe.image))
+        })
+        Promise.all(this.state.preloadedImages).then((results) => {
+            let downloadedAll = true;
+            results.forEach((result) => {
+                if (!result) {
+                    downloadedAll = false;
+                }
+            })
+            if (downloadedAll) {
+                // Loaded all Images
+            }
+        })
     }
 
     clearFuture() {

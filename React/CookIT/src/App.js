@@ -62,6 +62,7 @@ export default class app extends Component {
   componentDidMount() {
     ro.setRecipeType(this.state.itemList[this.state.itemIndex])
     ro.fillFuture(this, this.cllbck)
+    ro.preloadImages()
   }
 
   render() {
@@ -71,6 +72,7 @@ export default class app extends Component {
         <View style={styles.screen}>
           <Picker
             style={styles.picker}
+            mode={"dialog"}
             selectedValue={this.state.itemList[this.state.itemIndex]}
             onValueChange={(itemValue, itemIndex) => {
               this.setState({ itemIndex })
@@ -82,12 +84,13 @@ export default class app extends Component {
             ))}
           </Picker>
           <ScrollView>
-            <CardView style={styles.imageContainer}
+            <CardView style={styles.card}
               cardElevation={4}
               cardMaxElevation={4}
               cornerRadius={8}
               attrs={graphicsAttributes.imageContainer} onTouchStart={() => {
                 const data = ro.getNextRecipe()
+                ro.preloadImages()
                 if (data) {
                   this.setState({ data })
                 }
@@ -129,7 +132,8 @@ export default class app extends Component {
               cardMaxElevation={4}
               cornerRadius={8}
               attrs={graphicsAttributes.imageContainer}>
-              <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Instructions</Divider>
+              <View style={{ marginTop: 8, marginBottom: 8 }} />
+              <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Istruzioni</Divider>
               <View style={{ marginTop: 8, marginBottom: 8 }} />
               <Text
                 style={styles.paragraph1}>

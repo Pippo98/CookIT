@@ -4,10 +4,10 @@ export const colors = {
     cardBackground: "#f7fcff",
 
     pallette1: {
-        green: "#5b8c85",
-        grey: "#434e52",
-        yellow1: "#b0a160",
-        yellow2: "#ecce6d"
+        c1: "#5b8c85",
+        c2: "#434e52",
+        c3: "#b0a160",
+        c4: "#ecce6d"
     },
     pallette2: {
         c1: "#1eb2a6",
