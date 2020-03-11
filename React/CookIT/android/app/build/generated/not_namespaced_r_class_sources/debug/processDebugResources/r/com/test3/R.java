@@ -698,13 +698,66 @@ public final class R {
      */
     public static final int buttonTintMode=0x7f030047;
     /**
+     * Background color for CardView.
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int cardBackgroundColor=0x7f030048;
+    /**
+     * Corner radius for CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int cardCornerRadius=0x7f030049;
+    /**
+     * Elevation for CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int cardElevation=0x7f03004a;
+    /**
+     * Maximum Elevation for CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int cardMaxElevation=0x7f03004b;
+    /**
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int cardPreventCornerOverlap=0x7f03004c;
+    /**
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int cardUseCompatPadding=0x7f03004d;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int cardViewStyle=0x7f03004e;
+    /**
      * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f030048;
+    public static final int checkboxStyle=0x7f03004f;
     /**
      * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
@@ -712,7 +765,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f030049;
+    public static final int checkedTextViewStyle=0x7f030050;
     /**
      * Close button icon
      * <p>May be a reference to another resource, in the form
@@ -720,7 +773,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeIcon=0x7f03004a;
+    public static final int closeIcon=0x7f030051;
     /**
      * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
@@ -728,13 +781,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f03004b;
+    public static final int closeItemLayout=0x7f030052;
     /**
      * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f03004c;
+    public static final int collapseContentDescription=0x7f030053;
     /**
      * Icon drawable to use for the collapse button.
      * <p>May be a reference to another resource, in the form
@@ -742,14 +795,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f03004d;
+    public static final int collapseIcon=0x7f030054;
     /**
      * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f03004e;
+    public static final int color=0x7f030055;
     /**
      * Bright complement to the primary branding color. By default, this is the color applied
      * to framework controls (via colorControlActivated).
@@ -757,42 +810,42 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f03004f;
+    public static final int colorAccent=0x7f030056;
     /**
      * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f030050;
+    public static final int colorBackgroundFloating=0x7f030057;
     /**
      * The color applied to framework buttons in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f030051;
+    public static final int colorButtonNormal=0x7f030058;
     /**
      * The color applied to framework controls in their activated (ex. checked) state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f030052;
+    public static final int colorControlActivated=0x7f030059;
     /**
      * The color applied to framework control highlights (ex. ripples, list selectors).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f030053;
+    public static final int colorControlHighlight=0x7f03005a;
     /**
      * The color applied to framework controls in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f030054;
+    public static final int colorControlNormal=0x7f03005b;
     /**
      * Color used for error states and things that need to be drawn to
      * the user's attention.
@@ -804,7 +857,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f030055;
+    public static final int colorError=0x7f03005c;
     /**
      * The primary branding color for the app. By default, this is the color applied to the
      * action bar background.
@@ -812,7 +865,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f030056;
+    public static final int colorPrimary=0x7f03005d;
     /**
      * Dark variant of the primary branding color. By default, this is the color applied to
      * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
@@ -820,14 +873,14 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f030057;
+    public static final int colorPrimaryDark=0x7f03005e;
     /**
      * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f030058;
+    public static final int colorSwitchThumbNormal=0x7f03005f;
     /**
      * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
@@ -835,13 +888,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f030059;
+    public static final int commitIcon=0x7f030060;
     /**
      * The content description associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f03005a;
+    public static final int contentDescription=0x7f030061;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -851,7 +904,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f03005b;
+    public static final int contentInsetEnd=0x7f030062;
     /**
      * Minimum inset for content views within a bar when actions from a menu
      * are present. Only valid for some themes and configurations.
@@ -861,7 +914,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f03005c;
+    public static final int contentInsetEndWithActions=0x7f030063;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -871,7 +924,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f03005d;
+    public static final int contentInsetLeft=0x7f030064;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -881,7 +934,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f03005e;
+    public static final int contentInsetRight=0x7f030065;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -891,7 +944,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f03005f;
+    public static final int contentInsetStart=0x7f030066;
     /**
      * Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button. Only valid for some themes and configurations.
@@ -901,7 +954,52 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f030060;
+    public static final int contentInsetStartWithNavigation=0x7f030067;
+    /**
+     * Inner padding between the edges of the Card and children of the CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int contentPadding=0x7f030068;
+    /**
+     * Inner padding between the bottom edge of the Card and children of the CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int contentPaddingBottom=0x7f030069;
+    /**
+     * Inner padding between the left edge of the Card and children of the CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int contentPaddingLeft=0x7f03006a;
+    /**
+     * Inner padding between the right edge of the Card and children of the CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int contentPaddingRight=0x7f03006b;
+    /**
+     * Inner padding between the top edge of the Card and children of the CardView.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int contentPaddingTop=0x7f03006c;
     /**
      * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
@@ -909,14 +1007,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f030061;
+    public static final int controlBackground=0x7f03006d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f030062;
+    public static final int coordinatorLayoutStyle=0x7f03006e;
     /**
      * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
@@ -924,14 +1022,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f030063;
+    public static final int customNavigationLayout=0x7f03006f;
     /**
      * Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int defaultQueryHint=0x7f030064;
+    public static final int defaultQueryHint=0x7f030070;
     /**
      * Preferred corner radius of dialogs.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -940,7 +1038,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogCornerRadius=0x7f030065;
+    public static final int dialogCornerRadius=0x7f030071;
     /**
      * Preferred padding for dialog content.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -949,7 +1047,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogPreferredPadding=0x7f030066;
+    public static final int dialogPreferredPadding=0x7f030072;
     /**
      * Theme to use for dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
@@ -957,7 +1055,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f030067;
+    public static final int dialogTheme=0x7f030073;
     /**
      * Options affecting how the action bar is displayed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -975,7 +1073,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f030068;
+    public static final int displayOptions=0x7f030074;
     /**
      * Specifies the drawable used for item dividers.
      * <p>May be a reference to another resource, in the form
@@ -983,7 +1081,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f030069;
+    public static final int divider=0x7f030075;
     /**
      * A drawable that may be used as a horizontal divider between visual elements.
      * <p>May be a reference to another resource, in the form
@@ -991,7 +1089,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f03006a;
+    public static final int dividerHorizontal=0x7f030076;
     /**
      * Size of padding on either end of a divider.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1000,7 +1098,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f03006b;
+    public static final int dividerPadding=0x7f030077;
     /**
      * A drawable that may be used as a vertical divider between visual elements.
      * <p>May be a reference to another resource, in the form
@@ -1008,7 +1106,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f03006c;
+    public static final int dividerVertical=0x7f030078;
     /**
      * The total size of the drawable
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1017,14 +1115,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f03006d;
+    public static final int drawableSize=0x7f030079;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f03006e;
+    public static final int drawerArrowStyle=0x7f03007a;
     /**
      * ListPopupWindow compatibility
      * <p>May be a reference to another resource, in the form
@@ -1032,7 +1130,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f03006f;
+    public static final int dropDownListViewStyle=0x7f03007b;
     /**
      * The preferred item height for dropdown lists.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1041,7 +1139,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f030070;
+    public static final int dropdownListPreferredItemHeight=0x7f03007c;
     /**
      * EditText background drawable.
      * <p>May be a reference to another resource, in the form
@@ -1049,7 +1147,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextBackground=0x7f030071;
+    public static final int editTextBackground=0x7f03007d;
     /**
      * EditText text foreground color.
      * <p>May be a reference to another resource, in the form
@@ -1060,7 +1158,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int editTextColor=0x7f030072;
+    public static final int editTextColor=0x7f03007e;
     /**
      * Default EditText style.
      * <p>May be a reference to another resource, in the form
@@ -1068,7 +1166,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextStyle=0x7f030073;
+    public static final int editTextStyle=0x7f03007f;
     /**
      * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1077,7 +1175,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int elevation=0x7f030074;
+    public static final int elevation=0x7f030080;
     /**
      * The drawable to show in the button for expanding the activities overflow popup.
      * <strong>Note:</strong> Clients would like to set this drawable
@@ -1089,12 +1187,12 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandActivityOverflowButtonDrawable=0x7f030075;
+    public static final int expandActivityOverflowButtonDrawable=0x7f030081;
     /**
      * Fade duration in milliseconds.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fadeDuration=0x7f030076;
+    public static final int fadeDuration=0x7f030082;
     /**
      * A drawable to be be used as a failure image.
      * <p>May be a reference to another resource, in the form
@@ -1102,7 +1200,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int failureImage=0x7f030077;
+    public static final int failureImage=0x7f030083;
     /**
      * Scale type of the failure image. Ignored if failureImage is not specified.
      * <p>Must be one of the following constant values.</p>
@@ -1123,7 +1221,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int failureImageScaleType=0x7f030078;
+    public static final int failureImageScaleType=0x7f030084;
     /**
      * Distance from the top of the TextView to the first text baseline. If set, this
      * overrides the value set for paddingTop.
@@ -1133,7 +1231,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int firstBaselineToTopHeight=0x7f030079;
+    public static final int firstBaselineToTopHeight=0x7f030085;
     /**
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
@@ -1142,19 +1240,19 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f03007a;
+    public static final int font=0x7f030086;
     /**
      * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f03007b;
+    public static final int fontFamily=0x7f030087;
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f03007c;
+    public static final int fontProviderAuthority=0x7f030088;
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -1166,7 +1264,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f03007d;
+    public static final int fontProviderCerts=0x7f030089;
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -1193,7 +1291,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f03007e;
+    public static final int fontProviderFetchStrategy=0x7f03008a;
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -1207,21 +1305,21 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f03007f;
+    public static final int fontProviderFetchTimeout=0x7f03008b;
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f030080;
+    public static final int fontProviderPackage=0x7f03008c;
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f030081;
+    public static final int fontProviderQuery=0x7f03008d;
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -1236,7 +1334,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f030082;
+    public static final int fontStyle=0x7f03008e;
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -1245,7 +1343,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f030083;
+    public static final int fontVariationSettings=0x7f03008f;
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -1254,7 +1352,7 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f030084;
+    public static final int fontWeight=0x7f030090;
     /**
      * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1263,7 +1361,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f030085;
+    public static final int gapBetweenBars=0x7f030091;
     /**
      * Go button icon
      * <p>May be a reference to another resource, in the form
@@ -1271,7 +1369,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f030086;
+    public static final int goIcon=0x7f030092;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1279,13 +1377,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f030087;
+    public static final int height=0x7f030093;
     /**
      * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f030088;
+    public static final int hideOnContentScroll=0x7f030094;
     /**
      * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
@@ -1293,7 +1391,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f030089;
+    public static final int homeAsUpIndicator=0x7f030095;
     /**
      * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
@@ -1301,7 +1399,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f03008a;
+    public static final int homeLayout=0x7f030096;
     /**
      * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
@@ -1309,14 +1407,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f03008b;
+    public static final int icon=0x7f030097;
     /**
      * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f03008c;
+    public static final int iconTint=0x7f030098;
     /**
      * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
@@ -1338,14 +1436,14 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f03008d;
+    public static final int iconTintMode=0x7f030099;
     /**
      * The default state of the SearchView. If true, it will be iconified when not in
      * use and expanded when clicked.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f03008e;
+    public static final int iconifiedByDefault=0x7f03009a;
     /**
      * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
@@ -1353,7 +1451,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f03008f;
+    public static final int imageButtonStyle=0x7f03009b;
     /**
      * Specifies a style resource to use for an indeterminate progress spinner.
      * <p>May be a reference to another resource, in the form
@@ -1361,18 +1459,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f030090;
+    public static final int indeterminateProgressStyle=0x7f03009c;
     /**
      * The maximal number of items initially shown in the activity list.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f030091;
+    public static final int initialActivityCount=0x7f03009d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f030092;
+    public static final int isLightTheme=0x7f03009e;
     /**
      * Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.
@@ -1382,7 +1480,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f030093;
+    public static final int itemPadding=0x7f03009f;
     /**
      * A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.
@@ -1394,7 +1492,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f030094;
+    public static final int keylines=0x7f0300a0;
     /**
      * Distance from the bottom of the TextView to the last text baseline. If set, this
      * overrides the value set for paddingBottom.
@@ -1404,7 +1502,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lastBaselineToBottomHeight=0x7f030095;
+    public static final int lastBaselineToBottomHeight=0x7f0300a1;
     /**
      * The layout to use for the search view.
      * <p>May be a reference to another resource, in the form
@@ -1412,7 +1510,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f030096;
+    public static final int layout=0x7f0300a2;
     /**
      * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
@@ -1420,7 +1518,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f030097;
+    public static final int layout_anchor=0x7f0300a3;
     /**
      * Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.
@@ -1452,14 +1550,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f030098;
+    public static final int layout_anchorGravity=0x7f0300a4;
     /**
      * The class name of a Behavior class defining special runtime behavior
      * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f030099;
+    public static final int layout_behavior=0x7f0300a5;
     /**
      * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -1478,7 +1576,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f03009a;
+    public static final int layout_dodgeInsetEdges=0x7f0300a6;
     /**
      * Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.
@@ -1497,14 +1595,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f03009b;
+    public static final int layout_insetEdge=0x7f0300a7;
     /**
      * The index of a keyline this view should position relative to.
      * android:layout_gravity will affect how the view aligns to the
      * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f03009c;
+    public static final int layout_keyline=0x7f0300a8;
     /**
      * Explicit height between lines of text. If set, this will override the values set
      * for lineSpacingExtra and lineSpacingMultiplier.
@@ -1514,7 +1612,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineHeight=0x7f03009d;
+    public static final int lineHeight=0x7f0300a9;
     /**
      * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
@@ -1522,7 +1620,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f03009e;
+    public static final int listChoiceBackgroundIndicator=0x7f0300aa;
     /**
      * The list divider used in alert dialogs.
      * <p>May be a reference to another resource, in the form
@@ -1530,21 +1628,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f03009f;
+    public static final int listDividerAlertDialog=0x7f0300ab;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f0300a0;
+    public static final int listItemLayout=0x7f0300ac;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f0300a1;
+    public static final int listLayout=0x7f0300ad;
     /**
      * Default menu-style ListView style.
      * <p>May be a reference to another resource, in the form
@@ -1552,14 +1650,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f0300a2;
+    public static final int listMenuViewStyle=0x7f0300ae;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f0300a3;
+    public static final int listPopupWindowStyle=0x7f0300af;
     /**
      * The preferred list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1568,7 +1666,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f0300a4;
+    public static final int listPreferredItemHeight=0x7f0300b0;
     /**
      * A larger, more robust list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1577,7 +1675,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f0300a5;
+    public static final int listPreferredItemHeightLarge=0x7f0300b1;
     /**
      * A smaller, sleeker list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1586,7 +1684,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f0300a6;
+    public static final int listPreferredItemHeightSmall=0x7f0300b2;
     /**
      * The preferred padding along the left edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1595,7 +1693,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f0300a7;
+    public static final int listPreferredItemPaddingLeft=0x7f0300b3;
     /**
      * The preferred padding along the right edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1604,7 +1702,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f0300a8;
+    public static final int listPreferredItemPaddingRight=0x7f0300b4;
     /**
      * Specifies the drawable used for the application logo.
      * <p>May be a reference to another resource, in the form
@@ -1612,14 +1710,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int logo=0x7f0300a9;
+    public static final int logo=0x7f0300b5;
     /**
      * A content description string to describe the appearance of the
      * associated logo image.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int logoDescription=0x7f0300aa;
+    public static final int logoDescription=0x7f0300b6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1627,7 +1725,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int maxButtonHeight=0x7f0300ab;
+    public static final int maxButtonHeight=0x7f0300b7;
     /**
      * When set to true, all children with a weight will be considered having
      * the minimum size of the largest child. If false, all children are
@@ -1635,21 +1733,21 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f0300ac;
+    public static final int measureWithLargestChild=0x7f0300b8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int multiChoiceItemLayout=0x7f0300ad;
+    public static final int multiChoiceItemLayout=0x7f0300b9;
     /**
      * Text to set as the content description for the navigation button
      * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f0300ae;
+    public static final int navigationContentDescription=0x7f0300ba;
     /**
      * Icon drawable to use for the navigation button located at
      * the start of the toolbar.
@@ -1658,7 +1756,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f0300af;
+    public static final int navigationIcon=0x7f0300bb;
     /**
      * The type of navigation to use.
      * <p>Must be one of the following constant values.</p>
@@ -1672,7 +1770,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f0300b0;
+    public static final int navigationMode=0x7f0300bc;
     /**
      * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
      * keyboard. The values should be kept in sync with KeyEvent
@@ -1690,13 +1788,13 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f0300b1;
+    public static final int numericModifiers=0x7f0300bd;
     /**
      * Whether the popup window should overlap its anchor view.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int overlapAnchor=0x7f0300b2;
+    public static final int overlapAnchor=0x7f0300be;
     /**
      * A drawable or color to be used as an overlay.
      * <p>May be a reference to another resource, in the form
@@ -1704,7 +1802,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int overlayImage=0x7f0300b3;
+    public static final int overlayImage=0x7f0300bf;
     /**
      * Bottom padding to use when no buttons are present.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1713,7 +1811,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingBottomNoButtons=0x7f0300b4;
+    public static final int paddingBottomNoButtons=0x7f0300c0;
     /**
      * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1722,7 +1820,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingEnd=0x7f0300b5;
+    public static final int paddingEnd=0x7f0300c1;
     /**
      * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1731,7 +1829,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingStart=0x7f0300b6;
+    public static final int paddingStart=0x7f0300c2;
     /**
      * Top padding to use when no title is present.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1740,7 +1838,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingTopNoTitle=0x7f0300b7;
+    public static final int paddingTopNoTitle=0x7f0300c3;
     /**
      * The background of a panel when it is inset from the left and right edges of the screen.
      * <p>May be a reference to another resource, in the form
@@ -1748,7 +1846,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelBackground=0x7f0300b8;
+    public static final int panelBackground=0x7f0300c4;
     /**
      * Default Panel Menu style.
      * <p>May be a reference to another resource, in the form
@@ -1756,7 +1854,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelMenuListTheme=0x7f0300b9;
+    public static final int panelMenuListTheme=0x7f0300c5;
     /**
      * Default Panel Menu width.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1765,7 +1863,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int panelMenuListWidth=0x7f0300ba;
+    public static final int panelMenuListWidth=0x7f0300c6;
     /**
      * A drawable or color to be be used as a placeholder.
      * <p>May be a reference to another resource, in the form
@@ -1773,7 +1871,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int placeholderImage=0x7f0300bb;
+    public static final int placeholderImage=0x7f0300c7;
     /**
      * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
      * <p>Must be one of the following constant values.</p>
@@ -1794,7 +1892,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int placeholderImageScaleType=0x7f0300bc;
+    public static final int placeholderImageScaleType=0x7f0300c8;
     /**
      * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
@@ -1802,7 +1900,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupMenuStyle=0x7f0300bd;
+    public static final int popupMenuStyle=0x7f0300c9;
     /**
      * Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.
@@ -1811,7 +1909,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupTheme=0x7f0300be;
+    public static final int popupTheme=0x7f0300ca;
     /**
      * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
@@ -1819,13 +1917,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupWindowStyle=0x7f0300bf;
+    public static final int popupWindowStyle=0x7f0300cb;
     /**
      * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int preserveIconSpacing=0x7f0300c0;
+    public static final int preserveIconSpacing=0x7f0300cc;
     /**
      * A drawable or color to be used as a pressed-state-overlay
      * <p>May be a reference to another resource, in the form
@@ -1833,12 +1931,12 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int pressedStateOverlayImage=0x7f0300c1;
+    public static final int pressedStateOverlayImage=0x7f0300cd;
     /**
      * Progress bar Auto Rotate interval in milliseconds
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int progressBarAutoRotateInterval=0x7f0300c2;
+    public static final int progressBarAutoRotateInterval=0x7f0300ce;
     /**
      * A drawable to be be used as a progress bar.
      * <p>May be a reference to another resource, in the form
@@ -1846,7 +1944,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarImage=0x7f0300c3;
+    public static final int progressBarImage=0x7f0300cf;
     /**
      * Scale type of the progress bar. Ignored if progressBarImage is not specified.
      * <p>Must be one of the following constant values.</p>
@@ -1867,7 +1965,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int progressBarImageScaleType=0x7f0300c4;
+    public static final int progressBarImageScaleType=0x7f0300d0;
     /**
      * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1876,7 +1974,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int progressBarPadding=0x7f0300c5;
+    public static final int progressBarPadding=0x7f0300d1;
     /**
      * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
@@ -1884,7 +1982,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarStyle=0x7f0300c6;
+    public static final int progressBarStyle=0x7f0300d2;
     /**
      * Background for the section containing the search query
      * <p>May be a reference to another resource, in the form
@@ -1892,13 +1990,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f0300c7;
+    public static final int queryBackground=0x7f0300d3;
     /**
      * An optional user-defined query hint string to be displayed in the empty query field.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f0300c8;
+    public static final int queryHint=0x7f0300d4;
     /**
      * Default RadioButton style.
      * <p>May be a reference to another resource, in the form
@@ -1906,7 +2004,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f0300c9;
+    public static final int radioButtonStyle=0x7f0300d5;
     /**
      * Default RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -1914,7 +2012,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f0300ca;
+    public static final int ratingBarStyle=0x7f0300d6;
     /**
      * Indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -1922,7 +2020,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f0300cb;
+    public static final int ratingBarStyleIndicator=0x7f0300d7;
     /**
      * Small indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -1930,7 +2028,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f0300cc;
+    public static final int ratingBarStyleSmall=0x7f0300d8;
     /**
      * A drawable to be be used as a retry image.
      * <p>May be a reference to another resource, in the form
@@ -1938,7 +2036,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int retryImage=0x7f0300cd;
+    public static final int retryImage=0x7f0300d9;
     /**
      * Scale type of the retry image. Ignored if retryImage is not specified.
      * <p>Must be one of the following constant values.</p>
@@ -1959,68 +2057,68 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int retryImageScaleType=0x7f0300ce;
+    public static final int retryImageScaleType=0x7f0300da;
     /**
      * Round as circle.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundAsCircle=0x7f0300cf;
+    public static final int roundAsCircle=0x7f0300db;
     /**
      * Round the bottom-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundBottomEnd=0x7f0300d0;
+    public static final int roundBottomEnd=0x7f0300dc;
     /**
      * Round the bottom-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundBottomLeft=0x7f0300d1;
+    public static final int roundBottomLeft=0x7f0300dd;
     /**
      * Round the bottom-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundBottomRight=0x7f0300d2;
+    public static final int roundBottomRight=0x7f0300de;
     /**
      * Round the bottom-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundBottomStart=0x7f0300d3;
+    public static final int roundBottomStart=0x7f0300df;
     /**
      * Round the top-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundTopEnd=0x7f0300d4;
+    public static final int roundTopEnd=0x7f0300e0;
     /**
      * Round the top-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundTopLeft=0x7f0300d5;
+    public static final int roundTopLeft=0x7f0300e1;
     /**
      * Round the top-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundTopRight=0x7f0300d6;
+    public static final int roundTopRight=0x7f0300e2;
     /**
      * Round the top-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int roundTopStart=0x7f0300d7;
+    public static final int roundTopStart=0x7f0300e3;
     /**
      * Round by overlying color.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int roundWithOverlayColor=0x7f0300d8;
+    public static final int roundWithOverlayColor=0x7f0300e4;
     /**
      * Rounded corner radius. Ignored if roundAsCircle is used.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2029,14 +2127,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int roundedCornerRadius=0x7f0300d9;
+    public static final int roundedCornerRadius=0x7f0300e5;
     /**
      * Rounding border color
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int roundingBorderColor=0x7f0300da;
+    public static final int roundingBorderColor=0x7f0300e6;
     /**
      * Rounding border padding
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2045,7 +2143,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int roundingBorderPadding=0x7f0300db;
+    public static final int roundingBorderPadding=0x7f0300e7;
     /**
      * Rounding border width
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2054,7 +2152,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int roundingBorderWidth=0x7f0300dc;
+    public static final int roundingBorderWidth=0x7f0300e8;
     /**
      * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
@@ -2062,7 +2160,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f0300dd;
+    public static final int searchHintIcon=0x7f0300e9;
     /**
      * Search icon
      * <p>May be a reference to another resource, in the form
@@ -2070,7 +2168,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f0300de;
+    public static final int searchIcon=0x7f0300ea;
     /**
      * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
@@ -2078,7 +2176,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f0300df;
+    public static final int searchViewStyle=0x7f0300eb;
     /**
      * Default SeekBar style.
      * <p>May be a reference to another resource, in the form
@@ -2086,7 +2184,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f0300e0;
+    public static final int seekBarStyle=0x7f0300ec;
     /**
      * A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
@@ -2096,7 +2194,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f0300e1;
+    public static final int selectableItemBackground=0x7f0300ed;
     /**
      * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
@@ -2104,7 +2202,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f0300e2;
+    public static final int selectableItemBackgroundBorderless=0x7f0300ee;
     /**
      * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -2129,7 +2227,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f0300e3;
+    public static final int showAsAction=0x7f0300ef;
     /**
      * Setting for which dividers to show.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -2144,31 +2242,31 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f0300e4;
+    public static final int showDividers=0x7f0300f0;
     /**
      * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f0300e5;
+    public static final int showText=0x7f0300f1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f0300e6;
+    public static final int showTitle=0x7f0300f2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f0300e7;
+    public static final int singleChoiceItemLayout=0x7f0300f3;
     /**
      * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f0300e8;
+    public static final int spinBars=0x7f0300f4;
     /**
      * Default Spinner style.
      * <p>May be a reference to another resource, in the form
@@ -2176,7 +2274,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f0300e9;
+    public static final int spinnerDropDownItemStyle=0x7f0300f5;
     /**
      * Default Spinner style.
      * <p>May be a reference to another resource, in the form
@@ -2184,13 +2282,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f0300ea;
+    public static final int spinnerStyle=0x7f0300f6;
     /**
      * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f0300eb;
+    public static final int splitTrack=0x7f0300f7;
     /**
      * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
      * when running on older versions of the platform.
@@ -2199,13 +2297,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f0300ec;
+    public static final int srcCompat=0x7f0300f8;
     /**
      * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f0300ed;
+    public static final int state_above_anchor=0x7f0300f9;
     /**
      * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
@@ -2216,7 +2314,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f0300ee;
+    public static final int statusBarBackground=0x7f0300fa;
     /**
      * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
@@ -2224,7 +2322,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f0300ef;
+    public static final int subMenuArrow=0x7f0300fb;
     /**
      * Background for the section containing the action (e.g. voice search)
      * <p>May be a reference to another resource, in the form
@@ -2232,27 +2330,27 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f0300f0;
+    public static final int submitBackground=0x7f0300fc;
     /**
      * Specifies subtitle text used for navigationMode="normal"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f0300f1;
+    public static final int subtitle=0x7f0300fd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f0300f2;
+    public static final int subtitleTextAppearance=0x7f0300fe;
     /**
      * A color to apply to the subtitle string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f0300f3;
+    public static final int subtitleTextColor=0x7f0300ff;
     /**
      * Specifies a style to use for subtitle text.
      * <p>May be a reference to another resource, in the form
@@ -2260,7 +2358,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f0300f4;
+    public static final int subtitleTextStyle=0x7f030100;
     /**
      * Layout for query suggestion rows
      * <p>May be a reference to another resource, in the form
@@ -2268,7 +2366,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f0300f5;
+    public static final int suggestionRowLayout=0x7f030101;
     /**
      * Minimum width for the switch component
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2277,7 +2375,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f0300f6;
+    public static final int switchMinWidth=0x7f030102;
     /**
      * Minimum space between the switch and caption text
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2286,7 +2384,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f0300f7;
+    public static final int switchPadding=0x7f030103;
     /**
      * Default style for the Switch widget.
      * <p>May be a reference to another resource, in the form
@@ -2294,7 +2392,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f0300f8;
+    public static final int switchStyle=0x7f030104;
     /**
      * TextAppearance style for text displayed on the switch thumb.
      * <p>May be a reference to another resource, in the form
@@ -2302,7 +2400,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f0300f9;
+    public static final int switchTextAppearance=0x7f030105;
     /**
      * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
@@ -2312,7 +2410,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f0300fa;
+    public static final int textAllCaps=0x7f030106;
     /**
      * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2320,7 +2418,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f0300fb;
+    public static final int textAppearanceLargePopupMenu=0x7f030107;
     /**
      * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
@@ -2328,7 +2426,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f0300fc;
+    public static final int textAppearanceListItem=0x7f030108;
     /**
      * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
@@ -2336,7 +2434,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f0300fd;
+    public static final int textAppearanceListItemSecondary=0x7f030109;
     /**
      * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
@@ -2344,7 +2442,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f0300fe;
+    public static final int textAppearanceListItemSmall=0x7f03010a;
     /**
      * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2352,7 +2450,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f0300ff;
+    public static final int textAppearancePopupMenuHeader=0x7f03010b;
     /**
      * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
@@ -2360,7 +2458,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f030100;
+    public static final int textAppearanceSearchResultSubtitle=0x7f03010c;
     /**
      * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
@@ -2368,7 +2466,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f030101;
+    public static final int textAppearanceSearchResultTitle=0x7f03010d;
     /**
      * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2376,7 +2474,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f030102;
+    public static final int textAppearanceSmallPopupMenu=0x7f03010e;
     /**
      * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
@@ -2387,7 +2485,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorAlertDialogListItem=0x7f030103;
+    public static final int textColorAlertDialogListItem=0x7f03010f;
     /**
      * Text color for urls in search suggestions, used by things like global search
      * <p>May be a reference to another resource, in the form
@@ -2398,7 +2496,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f030104;
+    public static final int textColorSearchUrl=0x7f030110;
     /**
      * Deprecated.
      * <p>May be a reference to another resource, in the form
@@ -2406,7 +2504,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f030105;
+    public static final int theme=0x7f030111;
     /**
      * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2415,7 +2513,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f030106;
+    public static final int thickness=0x7f030112;
     /**
      * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2424,14 +2522,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f030107;
+    public static final int thumbTextPadding=0x7f030113;
     /**
      * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f030108;
+    public static final int thumbTint=0x7f030114;
     /**
      * Blending mode used to apply the thumb tint.
      * <p>Must be one of the following constant values.</p>
@@ -2453,7 +2551,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f030109;
+    public static final int thumbTintMode=0x7f030115;
     /**
      * Drawable displayed at each progress position on a seekbar.
      * <p>May be a reference to another resource, in the form
@@ -2461,14 +2559,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f03010a;
+    public static final int tickMark=0x7f030116;
     /**
      * Tint to apply to the tick mark drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f03010b;
+    public static final int tickMarkTint=0x7f030117;
     /**
      * Blending mode used to apply the tick mark tint.
      * <p>Must be one of the following constant values.</p>
@@ -2490,14 +2588,14 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f03010c;
+    public static final int tickMarkTintMode=0x7f030118;
     /**
      * Tint to apply to the image source.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f03010d;
+    public static final int tint=0x7f030119;
     /**
      * Blending mode used to apply the image source tint.
      * <p>Must be one of the following constant values.</p>
@@ -2519,12 +2617,12 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f03010e;
+    public static final int tintMode=0x7f03011a;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f03010f;
+    public static final int title=0x7f03011b;
     /**
      * Specifies extra space on the left, start, right and end sides
      * of the toolbar's title. Margin values should be positive.
@@ -2534,7 +2632,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f030110;
+    public static final int titleMargin=0x7f03011c;
     /**
      * Specifies extra space on the bottom side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2545,7 +2643,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f030111;
+    public static final int titleMarginBottom=0x7f03011d;
     /**
      * Specifies extra space on the end side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2556,7 +2654,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f030112;
+    public static final int titleMarginEnd=0x7f03011e;
     /**
      * Specifies extra space on the start side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2567,7 +2665,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f030113;
+    public static final int titleMarginStart=0x7f03011f;
     /**
      * Specifies extra space on the top side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2578,7 +2676,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f030114;
+    public static final int titleMarginTop=0x7f030120;
     /**
      * {@deprecated Use titleMargin}
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2588,21 +2686,21 @@ public final class R {
      * mm (millimeters).
      */
     @Deprecated
-    public static final int titleMargins=0x7f030115;
+    public static final int titleMargins=0x7f030121;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f030116;
+    public static final int titleTextAppearance=0x7f030122;
     /**
      * A color to apply to the title string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f030117;
+    public static final int titleTextColor=0x7f030123;
     /**
      * Specifies a style to use for title text.
      * <p>May be a reference to another resource, in the form
@@ -2610,7 +2708,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f030118;
+    public static final int titleTextStyle=0x7f030124;
     /**
      * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
@@ -2618,7 +2716,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f030119;
+    public static final int toolbarNavigationButtonStyle=0x7f030125;
     /**
      * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
@@ -2626,7 +2724,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f03011a;
+    public static final int toolbarStyle=0x7f030126;
     /**
      * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
@@ -2637,7 +2735,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f03011b;
+    public static final int tooltipForegroundColor=0x7f030127;
     /**
      * Background to use for tooltips
      * <p>May be a reference to another resource, in the form
@@ -2645,13 +2743,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f03011c;
+    public static final int tooltipFrameBackground=0x7f030128;
     /**
      * The tooltip text associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f03011d;
+    public static final int tooltipText=0x7f030129;
     /**
      * Drawable to use as the "track" that the switch thumb slides within.
      * <p>May be a reference to another resource, in the form
@@ -2659,14 +2757,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f03011e;
+    public static final int track=0x7f03012a;
     /**
      * Tint to apply to the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f03011f;
+    public static final int trackTint=0x7f03012b;
     /**
      * Blending mode used to apply the track tint.
      * <p>Must be one of the following constant values.</p>
@@ -2688,23 +2786,23 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f030120;
+    public static final int trackTintMode=0x7f03012c;
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f030121;
+    public static final int ttcIndex=0x7f03012d;
     /**
      * Aspect ratio (width / height) of the view, not necessarily of the images.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int viewAspectRatio=0x7f030122;
+    public static final int viewAspectRatio=0x7f03012e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f030123;
+    public static final int viewInflaterClass=0x7f03012f;
     /**
      * Voice button icon
      * <p>May be a reference to another resource, in the form
@@ -2712,14 +2810,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f030124;
+    public static final int voiceIcon=0x7f030130;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int wheel_data=0x7f030125;
+    public static final int wheel_data=0x7f030131;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2731,20 +2829,20 @@ public final class R {
      * <tr><td>vertical</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int wheel_direction=0x7f030126;
+    public static final int wheel_direction=0x7f030132;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int wheel_item_count=0x7f030127;
+    public static final int wheel_item_count=0x7f030133;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int wheel_item_index=0x7f030128;
+    public static final int wheel_item_index=0x7f030134;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int wheel_item_same_size=0x7f030129;
+    public static final int wheel_item_same_size=0x7f030135;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2752,7 +2850,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int wheel_item_space=0x7f03012a;
+    public static final int wheel_item_space=0x7f030136;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2764,19 +2862,19 @@ public final class R {
      * <tr><td>straight</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int wheel_style=0x7f03012b;
+    public static final int wheel_style=0x7f030137;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int wheel_text_color=0x7f03012c;
+    public static final int wheel_text_color=0x7f030138;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int wheel_text_color_current=0x7f03012d;
+    public static final int wheel_text_color_current=0x7f030139;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2784,14 +2882,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int wheel_text_size=0x7f03012e;
+    public static final int wheel_text_size=0x7f03013a;
     /**
      * Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f03012f;
+    public static final int windowActionBar=0x7f03013b;
     /**
      * Flag indicating whether this window's Action Bar should overlay
      * application content. Does nothing if the window would not
@@ -2799,14 +2897,14 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f030130;
+    public static final int windowActionBarOverlay=0x7f03013c;
     /**
      * Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f030131;
+    public static final int windowActionModeOverlay=0x7f03013d;
     /**
      * A fixed height for the window along the major axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -2821,7 +2919,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f030132;
+    public static final int windowFixedHeightMajor=0x7f03013e;
     /**
      * A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -2836,7 +2934,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f030133;
+    public static final int windowFixedHeightMinor=0x7f03013f;
     /**
      * A fixed width for the window along the major axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -2851,7 +2949,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f030134;
+    public static final int windowFixedWidthMajor=0x7f030140;
     /**
      * A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -2866,7 +2964,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f030135;
+    public static final int windowFixedWidthMinor=0x7f030141;
     /**
      * The minimum width the window is allowed to be, along the major
      * axis of the screen.  That is, when in landscape.  Can be either
@@ -2882,7 +2980,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f030136;
+    public static final int windowMinWidthMajor=0x7f030142;
     /**
      * The minimum width the window is allowed to be, along the minor
      * axis of the screen.  That is, when in portrait.  Can be either
@@ -2898,13 +2996,13 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f030137;
+    public static final int windowMinWidthMinor=0x7f030143;
     /**
      * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f030138;
+    public static final int windowNoTitle=0x7f030144;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f040000;
@@ -2953,53 +3051,57 @@ public final class R {
     public static final int bright_foreground_material_light=0x7f050026;
     public static final int button_material_dark=0x7f050027;
     public static final int button_material_light=0x7f050028;
-    public static final int catalyst_redbox_background=0x7f050029;
-    public static final int dim_foreground_disabled_material_dark=0x7f05002a;
-    public static final int dim_foreground_disabled_material_light=0x7f05002b;
-    public static final int dim_foreground_material_dark=0x7f05002c;
-    public static final int dim_foreground_material_light=0x7f05002d;
-    public static final int error_color_material_dark=0x7f05002e;
-    public static final int error_color_material_light=0x7f05002f;
-    public static final int foreground_material_dark=0x7f050030;
-    public static final int foreground_material_light=0x7f050031;
-    public static final int highlighted_text_material_dark=0x7f050032;
-    public static final int highlighted_text_material_light=0x7f050033;
-    public static final int material_blue_grey_800=0x7f050034;
-    public static final int material_blue_grey_900=0x7f050035;
-    public static final int material_blue_grey_950=0x7f050036;
-    public static final int material_deep_teal_200=0x7f050037;
-    public static final int material_deep_teal_500=0x7f050038;
-    public static final int material_grey_100=0x7f050039;
-    public static final int material_grey_300=0x7f05003a;
-    public static final int material_grey_50=0x7f05003b;
-    public static final int material_grey_600=0x7f05003c;
-    public static final int material_grey_800=0x7f05003d;
-    public static final int material_grey_850=0x7f05003e;
-    public static final int material_grey_900=0x7f05003f;
-    public static final int notification_action_color_filter=0x7f050040;
-    public static final int notification_icon_bg_color=0x7f050041;
-    public static final int primary_dark_material_dark=0x7f050042;
-    public static final int primary_dark_material_light=0x7f050043;
-    public static final int primary_material_dark=0x7f050044;
-    public static final int primary_material_light=0x7f050045;
-    public static final int primary_text_default_material_dark=0x7f050046;
-    public static final int primary_text_default_material_light=0x7f050047;
-    public static final int primary_text_disabled_material_dark=0x7f050048;
-    public static final int primary_text_disabled_material_light=0x7f050049;
-    public static final int ripple_material_dark=0x7f05004a;
-    public static final int ripple_material_light=0x7f05004b;
-    public static final int secondary_text_default_material_dark=0x7f05004c;
-    public static final int secondary_text_default_material_light=0x7f05004d;
-    public static final int secondary_text_disabled_material_dark=0x7f05004e;
-    public static final int secondary_text_disabled_material_light=0x7f05004f;
-    public static final int switch_thumb_disabled_material_dark=0x7f050050;
-    public static final int switch_thumb_disabled_material_light=0x7f050051;
-    public static final int switch_thumb_material_dark=0x7f050052;
-    public static final int switch_thumb_material_light=0x7f050053;
-    public static final int switch_thumb_normal_material_dark=0x7f050054;
-    public static final int switch_thumb_normal_material_light=0x7f050055;
-    public static final int tooltip_background_dark=0x7f050056;
-    public static final int tooltip_background_light=0x7f050057;
+    public static final int cardview_dark_background=0x7f050029;
+    public static final int cardview_light_background=0x7f05002a;
+    public static final int cardview_shadow_end_color=0x7f05002b;
+    public static final int cardview_shadow_start_color=0x7f05002c;
+    public static final int catalyst_redbox_background=0x7f05002d;
+    public static final int dim_foreground_disabled_material_dark=0x7f05002e;
+    public static final int dim_foreground_disabled_material_light=0x7f05002f;
+    public static final int dim_foreground_material_dark=0x7f050030;
+    public static final int dim_foreground_material_light=0x7f050031;
+    public static final int error_color_material_dark=0x7f050032;
+    public static final int error_color_material_light=0x7f050033;
+    public static final int foreground_material_dark=0x7f050034;
+    public static final int foreground_material_light=0x7f050035;
+    public static final int highlighted_text_material_dark=0x7f050036;
+    public static final int highlighted_text_material_light=0x7f050037;
+    public static final int material_blue_grey_800=0x7f050038;
+    public static final int material_blue_grey_900=0x7f050039;
+    public static final int material_blue_grey_950=0x7f05003a;
+    public static final int material_deep_teal_200=0x7f05003b;
+    public static final int material_deep_teal_500=0x7f05003c;
+    public static final int material_grey_100=0x7f05003d;
+    public static final int material_grey_300=0x7f05003e;
+    public static final int material_grey_50=0x7f05003f;
+    public static final int material_grey_600=0x7f050040;
+    public static final int material_grey_800=0x7f050041;
+    public static final int material_grey_850=0x7f050042;
+    public static final int material_grey_900=0x7f050043;
+    public static final int notification_action_color_filter=0x7f050044;
+    public static final int notification_icon_bg_color=0x7f050045;
+    public static final int primary_dark_material_dark=0x7f050046;
+    public static final int primary_dark_material_light=0x7f050047;
+    public static final int primary_material_dark=0x7f050048;
+    public static final int primary_material_light=0x7f050049;
+    public static final int primary_text_default_material_dark=0x7f05004a;
+    public static final int primary_text_default_material_light=0x7f05004b;
+    public static final int primary_text_disabled_material_dark=0x7f05004c;
+    public static final int primary_text_disabled_material_light=0x7f05004d;
+    public static final int ripple_material_dark=0x7f05004e;
+    public static final int ripple_material_light=0x7f05004f;
+    public static final int secondary_text_default_material_dark=0x7f050050;
+    public static final int secondary_text_default_material_light=0x7f050051;
+    public static final int secondary_text_disabled_material_dark=0x7f050052;
+    public static final int secondary_text_disabled_material_light=0x7f050053;
+    public static final int switch_thumb_disabled_material_dark=0x7f050054;
+    public static final int switch_thumb_disabled_material_light=0x7f050055;
+    public static final int switch_thumb_material_dark=0x7f050056;
+    public static final int switch_thumb_material_light=0x7f050057;
+    public static final int switch_thumb_normal_material_dark=0x7f050058;
+    public static final int switch_thumb_normal_material_light=0x7f050059;
+    public static final int tooltip_background_dark=0x7f05005a;
+    public static final int tooltip_background_light=0x7f05005b;
   }
   public static final class dimen {
     public static final int WheelItemSpace=0x7f060000;
@@ -3081,45 +3183,48 @@ public final class R {
     public static final int abc_text_size_subtitle_material_toolbar=0x7f06004c;
     public static final int abc_text_size_title_material=0x7f06004d;
     public static final int abc_text_size_title_material_toolbar=0x7f06004e;
-    public static final int compat_button_inset_horizontal_material=0x7f06004f;
-    public static final int compat_button_inset_vertical_material=0x7f060050;
-    public static final int compat_button_padding_horizontal_material=0x7f060051;
-    public static final int compat_button_padding_vertical_material=0x7f060052;
-    public static final int compat_control_corner_material=0x7f060053;
-    public static final int compat_notification_large_icon_max_height=0x7f060054;
-    public static final int compat_notification_large_icon_max_width=0x7f060055;
-    public static final int disabled_alpha_material_dark=0x7f060056;
-    public static final int disabled_alpha_material_light=0x7f060057;
-    public static final int highlight_alpha_material_colored=0x7f060058;
-    public static final int highlight_alpha_material_dark=0x7f060059;
-    public static final int highlight_alpha_material_light=0x7f06005a;
-    public static final int hint_alpha_material_dark=0x7f06005b;
-    public static final int hint_alpha_material_light=0x7f06005c;
-    public static final int hint_pressed_alpha_material_dark=0x7f06005d;
-    public static final int hint_pressed_alpha_material_light=0x7f06005e;
-    public static final int notification_action_icon_size=0x7f06005f;
-    public static final int notification_action_text_size=0x7f060060;
-    public static final int notification_big_circle_margin=0x7f060061;
-    public static final int notification_content_margin_start=0x7f060062;
-    public static final int notification_large_icon_height=0x7f060063;
-    public static final int notification_large_icon_width=0x7f060064;
-    public static final int notification_main_column_padding_top=0x7f060065;
-    public static final int notification_media_narrow_margin=0x7f060066;
-    public static final int notification_right_icon_size=0x7f060067;
-    public static final int notification_right_side_padding_top=0x7f060068;
-    public static final int notification_small_icon_background_padding=0x7f060069;
-    public static final int notification_small_icon_size_as_large=0x7f06006a;
-    public static final int notification_subtext_size=0x7f06006b;
-    public static final int notification_top_pad=0x7f06006c;
-    public static final int notification_top_pad_large_text=0x7f06006d;
-    public static final int tooltip_corner_radius=0x7f06006e;
-    public static final int tooltip_horizontal_padding=0x7f06006f;
-    public static final int tooltip_margin=0x7f060070;
-    public static final int tooltip_precise_anchor_extra_offset=0x7f060071;
-    public static final int tooltip_precise_anchor_threshold=0x7f060072;
-    public static final int tooltip_vertical_padding=0x7f060073;
-    public static final int tooltip_y_offset_non_touch=0x7f060074;
-    public static final int tooltip_y_offset_touch=0x7f060075;
+    public static final int cardview_compat_inset_shadow=0x7f06004f;
+    public static final int cardview_default_elevation=0x7f060050;
+    public static final int cardview_default_radius=0x7f060051;
+    public static final int compat_button_inset_horizontal_material=0x7f060052;
+    public static final int compat_button_inset_vertical_material=0x7f060053;
+    public static final int compat_button_padding_horizontal_material=0x7f060054;
+    public static final int compat_button_padding_vertical_material=0x7f060055;
+    public static final int compat_control_corner_material=0x7f060056;
+    public static final int compat_notification_large_icon_max_height=0x7f060057;
+    public static final int compat_notification_large_icon_max_width=0x7f060058;
+    public static final int disabled_alpha_material_dark=0x7f060059;
+    public static final int disabled_alpha_material_light=0x7f06005a;
+    public static final int highlight_alpha_material_colored=0x7f06005b;
+    public static final int highlight_alpha_material_dark=0x7f06005c;
+    public static final int highlight_alpha_material_light=0x7f06005d;
+    public static final int hint_alpha_material_dark=0x7f06005e;
+    public static final int hint_alpha_material_light=0x7f06005f;
+    public static final int hint_pressed_alpha_material_dark=0x7f060060;
+    public static final int hint_pressed_alpha_material_light=0x7f060061;
+    public static final int notification_action_icon_size=0x7f060062;
+    public static final int notification_action_text_size=0x7f060063;
+    public static final int notification_big_circle_margin=0x7f060064;
+    public static final int notification_content_margin_start=0x7f060065;
+    public static final int notification_large_icon_height=0x7f060066;
+    public static final int notification_large_icon_width=0x7f060067;
+    public static final int notification_main_column_padding_top=0x7f060068;
+    public static final int notification_media_narrow_margin=0x7f060069;
+    public static final int notification_right_icon_size=0x7f06006a;
+    public static final int notification_right_side_padding_top=0x7f06006b;
+    public static final int notification_small_icon_background_padding=0x7f06006c;
+    public static final int notification_small_icon_size_as_large=0x7f06006d;
+    public static final int notification_subtext_size=0x7f06006e;
+    public static final int notification_top_pad=0x7f06006f;
+    public static final int notification_top_pad_large_text=0x7f060070;
+    public static final int tooltip_corner_radius=0x7f060071;
+    public static final int tooltip_horizontal_padding=0x7f060072;
+    public static final int tooltip_margin=0x7f060073;
+    public static final int tooltip_precise_anchor_extra_offset=0x7f060074;
+    public static final int tooltip_precise_anchor_threshold=0x7f060075;
+    public static final int tooltip_vertical_padding=0x7f060076;
+    public static final int tooltip_y_offset_non_touch=0x7f060077;
+    public static final int tooltip_y_offset_touch=0x7f060078;
   }
   public static final class drawable {
     public static final int abc_ab_share_pack_mtrl_alpha=0x7f070000;
@@ -3558,361 +3663,365 @@ public final class R {
     public static final int Base_Animation_AppCompat_Dialog=0x7f0d0009;
     public static final int Base_Animation_AppCompat_DropDownUp=0x7f0d000a;
     public static final int Base_Animation_AppCompat_Tooltip=0x7f0d000b;
-    public static final int Base_DialogWindowTitle_AppCompat=0x7f0d000c;
-    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0d000d;
-    public static final int Base_TextAppearance_AppCompat=0x7f0d000e;
-    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0d000f;
-    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0d0010;
-    public static final int Base_TextAppearance_AppCompat_Button=0x7f0d0011;
-    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0d0012;
-    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0d0013;
-    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0d0014;
-    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0d0015;
-    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0d0016;
-    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0d0017;
-    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0d0018;
-    public static final int Base_TextAppearance_AppCompat_Large=0x7f0d0019;
-    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0d001a;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d001b;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d001c;
-    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0d001d;
-    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0d001e;
-    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0d001f;
-    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0d0020;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0021;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0d0022;
-    public static final int Base_TextAppearance_AppCompat_Small=0x7f0d0023;
-    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0d0024;
-    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0d0025;
-    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0d0026;
-    public static final int Base_TextAppearance_AppCompat_Title=0x7f0d0027;
-    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0d0028;
-    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0d0029;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d002a;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d002b;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d002c;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d002d;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d002e;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d002f;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d0030;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0d0031;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d0032;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d0033;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d0034;
-    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0035;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d0036;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d0037;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d0038;
-    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0d0039;
-    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d003a;
-    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d003b;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d003c;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d003d;
-    public static final int Base_Theme_AppCompat=0x7f0d003e;
-    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0d003f;
-    public static final int Base_Theme_AppCompat_Dialog=0x7f0d0040;
-    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0d0041;
-    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0d0042;
-    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0d0043;
-    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0d0044;
-    public static final int Base_Theme_AppCompat_Light=0x7f0d0045;
-    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0d0046;
-    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0d0047;
-    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0d0048;
-    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0d0049;
-    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d004a;
-    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0d004b;
-    public static final int Base_ThemeOverlay_AppCompat=0x7f0d004c;
-    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0d004d;
-    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d004e;
-    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d004f;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0d0050;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0051;
-    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0052;
-    public static final int Base_V21_Theme_AppCompat=0x7f0d0053;
-    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d0054;
-    public static final int Base_V21_Theme_AppCompat_Light=0x7f0d0055;
-    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d0056;
-    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0d0057;
-    public static final int Base_V22_Theme_AppCompat=0x7f0d0058;
-    public static final int Base_V22_Theme_AppCompat_Light=0x7f0d0059;
-    public static final int Base_V23_Theme_AppCompat=0x7f0d005a;
-    public static final int Base_V23_Theme_AppCompat_Light=0x7f0d005b;
-    public static final int Base_V26_Theme_AppCompat=0x7f0d005c;
-    public static final int Base_V26_Theme_AppCompat_Light=0x7f0d005d;
-    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0d005e;
-    public static final int Base_V28_Theme_AppCompat=0x7f0d005f;
-    public static final int Base_V28_Theme_AppCompat_Light=0x7f0d0060;
-    public static final int Base_V7_Theme_AppCompat=0x7f0d0061;
-    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0062;
-    public static final int Base_V7_Theme_AppCompat_Light=0x7f0d0063;
-    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0d0064;
-    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0d0065;
-    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0d0066;
-    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0d0067;
-    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0d0068;
-    public static final int Base_Widget_AppCompat_ActionBar=0x7f0d0069;
-    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0d006a;
-    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0d006b;
-    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0d006c;
-    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0d006d;
-    public static final int Base_Widget_AppCompat_ActionButton=0x7f0d006e;
-    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0d006f;
-    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0d0070;
-    public static final int Base_Widget_AppCompat_ActionMode=0x7f0d0071;
-    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0d0072;
-    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0d0073;
-    public static final int Base_Widget_AppCompat_Button=0x7f0d0074;
-    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0d0075;
-    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0d0076;
-    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0077;
-    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0d0078;
-    public static final int Base_Widget_AppCompat_Button_Small=0x7f0d0079;
-    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0d007a;
-    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d007b;
-    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0d007c;
-    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0d007d;
-    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0d007e;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0d007f;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0d0080;
-    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0d0081;
-    public static final int Base_Widget_AppCompat_EditText=0x7f0d0082;
-    public static final int Base_Widget_AppCompat_ImageButton=0x7f0d0083;
-    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0d0084;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0085;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0086;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0087;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0088;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0089;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0d008a;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d008b;
-    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0d008c;
-    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0d008d;
-    public static final int Base_Widget_AppCompat_ListView=0x7f0d008e;
-    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0d008f;
-    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0d0090;
-    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0d0091;
-    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0d0092;
-    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0d0093;
-    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0d0094;
-    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0095;
-    public static final int Base_Widget_AppCompat_RatingBar=0x7f0d0096;
-    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0d0097;
-    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0d0098;
-    public static final int Base_Widget_AppCompat_SearchView=0x7f0d0099;
-    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0d009a;
-    public static final int Base_Widget_AppCompat_SeekBar=0x7f0d009b;
-    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0d009c;
-    public static final int Base_Widget_AppCompat_Spinner=0x7f0d009d;
-    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0d009e;
-    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0d009f;
-    public static final int Base_Widget_AppCompat_Toolbar=0x7f0d00a0;
-    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00a1;
-    public static final int CalendarDatePickerDialog=0x7f0d00a2;
-    public static final int CalendarDatePickerStyle=0x7f0d00a3;
-    public static final int ClockTimePickerDialog=0x7f0d00a4;
-    public static final int ClockTimePickerStyle=0x7f0d00a5;
-    public static final int DialogAnimationFade=0x7f0d00a6;
-    public static final int DialogAnimationSlide=0x7f0d00a7;
-    public static final int Platform_AppCompat=0x7f0d00a8;
-    public static final int Platform_AppCompat_Light=0x7f0d00a9;
-    public static final int Platform_ThemeOverlay_AppCompat=0x7f0d00aa;
-    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d00ab;
-    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0d00ac;
-    public static final int Platform_V21_AppCompat=0x7f0d00ad;
-    public static final int Platform_V21_AppCompat_Light=0x7f0d00ae;
-    public static final int Platform_V25_AppCompat=0x7f0d00af;
-    public static final int Platform_V25_AppCompat_Light=0x7f0d00b0;
-    public static final int Platform_Widget_AppCompat_Spinner=0x7f0d00b1;
-    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0d00b2;
-    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d00b3;
-    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0d00b4;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d00b5;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d00b6;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0d00b7;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0d00b8;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d00b9;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0d00ba;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d00bb;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d00bc;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d00bd;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d00be;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d00bf;
-    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d00c0;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d00c1;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d00c2;
-    public static final int SpinnerDatePickerDialog=0x7f0d00c3;
-    public static final int SpinnerDatePickerStyle=0x7f0d00c4;
-    public static final int SpinnerTimePickerDialog=0x7f0d00c5;
-    public static final int SpinnerTimePickerStyle=0x7f0d00c6;
-    public static final int TextAppearance_AppCompat=0x7f0d00c7;
-    public static final int TextAppearance_AppCompat_Body1=0x7f0d00c8;
-    public static final int TextAppearance_AppCompat_Body2=0x7f0d00c9;
-    public static final int TextAppearance_AppCompat_Button=0x7f0d00ca;
-    public static final int TextAppearance_AppCompat_Caption=0x7f0d00cb;
-    public static final int TextAppearance_AppCompat_Display1=0x7f0d00cc;
-    public static final int TextAppearance_AppCompat_Display2=0x7f0d00cd;
-    public static final int TextAppearance_AppCompat_Display3=0x7f0d00ce;
-    public static final int TextAppearance_AppCompat_Display4=0x7f0d00cf;
-    public static final int TextAppearance_AppCompat_Headline=0x7f0d00d0;
-    public static final int TextAppearance_AppCompat_Inverse=0x7f0d00d1;
-    public static final int TextAppearance_AppCompat_Large=0x7f0d00d2;
-    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d00d3;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d00d4;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d00d5;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d00d6;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d00d7;
-    public static final int TextAppearance_AppCompat_Medium=0x7f0d00d8;
-    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d00d9;
-    public static final int TextAppearance_AppCompat_Menu=0x7f0d00da;
-    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d00db;
-    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d00dc;
-    public static final int TextAppearance_AppCompat_Small=0x7f0d00dd;
-    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d00de;
-    public static final int TextAppearance_AppCompat_Subhead=0x7f0d00df;
-    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d00e0;
-    public static final int TextAppearance_AppCompat_Title=0x7f0d00e1;
-    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d00e2;
-    public static final int TextAppearance_AppCompat_Tooltip=0x7f0d00e3;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d00e4;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d00e5;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d00e6;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d00e7;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d00e8;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d00e9;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d00ea;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d00eb;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d00ec;
-    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0d00ed;
-    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d00ee;
-    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d00ef;
-    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d00f0;
-    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d00f1;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d00f2;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d00f3;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d00f4;
-    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d00f5;
-    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d00f6;
-    public static final int TextAppearance_Compat_Notification=0x7f0d00f7;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0d00f8;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0d00f9;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0d00fa;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0d00fb;
-    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d00fc;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d00fd;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d00fe;
-    public static final int Theme=0x7f0d00ff;
-    public static final int Theme_AppCompat=0x7f0d0100;
-    public static final int Theme_AppCompat_CompactMenu=0x7f0d0101;
-    public static final int Theme_AppCompat_DayNight=0x7f0d0102;
-    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0d0103;
-    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0d0104;
-    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0d0105;
-    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0d0106;
-    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0d0107;
-    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0d0108;
-    public static final int Theme_AppCompat_Dialog=0x7f0d0109;
-    public static final int Theme_AppCompat_Dialog_Alert=0x7f0d010a;
-    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0d010b;
-    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d010c;
-    public static final int Theme_AppCompat_Light=0x7f0d010d;
-    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d010e;
-    public static final int Theme_AppCompat_Light_Dialog=0x7f0d010f;
-    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0d0110;
-    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0111;
-    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d0112;
-    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d0113;
-    public static final int Theme_AppCompat_NoActionBar=0x7f0d0114;
-    public static final int Theme_Catalyst=0x7f0d0115;
-    public static final int Theme_Catalyst_RedBox=0x7f0d0116;
-    public static final int Theme_FullScreenDialog=0x7f0d0117;
-    public static final int Theme_FullScreenDialogAnimatedFade=0x7f0d0118;
-    public static final int Theme_FullScreenDialogAnimatedSlide=0x7f0d0119;
-    public static final int Theme_ReactNative_AppCompat_Light=0x7f0d011a;
-    public static final int Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen=0x7f0d011b;
-    public static final int ThemeOverlay_AppCompat=0x7f0d011c;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d011d;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f0d011e;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d011f;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0d0120;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0121;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f0d0122;
-    public static final int Widget_AppCompat_ActionBar=0x7f0d0123;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d0124;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d0125;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d0126;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d0127;
-    public static final int Widget_AppCompat_ActionButton=0x7f0d0128;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d0129;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d012a;
-    public static final int Widget_AppCompat_ActionMode=0x7f0d012b;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f0d012c;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d012d;
-    public static final int Widget_AppCompat_Button=0x7f0d012e;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f0d012f;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0d0130;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0131;
-    public static final int Widget_AppCompat_Button_Colored=0x7f0d0132;
-    public static final int Widget_AppCompat_Button_Small=0x7f0d0133;
-    public static final int Widget_AppCompat_ButtonBar=0x7f0d0134;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d0135;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0d0136;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0d0137;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d0138;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d0139;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d013a;
-    public static final int Widget_AppCompat_EditText=0x7f0d013b;
-    public static final int Widget_AppCompat_ImageButton=0x7f0d013c;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f0d013d;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d013e;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d013f;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0140;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d0141;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0142;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0143;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0144;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d0145;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f0d0146;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d0147;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d0148;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d0149;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d014a;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d014b;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d014c;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d014d;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d014e;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d014f;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0150;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f0d0151;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d0152;
-    public static final int Widget_AppCompat_ListMenuView=0x7f0d0153;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f0d0154;
-    public static final int Widget_AppCompat_ListView=0x7f0d0155;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f0d0156;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f0d0157;
-    public static final int Widget_AppCompat_PopupMenu=0x7f0d0158;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d0159;
-    public static final int Widget_AppCompat_PopupWindow=0x7f0d015a;
-    public static final int Widget_AppCompat_ProgressBar=0x7f0d015b;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d015c;
-    public static final int Widget_AppCompat_RatingBar=0x7f0d015d;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0d015e;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f0d015f;
-    public static final int Widget_AppCompat_SearchView=0x7f0d0160;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0d0161;
-    public static final int Widget_AppCompat_SeekBar=0x7f0d0162;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0d0163;
-    public static final int Widget_AppCompat_Spinner=0x7f0d0164;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d0165;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d0166;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0d0167;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0d0168;
-    public static final int Widget_AppCompat_Toolbar=0x7f0d0169;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d016a;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0d016b;
-    public static final int Widget_Compat_NotificationActionText=0x7f0d016c;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0d016d;
-    public static final int redboxButton=0x7f0d016e;
+    public static final int Base_CardView=0x7f0d000c;
+    public static final int Base_DialogWindowTitle_AppCompat=0x7f0d000d;
+    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0d000e;
+    public static final int Base_TextAppearance_AppCompat=0x7f0d000f;
+    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0d0010;
+    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0d0011;
+    public static final int Base_TextAppearance_AppCompat_Button=0x7f0d0012;
+    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0d0013;
+    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0d0014;
+    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0d0015;
+    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0d0016;
+    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0d0017;
+    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0d0018;
+    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0d0019;
+    public static final int Base_TextAppearance_AppCompat_Large=0x7f0d001a;
+    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0d001b;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d001c;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d001d;
+    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0d001e;
+    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0d001f;
+    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0d0020;
+    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0d0021;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0022;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0d0023;
+    public static final int Base_TextAppearance_AppCompat_Small=0x7f0d0024;
+    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0d0025;
+    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0d0026;
+    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0d0027;
+    public static final int Base_TextAppearance_AppCompat_Title=0x7f0d0028;
+    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0d0029;
+    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0d002a;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d002b;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d002c;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d002d;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d002e;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d002f;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d0030;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d0031;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0d0032;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d0033;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d0034;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d0035;
+    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0036;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d0037;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d0038;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d0039;
+    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0d003a;
+    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d003b;
+    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d003c;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d003d;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d003e;
+    public static final int Base_Theme_AppCompat=0x7f0d003f;
+    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0d0040;
+    public static final int Base_Theme_AppCompat_Dialog=0x7f0d0041;
+    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0d0042;
+    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0d0043;
+    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0d0044;
+    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0d0045;
+    public static final int Base_Theme_AppCompat_Light=0x7f0d0046;
+    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0d0047;
+    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0d0048;
+    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0d0049;
+    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0d004a;
+    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d004b;
+    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0d004c;
+    public static final int Base_ThemeOverlay_AppCompat=0x7f0d004d;
+    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0d004e;
+    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d004f;
+    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d0050;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0d0051;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0052;
+    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0053;
+    public static final int Base_V21_Theme_AppCompat=0x7f0d0054;
+    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d0055;
+    public static final int Base_V21_Theme_AppCompat_Light=0x7f0d0056;
+    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d0057;
+    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0d0058;
+    public static final int Base_V22_Theme_AppCompat=0x7f0d0059;
+    public static final int Base_V22_Theme_AppCompat_Light=0x7f0d005a;
+    public static final int Base_V23_Theme_AppCompat=0x7f0d005b;
+    public static final int Base_V23_Theme_AppCompat_Light=0x7f0d005c;
+    public static final int Base_V26_Theme_AppCompat=0x7f0d005d;
+    public static final int Base_V26_Theme_AppCompat_Light=0x7f0d005e;
+    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0d005f;
+    public static final int Base_V28_Theme_AppCompat=0x7f0d0060;
+    public static final int Base_V28_Theme_AppCompat_Light=0x7f0d0061;
+    public static final int Base_V7_Theme_AppCompat=0x7f0d0062;
+    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0063;
+    public static final int Base_V7_Theme_AppCompat_Light=0x7f0d0064;
+    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0d0065;
+    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0d0066;
+    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0d0067;
+    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0d0068;
+    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0d0069;
+    public static final int Base_Widget_AppCompat_ActionBar=0x7f0d006a;
+    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0d006b;
+    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0d006c;
+    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0d006d;
+    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0d006e;
+    public static final int Base_Widget_AppCompat_ActionButton=0x7f0d006f;
+    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0d0070;
+    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0d0071;
+    public static final int Base_Widget_AppCompat_ActionMode=0x7f0d0072;
+    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0d0073;
+    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0d0074;
+    public static final int Base_Widget_AppCompat_Button=0x7f0d0075;
+    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0d0076;
+    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0d0077;
+    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0078;
+    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0d0079;
+    public static final int Base_Widget_AppCompat_Button_Small=0x7f0d007a;
+    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0d007b;
+    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d007c;
+    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0d007d;
+    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0d007e;
+    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0d007f;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0d0080;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0d0081;
+    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0d0082;
+    public static final int Base_Widget_AppCompat_EditText=0x7f0d0083;
+    public static final int Base_Widget_AppCompat_ImageButton=0x7f0d0084;
+    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0d0085;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0086;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0087;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0088;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0089;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0d008a;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0d008b;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d008c;
+    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0d008d;
+    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0d008e;
+    public static final int Base_Widget_AppCompat_ListView=0x7f0d008f;
+    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0d0090;
+    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0d0091;
+    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0d0092;
+    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0d0093;
+    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0d0094;
+    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0d0095;
+    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0096;
+    public static final int Base_Widget_AppCompat_RatingBar=0x7f0d0097;
+    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0d0098;
+    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0d0099;
+    public static final int Base_Widget_AppCompat_SearchView=0x7f0d009a;
+    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0d009b;
+    public static final int Base_Widget_AppCompat_SeekBar=0x7f0d009c;
+    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0d009d;
+    public static final int Base_Widget_AppCompat_Spinner=0x7f0d009e;
+    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0d009f;
+    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0d00a0;
+    public static final int Base_Widget_AppCompat_Toolbar=0x7f0d00a1;
+    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00a2;
+    public static final int CalendarDatePickerDialog=0x7f0d00a3;
+    public static final int CalendarDatePickerStyle=0x7f0d00a4;
+    public static final int CardView=0x7f0d00a5;
+    public static final int CardView_Dark=0x7f0d00a6;
+    public static final int CardView_Light=0x7f0d00a7;
+    public static final int ClockTimePickerDialog=0x7f0d00a8;
+    public static final int ClockTimePickerStyle=0x7f0d00a9;
+    public static final int DialogAnimationFade=0x7f0d00aa;
+    public static final int DialogAnimationSlide=0x7f0d00ab;
+    public static final int Platform_AppCompat=0x7f0d00ac;
+    public static final int Platform_AppCompat_Light=0x7f0d00ad;
+    public static final int Platform_ThemeOverlay_AppCompat=0x7f0d00ae;
+    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d00af;
+    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0d00b0;
+    public static final int Platform_V21_AppCompat=0x7f0d00b1;
+    public static final int Platform_V21_AppCompat_Light=0x7f0d00b2;
+    public static final int Platform_V25_AppCompat=0x7f0d00b3;
+    public static final int Platform_V25_AppCompat_Light=0x7f0d00b4;
+    public static final int Platform_Widget_AppCompat_Spinner=0x7f0d00b5;
+    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0d00b6;
+    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d00b7;
+    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0d00b8;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d00b9;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d00ba;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0d00bb;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0d00bc;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d00bd;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0d00be;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d00bf;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d00c0;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d00c1;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d00c2;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d00c3;
+    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d00c4;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d00c5;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d00c6;
+    public static final int SpinnerDatePickerDialog=0x7f0d00c7;
+    public static final int SpinnerDatePickerStyle=0x7f0d00c8;
+    public static final int SpinnerTimePickerDialog=0x7f0d00c9;
+    public static final int SpinnerTimePickerStyle=0x7f0d00ca;
+    public static final int TextAppearance_AppCompat=0x7f0d00cb;
+    public static final int TextAppearance_AppCompat_Body1=0x7f0d00cc;
+    public static final int TextAppearance_AppCompat_Body2=0x7f0d00cd;
+    public static final int TextAppearance_AppCompat_Button=0x7f0d00ce;
+    public static final int TextAppearance_AppCompat_Caption=0x7f0d00cf;
+    public static final int TextAppearance_AppCompat_Display1=0x7f0d00d0;
+    public static final int TextAppearance_AppCompat_Display2=0x7f0d00d1;
+    public static final int TextAppearance_AppCompat_Display3=0x7f0d00d2;
+    public static final int TextAppearance_AppCompat_Display4=0x7f0d00d3;
+    public static final int TextAppearance_AppCompat_Headline=0x7f0d00d4;
+    public static final int TextAppearance_AppCompat_Inverse=0x7f0d00d5;
+    public static final int TextAppearance_AppCompat_Large=0x7f0d00d6;
+    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d00d7;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d00d8;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d00d9;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d00da;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d00db;
+    public static final int TextAppearance_AppCompat_Medium=0x7f0d00dc;
+    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d00dd;
+    public static final int TextAppearance_AppCompat_Menu=0x7f0d00de;
+    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d00df;
+    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d00e0;
+    public static final int TextAppearance_AppCompat_Small=0x7f0d00e1;
+    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d00e2;
+    public static final int TextAppearance_AppCompat_Subhead=0x7f0d00e3;
+    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d00e4;
+    public static final int TextAppearance_AppCompat_Title=0x7f0d00e5;
+    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d00e6;
+    public static final int TextAppearance_AppCompat_Tooltip=0x7f0d00e7;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d00e8;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d00e9;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d00ea;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d00eb;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d00ec;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d00ed;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d00ee;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d00ef;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d00f0;
+    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0d00f1;
+    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d00f2;
+    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d00f3;
+    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d00f4;
+    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d00f5;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d00f6;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d00f7;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d00f8;
+    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d00f9;
+    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d00fa;
+    public static final int TextAppearance_Compat_Notification=0x7f0d00fb;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0d00fc;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0d00fd;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0d00fe;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0d00ff;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d0100;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d0101;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d0102;
+    public static final int Theme=0x7f0d0103;
+    public static final int Theme_AppCompat=0x7f0d0104;
+    public static final int Theme_AppCompat_CompactMenu=0x7f0d0105;
+    public static final int Theme_AppCompat_DayNight=0x7f0d0106;
+    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0d0107;
+    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0d0108;
+    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0d0109;
+    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0d010a;
+    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0d010b;
+    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0d010c;
+    public static final int Theme_AppCompat_Dialog=0x7f0d010d;
+    public static final int Theme_AppCompat_Dialog_Alert=0x7f0d010e;
+    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0d010f;
+    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d0110;
+    public static final int Theme_AppCompat_Light=0x7f0d0111;
+    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d0112;
+    public static final int Theme_AppCompat_Light_Dialog=0x7f0d0113;
+    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0d0114;
+    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0115;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d0116;
+    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d0117;
+    public static final int Theme_AppCompat_NoActionBar=0x7f0d0118;
+    public static final int Theme_Catalyst=0x7f0d0119;
+    public static final int Theme_Catalyst_RedBox=0x7f0d011a;
+    public static final int Theme_FullScreenDialog=0x7f0d011b;
+    public static final int Theme_FullScreenDialogAnimatedFade=0x7f0d011c;
+    public static final int Theme_FullScreenDialogAnimatedSlide=0x7f0d011d;
+    public static final int Theme_ReactNative_AppCompat_Light=0x7f0d011e;
+    public static final int Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen=0x7f0d011f;
+    public static final int ThemeOverlay_AppCompat=0x7f0d0120;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d0121;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f0d0122;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d0123;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0d0124;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0125;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f0d0126;
+    public static final int Widget_AppCompat_ActionBar=0x7f0d0127;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d0128;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d0129;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d012a;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d012b;
+    public static final int Widget_AppCompat_ActionButton=0x7f0d012c;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d012d;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d012e;
+    public static final int Widget_AppCompat_ActionMode=0x7f0d012f;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f0d0130;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d0131;
+    public static final int Widget_AppCompat_Button=0x7f0d0132;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f0d0133;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0d0134;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0135;
+    public static final int Widget_AppCompat_Button_Colored=0x7f0d0136;
+    public static final int Widget_AppCompat_Button_Small=0x7f0d0137;
+    public static final int Widget_AppCompat_ButtonBar=0x7f0d0138;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d0139;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0d013a;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0d013b;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d013c;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d013d;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d013e;
+    public static final int Widget_AppCompat_EditText=0x7f0d013f;
+    public static final int Widget_AppCompat_ImageButton=0x7f0d0140;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f0d0141;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0142;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d0143;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0144;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d0145;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0146;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0147;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0148;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d0149;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f0d014a;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d014b;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d014c;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d014d;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d014e;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d014f;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d0150;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d0151;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d0152;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d0153;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0154;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f0d0155;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d0156;
+    public static final int Widget_AppCompat_ListMenuView=0x7f0d0157;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f0d0158;
+    public static final int Widget_AppCompat_ListView=0x7f0d0159;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f0d015a;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f0d015b;
+    public static final int Widget_AppCompat_PopupMenu=0x7f0d015c;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d015d;
+    public static final int Widget_AppCompat_PopupWindow=0x7f0d015e;
+    public static final int Widget_AppCompat_ProgressBar=0x7f0d015f;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0160;
+    public static final int Widget_AppCompat_RatingBar=0x7f0d0161;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0d0162;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f0d0163;
+    public static final int Widget_AppCompat_SearchView=0x7f0d0164;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0d0165;
+    public static final int Widget_AppCompat_SeekBar=0x7f0d0166;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0d0167;
+    public static final int Widget_AppCompat_Spinner=0x7f0d0168;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d0169;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d016a;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0d016b;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0d016c;
+    public static final int Widget_AppCompat_Toolbar=0x7f0d016d;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d016e;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0d016f;
+    public static final int Widget_Compat_NotificationActionText=0x7f0d0170;
+    public static final int Widget_Support_CoordinatorLayout=0x7f0d0171;
+    public static final int redboxButton=0x7f0d0172;
   }
   public static final class styleable {
     /**
@@ -3922,16 +4031,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_data com.test3:wheel_data}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_direction com.test3:wheel_direction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_count com.test3:wheel_item_count}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_index com.test3:wheel_item_index}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_same_size com.test3:wheel_item_same_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_space com.test3:wheel_item_space}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_style com.test3:wheel_style}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_color com.test3:wheel_text_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_color_current com.test3:wheel_text_color_current}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_size com.test3:wheel_text_size}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_data com.cookit:wheel_data}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_direction com.cookit:wheel_direction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_count com.cookit:wheel_item_count}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_index com.cookit:wheel_item_index}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_same_size com.cookit:wheel_item_same_size}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_item_space com.cookit:wheel_item_space}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_style com.cookit:wheel_style}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_color com.cookit:wheel_text_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_color_current com.cookit:wheel_text_color_current}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AbstractWheelPicker_wheel_text_size com.cookit:wheel_text_size}</code></td><td></td></tr>
      * </table>
      * @see #AbstractWheelPicker_wheel_data
      * @see #AbstractWheelPicker_wheel_direction
@@ -3945,12 +4054,12 @@ public final class R {
      * @see #AbstractWheelPicker_wheel_text_size
      */
     public static final int[] AbstractWheelPicker={
-      0x7f030125, 0x7f030126, 0x7f030127, 0x7f030128, 
-      0x7f030129, 0x7f03012a, 0x7f03012b, 0x7f03012c, 
-      0x7f03012d, 0x7f03012e
+      0x7f030131, 0x7f030132, 0x7f030133, 0x7f030134, 
+      0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 
+      0x7f030139, 0x7f03013a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_data}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_data}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3958,11 +4067,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:wheel_data
+     * @attr name com.cookit:wheel_data
      */
     public static final int AbstractWheelPicker_wheel_data=0;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_direction}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_direction}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3975,39 +4084,39 @@ public final class R {
      * <tr><td>vertical</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:wheel_direction
+     * @attr name com.cookit:wheel_direction
      */
     public static final int AbstractWheelPicker_wheel_direction=1;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_item_count}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_item_count}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:wheel_item_count
+     * @attr name com.cookit:wheel_item_count
      */
     public static final int AbstractWheelPicker_wheel_item_count=2;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_item_index}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_item_index}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:wheel_item_index
+     * @attr name com.cookit:wheel_item_index
      */
     public static final int AbstractWheelPicker_wheel_item_index=3;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_item_same_size}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_item_same_size}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:wheel_item_same_size
+     * @attr name com.cookit:wheel_item_same_size
      */
     public static final int AbstractWheelPicker_wheel_item_same_size=4;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_item_space}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_item_space}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4016,11 +4125,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:wheel_item_space
+     * @attr name com.cookit:wheel_item_space
      */
     public static final int AbstractWheelPicker_wheel_item_space=5;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_style}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_style}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4033,33 +4142,33 @@ public final class R {
      * <tr><td>straight</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:wheel_style
+     * @attr name com.cookit:wheel_style
      */
     public static final int AbstractWheelPicker_wheel_style=6;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_text_color}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_text_color}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:wheel_text_color
+     * @attr name com.cookit:wheel_text_color
      */
     public static final int AbstractWheelPicker_wheel_text_color=7;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_text_color_current}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_text_color_current}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:wheel_text_color_current
+     * @attr name com.cookit:wheel_text_color_current
      */
     public static final int AbstractWheelPicker_wheel_text_color_current=8;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#wheel_text_size}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#wheel_text_size}
      * attribute's value can be found in the {@link #AbstractWheelPicker} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4068,7 +4177,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:wheel_text_size
+     * @attr name com.cookit:wheel_text_size
      */
     public static final int AbstractWheelPicker_wheel_text_size=9;
     /**
@@ -4078,39 +4187,39 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.test3:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.test3:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.test3:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.test3:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.test3:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #ActionBar_background com.cookit:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.cookit:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.cookit:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.cookit:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.cookit:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.test3:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.test3:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.test3:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.test3:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.cookit:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.cookit:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.cookit:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.cookit:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.test3:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.test3:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.test3:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.test3:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.test3:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.test3:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.test3:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.test3:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.test3:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.test3:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.test3:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.cookit:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.cookit:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.cookit:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.cookit:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.cookit:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.cookit:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.cookit:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.cookit:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.cookit:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.cookit:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.cookit:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.test3:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.test3:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.test3:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #ActionBar_logo com.cookit:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.cookit:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.cookit:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.test3:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.test3:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.test3:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.test3:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.test3:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.test3:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.cookit:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.cookit:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.cookit:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.cookit:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.cookit:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.cookit:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -4143,14 +4252,14 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f030034, 0x7f030036, 0x7f030037, 0x7f03005b, 
-      0x7f03005c, 0x7f03005d, 0x7f03005e, 0x7f03005f, 
-      0x7f030060, 0x7f030063, 0x7f030068, 0x7f030069, 
-      0x7f030074, 0x7f030087, 0x7f030088, 0x7f030089, 
-      0x7f03008a, 0x7f03008b, 0x7f030090, 0x7f030093, 
-      0x7f0300a9, 0x7f0300b0, 0x7f0300be, 0x7f0300c5, 
-      0x7f0300c6, 0x7f0300f1, 0x7f0300f4, 0x7f03010f, 
-      0x7f030118
+      0x7f030034, 0x7f030036, 0x7f030037, 0x7f030062, 
+      0x7f030063, 0x7f030064, 0x7f030065, 0x7f030066, 
+      0x7f030067, 0x7f03006f, 0x7f030074, 0x7f030075, 
+      0x7f030080, 0x7f030093, 0x7f030094, 0x7f030095, 
+      0x7f030096, 0x7f030097, 0x7f03009c, 0x7f03009f, 
+      0x7f0300b5, 0x7f0300bc, 0x7f0300ca, 0x7f0300d1, 
+      0x7f0300d2, 0x7f0300fd, 0x7f030100, 0x7f03011b, 
+      0x7f030124
     };
     /**
      * <p>
@@ -4162,7 +4271,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:background
+     * @attr name com.cookit:background
      */
     public static final int ActionBar_background=0;
     /**
@@ -4178,7 +4287,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:backgroundSplit
+     * @attr name com.cookit:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
@@ -4194,7 +4303,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:backgroundStacked
+     * @attr name com.cookit:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
@@ -4209,7 +4318,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetEnd
+     * @attr name com.cookit:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
@@ -4224,7 +4333,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetEndWithActions
+     * @attr name com.cookit:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
@@ -4239,7 +4348,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetLeft
+     * @attr name com.cookit:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
@@ -4254,7 +4363,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetRight
+     * @attr name com.cookit:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
@@ -4269,7 +4378,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetStart
+     * @attr name com.cookit:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
@@ -4284,7 +4393,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetStartWithNavigation
+     * @attr name com.cookit:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
@@ -4297,7 +4406,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:customNavigationLayout
+     * @attr name com.cookit:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
@@ -4320,7 +4429,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:displayOptions
+     * @attr name com.cookit:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
@@ -4333,7 +4442,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:divider
+     * @attr name com.cookit:divider
      */
     public static final int ActionBar_divider=11;
     /**
@@ -4347,7 +4456,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:elevation
+     * @attr name com.cookit:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
@@ -4361,7 +4470,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:height
+     * @attr name com.cookit:height
      */
     public static final int ActionBar_height=13;
     /**
@@ -4372,7 +4481,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:hideOnContentScroll
+     * @attr name com.cookit:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
@@ -4385,7 +4494,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:homeAsUpIndicator
+     * @attr name com.cookit:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
@@ -4398,7 +4507,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:homeLayout
+     * @attr name com.cookit:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
@@ -4411,7 +4520,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:icon
+     * @attr name com.cookit:icon
      */
     public static final int ActionBar_icon=17;
     /**
@@ -4424,7 +4533,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:indeterminateProgressStyle
+     * @attr name com.cookit:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
@@ -4439,7 +4548,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:itemPadding
+     * @attr name com.cookit:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
@@ -4452,7 +4561,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:logo
+     * @attr name com.cookit:logo
      */
     public static final int ActionBar_logo=20;
     /**
@@ -4471,7 +4580,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
-     * @attr name com.test3:navigationMode
+     * @attr name com.cookit:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
@@ -4485,7 +4594,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:popupTheme
+     * @attr name com.cookit:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
@@ -4499,7 +4608,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:progressBarPadding
+     * @attr name com.cookit:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
@@ -4512,7 +4621,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:progressBarStyle
+     * @attr name com.cookit:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
@@ -4523,7 +4632,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:subtitle
+     * @attr name com.cookit:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
@@ -4536,7 +4645,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:subtitleTextStyle
+     * @attr name com.cookit:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
@@ -4547,7 +4656,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:title
+     * @attr name com.cookit:title
      */
     public static final int ActionBar_title=27;
     /**
@@ -4560,7 +4669,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:titleTextStyle
+     * @attr name com.cookit:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -4642,12 +4751,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.test3:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.test3:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.test3:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.test3:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.test3:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.test3:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.cookit:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.cookit:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.cookit:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.cookit:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.cookit:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.cookit:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -4657,8 +4766,8 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f030034, 0x7f030036, 0x7f03004b, 0x7f030087, 
-      0x7f0300f4, 0x7f030118
+      0x7f030034, 0x7f030036, 0x7f030052, 0x7f030093, 
+      0x7f030100, 0x7f030124
     };
     /**
      * <p>
@@ -4670,7 +4779,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:background
+     * @attr name com.cookit:background
      */
     public static final int ActionMode_background=0;
     /**
@@ -4686,7 +4795,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:backgroundSplit
+     * @attr name com.cookit:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
@@ -4699,7 +4808,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:closeItemLayout
+     * @attr name com.cookit:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
@@ -4713,7 +4822,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:height
+     * @attr name com.cookit:height
      */
     public static final int ActionMode_height=3;
     /**
@@ -4726,7 +4835,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:subtitleTextStyle
+     * @attr name com.cookit:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
@@ -4739,7 +4848,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:titleTextStyle
+     * @attr name com.cookit:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -4749,14 +4858,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.test3:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.test3:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.cookit:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.cookit:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f030075, 0x7f030091
+      0x7f030081, 0x7f03009d
     };
     /**
      * <p>
@@ -4772,7 +4881,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:expandActivityOverflowButtonDrawable
+     * @attr name com.cookit:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
@@ -4783,7 +4892,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:initialActivityCount
+     * @attr name com.cookit:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -4794,13 +4903,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.test3:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.test3:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.test3:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.test3:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.test3:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.test3:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.test3:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.cookit:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.cookit:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.cookit:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.cookit:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.cookit:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.cookit:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.cookit:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -4812,8 +4921,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f030042, 0x7f030043, 0x7f0300a0, 
-      0x7f0300a1, 0x7f0300ad, 0x7f0300e6, 0x7f0300e7
+      0x010100f2, 0x7f030042, 0x7f030043, 0x7f0300ac, 
+      0x7f0300ad, 0x7f0300b9, 0x7f0300f2, 0x7f0300f3
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -4828,7 +4937,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4837,11 +4946,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:buttonIconDimen
+     * @attr name com.cookit:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4849,11 +4958,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonPanelSideLayout
+     * @attr name com.cookit:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4861,11 +4970,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listItemLayout
+     * @attr name com.cookit:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4873,11 +4982,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listLayout
+     * @attr name com.cookit:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4885,21 +4994,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:multiChoiceItemLayout
+     * @attr name com.cookit:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:showTitle
+     * @attr name com.cookit:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4907,7 +5016,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:singleChoiceItemLayout
+     * @attr name com.cookit:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -5131,9 +5240,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.test3:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.test3:tint}</code></td><td>Tint to apply to the image source.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.test3:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.cookit:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.cookit:tint}</code></td><td>Tint to apply to the image source.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.cookit:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -5141,7 +5250,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f0300ec, 0x7f03010d, 0x7f03010e
+      0x01010119, 0x7f0300f8, 0x7f030119, 0x7f03011a
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -5169,7 +5278,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:srcCompat
+     * @attr name com.cookit:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
@@ -5181,7 +5290,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:tint
+     * @attr name com.cookit:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
@@ -5208,7 +5317,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:tintMode
+     * @attr name com.cookit:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -5219,9 +5328,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.test3:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.test3:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.test3:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.cookit:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.cookit:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.cookit:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -5229,7 +5338,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f03010a, 0x7f03010b, 0x7f03010c
+      0x01010142, 0x7f030116, 0x7f030117, 0x7f030118
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -5253,7 +5362,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:tickMark
+     * @attr name com.cookit:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
@@ -5265,7 +5374,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:tickMarkTint
+     * @attr name com.cookit:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
@@ -5292,7 +5401,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:tickMarkTintMode
+     * @attr name com.cookit:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -5432,18 +5541,18 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.test3:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.test3:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.test3:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.cookit:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.cookit:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.cookit:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
      * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.test3:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.cookit:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
      * <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.test3:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.test3:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.test3:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.test3:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.test3:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.test3:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.cookit:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.cookit:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.cookit:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.cookit:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.cookit:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.cookit:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -5459,8 +5568,8 @@ public final class R {
      */
     public static final int[] AppCompatTextView={
       0x01010034, 0x7f03002f, 0x7f030030, 0x7f030031, 
-      0x7f030032, 0x7f030033, 0x7f030079, 0x7f03007b, 
-      0x7f030095, 0x7f03009d, 0x7f0300fa
+      0x7f030032, 0x7f030033, 0x7f030085, 0x7f030087, 
+      0x7f0300a1, 0x7f0300a9, 0x7f030106
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -5485,7 +5594,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:autoSizeMaxTextSize
+     * @attr name com.cookit:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
@@ -5499,7 +5608,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:autoSizeMinTextSize
+     * @attr name com.cookit:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
@@ -5514,7 +5623,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:autoSizePresetSizes
+     * @attr name com.cookit:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
@@ -5530,7 +5639,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:autoSizeStepGranularity
+     * @attr name com.cookit:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
@@ -5550,7 +5659,7 @@ public final class R {
      * container.</td></tr>
      * </table>
      *
-     * @attr name com.test3:autoSizeTextType
+     * @attr name com.cookit:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
@@ -5565,7 +5674,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:firstBaselineToTopHeight
+     * @attr name com.cookit:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
@@ -5576,7 +5685,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontFamily
+     * @attr name com.cookit:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
@@ -5591,7 +5700,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:lastBaselineToBottomHeight
+     * @attr name com.cookit:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
@@ -5606,7 +5715,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:lineHeight
+     * @attr name com.cookit:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
@@ -5621,7 +5730,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:textAllCaps
+     * @attr name com.cookit:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -5633,142 +5742,142 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.test3:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.test3:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.test3:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.cookit:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.cookit:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.cookit:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.test3:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.cookit:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
      * bar used to present Action Modes.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.test3:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.test3:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.test3:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.test3:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.test3:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.test3:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.cookit:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.cookit:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.cookit:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.cookit:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.cookit:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.cookit:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
      * action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.test3:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.cookit:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
      * and layouts destined for the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.test3:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.test3:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.test3:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.cookit:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.cookit:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.cookit:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
      * appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.test3:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.test3:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.test3:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.test3:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.test3:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.test3:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.test3:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.test3:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.test3:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.test3:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.test3:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.test3:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.test3:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.test3:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.test3:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.test3:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.test3:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.test3:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.test3:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.test3:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.test3:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.test3:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.test3:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.test3:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.test3:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.test3:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.test3:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.test3:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.test3:buttonStyle}</code></td><td>Normal Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.test3:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.test3:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.test3:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.test3:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.test3:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.test3:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.test3:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.test3:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.test3:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.test3:colorError}</code></td><td>Color used for error states and things that need to be drawn to
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.cookit:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.cookit:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.cookit:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.cookit:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.cookit:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.cookit:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.cookit:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.cookit:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.cookit:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.cookit:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.cookit:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.cookit:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.cookit:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.cookit:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.cookit:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.cookit:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.cookit:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.cookit:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.cookit:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.cookit:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.cookit:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.cookit:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.cookit:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.cookit:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.cookit:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.cookit:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.cookit:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.cookit:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.cookit:buttonStyle}</code></td><td>Normal Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.cookit:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.cookit:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.cookit:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.cookit:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.cookit:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.cookit:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.cookit:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.cookit:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.cookit:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.cookit:colorError}</code></td><td>Color used for error states and things that need to be drawn to
      * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.test3:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.test3:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.test3:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.test3:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.test3:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.test3:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.test3:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.test3:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.test3:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.test3:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.test3:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.test3:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.test3:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.test3:editTextStyle}</code></td><td>Default EditText style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.test3:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.test3:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.test3:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.test3:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.test3:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.test3:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.test3:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.test3:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.test3:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.test3:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.test3:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.test3:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.test3:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.test3:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.test3:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.test3:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.test3:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.test3:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.test3:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.test3:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.test3:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.test3:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.test3:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.cookit:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.cookit:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.cookit:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.cookit:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.cookit:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.cookit:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.cookit:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.cookit:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.cookit:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.cookit:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.cookit:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.cookit:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.cookit:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.cookit:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.cookit:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.cookit:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.cookit:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.cookit:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.cookit:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.cookit:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.cookit:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.cookit:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.cookit:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.cookit:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.cookit:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.cookit:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.cookit:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.cookit:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.cookit:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.cookit:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.cookit:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.cookit:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.cookit:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.cookit:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.cookit:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.cookit:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.cookit:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
      * have a clear visual border along the edges.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.test3:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.test3:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.test3:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.test3:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.test3:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.test3:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.test3:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.test3:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.test3:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.test3:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.test3:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.test3:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.test3:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.test3:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.test3:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.test3:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.test3:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.test3:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.test3:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.test3:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.cookit:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.cookit:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.cookit:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.cookit:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.cookit:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.cookit:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.cookit:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.cookit:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.cookit:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.cookit:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.cookit:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.cookit:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.cookit:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.cookit:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.cookit:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.cookit:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.cookit:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.cookit:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.cookit:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.cookit:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.test3:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.cookit:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
      * application content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.test3:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.cookit:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.test3:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.cookit:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.test3:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.cookit:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.test3:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.cookit:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.test3:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.cookit:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.test3:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.cookit:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.test3:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.cookit:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.test3:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.cookit:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -5904,26 +6013,26 @@ public final class R {
       0x7f030021, 0x7f030025, 0x7f030026, 0x7f030027, 
       0x7f030028, 0x7f03002e, 0x7f03003b, 0x7f03003c, 
       0x7f03003d, 0x7f03003e, 0x7f03003f, 0x7f030040, 
-      0x7f030044, 0x7f030045, 0x7f030048, 0x7f030049, 
-      0x7f03004f, 0x7f030050, 0x7f030051, 0x7f030052, 
-      0x7f030053, 0x7f030054, 0x7f030055, 0x7f030056, 
-      0x7f030057, 0x7f030058, 0x7f030061, 0x7f030065, 
-      0x7f030066, 0x7f030067, 0x7f03006a, 0x7f03006c, 
-      0x7f03006f, 0x7f030070, 0x7f030071, 0x7f030072, 
-      0x7f030073, 0x7f030089, 0x7f03008f, 0x7f03009e, 
-      0x7f03009f, 0x7f0300a2, 0x7f0300a3, 0x7f0300a4, 
-      0x7f0300a5, 0x7f0300a6, 0x7f0300a7, 0x7f0300a8, 
-      0x7f0300b8, 0x7f0300b9, 0x7f0300ba, 0x7f0300bd, 
-      0x7f0300bf, 0x7f0300c9, 0x7f0300ca, 0x7f0300cb, 
-      0x7f0300cc, 0x7f0300df, 0x7f0300e0, 0x7f0300e1, 
-      0x7f0300e2, 0x7f0300e9, 0x7f0300ea, 0x7f0300f8, 
-      0x7f0300fb, 0x7f0300fc, 0x7f0300fd, 0x7f0300fe, 
-      0x7f0300ff, 0x7f030100, 0x7f030101, 0x7f030102, 
-      0x7f030103, 0x7f030104, 0x7f030119, 0x7f03011a, 
-      0x7f03011b, 0x7f03011c, 0x7f030123, 0x7f03012f, 
-      0x7f030130, 0x7f030131, 0x7f030132, 0x7f030133, 
-      0x7f030134, 0x7f030135, 0x7f030136, 0x7f030137, 
-      0x7f030138
+      0x7f030044, 0x7f030045, 0x7f03004f, 0x7f030050, 
+      0x7f030056, 0x7f030057, 0x7f030058, 0x7f030059, 
+      0x7f03005a, 0x7f03005b, 0x7f03005c, 0x7f03005d, 
+      0x7f03005e, 0x7f03005f, 0x7f03006d, 0x7f030071, 
+      0x7f030072, 0x7f030073, 0x7f030076, 0x7f030078, 
+      0x7f03007b, 0x7f03007c, 0x7f03007d, 0x7f03007e, 
+      0x7f03007f, 0x7f030095, 0x7f03009b, 0x7f0300aa, 
+      0x7f0300ab, 0x7f0300ae, 0x7f0300af, 0x7f0300b0, 
+      0x7f0300b1, 0x7f0300b2, 0x7f0300b3, 0x7f0300b4, 
+      0x7f0300c4, 0x7f0300c5, 0x7f0300c6, 0x7f0300c9, 
+      0x7f0300cb, 0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 
+      0x7f0300d8, 0x7f0300eb, 0x7f0300ec, 0x7f0300ed, 
+      0x7f0300ee, 0x7f0300f5, 0x7f0300f6, 0x7f030104, 
+      0x7f030107, 0x7f030108, 0x7f030109, 0x7f03010a, 
+      0x7f03010b, 0x7f03010c, 0x7f03010d, 0x7f03010e, 
+      0x7f03010f, 0x7f030110, 0x7f030125, 0x7f030126, 
+      0x7f030127, 0x7f030128, 0x7f03012f, 0x7f03013b, 
+      0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f03013f, 
+      0x7f030140, 0x7f030141, 0x7f030142, 0x7f030143, 
+      0x7f030144
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -5957,7 +6066,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarDivider
+     * @attr name com.cookit:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
@@ -5970,7 +6079,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarItemBackground
+     * @attr name com.cookit:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
@@ -5984,7 +6093,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarPopupTheme
+     * @attr name com.cookit:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
@@ -6007,7 +6116,7 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:actionBarSize
+     * @attr name com.cookit:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
@@ -6023,7 +6132,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarSplitStyle
+     * @attr name com.cookit:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
@@ -6036,11 +6145,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarStyle
+     * @attr name com.cookit:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6048,7 +6157,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarTabBarStyle
+     * @attr name com.cookit:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
@@ -6061,11 +6170,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarTabStyle
+     * @attr name com.cookit:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6073,7 +6182,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarTabTextStyle
+     * @attr name com.cookit:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
@@ -6088,7 +6197,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarTheme
+     * @attr name com.cookit:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
@@ -6107,7 +6216,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionBarWidgetTheme
+     * @attr name com.cookit:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
@@ -6120,7 +6229,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionButtonStyle
+     * @attr name com.cookit:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
@@ -6133,7 +6242,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionDropDownStyle
+     * @attr name com.cookit:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
@@ -6147,7 +6256,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionMenuTextAppearance
+     * @attr name com.cookit:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
@@ -6163,7 +6272,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:actionMenuTextColor
+     * @attr name com.cookit:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
@@ -6176,11 +6285,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeBackground
+     * @attr name com.cookit:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6188,7 +6297,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeCloseButtonStyle
+     * @attr name com.cookit:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
@@ -6201,7 +6310,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeCloseDrawable
+     * @attr name com.cookit:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
@@ -6214,7 +6323,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeCopyDrawable
+     * @attr name com.cookit:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
@@ -6227,7 +6336,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeCutDrawable
+     * @attr name com.cookit:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
@@ -6240,7 +6349,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeFindDrawable
+     * @attr name com.cookit:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
@@ -6253,7 +6362,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModePasteDrawable
+     * @attr name com.cookit:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
@@ -6266,7 +6375,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModePopupWindowStyle
+     * @attr name com.cookit:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
@@ -6279,7 +6388,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeSelectAllDrawable
+     * @attr name com.cookit:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
@@ -6292,7 +6401,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeShareDrawable
+     * @attr name com.cookit:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
@@ -6305,11 +6414,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeSplitBackground
+     * @attr name com.cookit:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6317,7 +6426,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeStyle
+     * @attr name com.cookit:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
@@ -6330,11 +6439,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionModeWebSearchDrawable
+     * @attr name com.cookit:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6342,11 +6451,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionOverflowButtonStyle
+     * @attr name com.cookit:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6354,7 +6463,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionOverflowMenuStyle
+     * @attr name com.cookit:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
@@ -6367,11 +6476,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:activityChooserViewStyle
+     * @attr name com.cookit:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6379,21 +6488,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:alertDialogButtonGroupStyle
+     * @attr name com.cookit:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:alertDialogCenterButtons
+     * @attr name com.cookit:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6401,7 +6510,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:alertDialogStyle
+     * @attr name com.cookit:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
@@ -6414,7 +6523,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:alertDialogTheme
+     * @attr name com.cookit:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -6427,7 +6536,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:autoCompleteTextViewStyle
+     * @attr name com.cookit:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
@@ -6440,7 +6549,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:borderlessButtonStyle
+     * @attr name com.cookit:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
@@ -6453,7 +6562,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonBarButtonStyle
+     * @attr name com.cookit:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
@@ -6466,7 +6575,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonBarNegativeButtonStyle
+     * @attr name com.cookit:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
@@ -6479,7 +6588,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonBarNeutralButtonStyle
+     * @attr name com.cookit:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
@@ -6492,7 +6601,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonBarPositiveButtonStyle
+     * @attr name com.cookit:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
@@ -6505,7 +6614,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonBarStyle
+     * @attr name com.cookit:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
@@ -6518,7 +6627,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonStyle
+     * @attr name com.cookit:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
@@ -6531,7 +6640,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:buttonStyleSmall
+     * @attr name com.cookit:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
@@ -6544,7 +6653,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:checkboxStyle
+     * @attr name com.cookit:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
@@ -6557,7 +6666,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:checkedTextViewStyle
+     * @attr name com.cookit:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
@@ -6570,7 +6679,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorAccent
+     * @attr name com.cookit:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
@@ -6582,7 +6691,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorBackgroundFloating
+     * @attr name com.cookit:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
@@ -6594,7 +6703,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorButtonNormal
+     * @attr name com.cookit:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
@@ -6606,7 +6715,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorControlActivated
+     * @attr name com.cookit:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
@@ -6618,7 +6727,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorControlHighlight
+     * @attr name com.cookit:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
@@ -6630,7 +6739,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorControlNormal
+     * @attr name com.cookit:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
@@ -6647,7 +6756,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorError
+     * @attr name com.cookit:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
@@ -6660,7 +6769,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorPrimary
+     * @attr name com.cookit:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
@@ -6673,7 +6782,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorPrimaryDark
+     * @attr name com.cookit:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
@@ -6685,7 +6794,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:colorSwitchThumbNormal
+     * @attr name com.cookit:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
@@ -6698,7 +6807,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:controlBackground
+     * @attr name com.cookit:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
@@ -6712,7 +6821,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:dialogCornerRadius
+     * @attr name com.cookit:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
@@ -6726,7 +6835,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:dialogPreferredPadding
+     * @attr name com.cookit:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
@@ -6739,7 +6848,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:dialogTheme
+     * @attr name com.cookit:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
@@ -6752,7 +6861,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:dividerHorizontal
+     * @attr name com.cookit:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
@@ -6765,7 +6874,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:dividerVertical
+     * @attr name com.cookit:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
@@ -6778,7 +6887,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:dropDownListViewStyle
+     * @attr name com.cookit:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
@@ -6792,7 +6901,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:dropdownListPreferredItemHeight
+     * @attr name com.cookit:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
@@ -6805,7 +6914,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:editTextBackground
+     * @attr name com.cookit:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
@@ -6821,7 +6930,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:editTextColor
+     * @attr name com.cookit:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
@@ -6834,7 +6943,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:editTextStyle
+     * @attr name com.cookit:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
@@ -6847,7 +6956,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:homeAsUpIndicator
+     * @attr name com.cookit:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
@@ -6860,7 +6969,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:imageButtonStyle
+     * @attr name com.cookit:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
@@ -6873,7 +6982,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listChoiceBackgroundIndicator
+     * @attr name com.cookit:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
@@ -6886,7 +6995,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listDividerAlertDialog
+     * @attr name com.cookit:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
@@ -6899,11 +7008,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listMenuViewStyle
+     * @attr name com.cookit:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6911,7 +7020,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:listPopupWindowStyle
+     * @attr name com.cookit:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
@@ -6925,7 +7034,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:listPreferredItemHeight
+     * @attr name com.cookit:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
@@ -6939,7 +7048,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:listPreferredItemHeightLarge
+     * @attr name com.cookit:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
@@ -6953,7 +7062,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:listPreferredItemHeightSmall
+     * @attr name com.cookit:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
@@ -6967,7 +7076,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:listPreferredItemPaddingLeft
+     * @attr name com.cookit:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
@@ -6981,7 +7090,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:listPreferredItemPaddingRight
+     * @attr name com.cookit:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
@@ -6994,7 +7103,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:panelBackground
+     * @attr name com.cookit:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
@@ -7007,7 +7116,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:panelMenuListTheme
+     * @attr name com.cookit:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
@@ -7021,7 +7130,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:panelMenuListWidth
+     * @attr name com.cookit:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
@@ -7034,7 +7143,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:popupMenuStyle
+     * @attr name com.cookit:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
@@ -7047,7 +7156,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:popupWindowStyle
+     * @attr name com.cookit:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
@@ -7060,7 +7169,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:radioButtonStyle
+     * @attr name com.cookit:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
@@ -7073,7 +7182,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:ratingBarStyle
+     * @attr name com.cookit:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
@@ -7086,7 +7195,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:ratingBarStyleIndicator
+     * @attr name com.cookit:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
@@ -7099,7 +7208,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:ratingBarStyleSmall
+     * @attr name com.cookit:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
@@ -7112,7 +7221,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:searchViewStyle
+     * @attr name com.cookit:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
@@ -7125,7 +7234,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:seekBarStyle
+     * @attr name com.cookit:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
@@ -7140,7 +7249,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:selectableItemBackground
+     * @attr name com.cookit:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
@@ -7153,7 +7262,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:selectableItemBackgroundBorderless
+     * @attr name com.cookit:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
@@ -7166,7 +7275,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:spinnerDropDownItemStyle
+     * @attr name com.cookit:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
@@ -7179,7 +7288,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:spinnerStyle
+     * @attr name com.cookit:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
@@ -7192,7 +7301,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:switchStyle
+     * @attr name com.cookit:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
@@ -7205,7 +7314,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceLargePopupMenu
+     * @attr name com.cookit:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
@@ -7218,7 +7327,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceListItem
+     * @attr name com.cookit:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
@@ -7231,7 +7340,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceListItemSecondary
+     * @attr name com.cookit:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
@@ -7244,7 +7353,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceListItemSmall
+     * @attr name com.cookit:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
@@ -7257,7 +7366,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearancePopupMenuHeader
+     * @attr name com.cookit:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
@@ -7270,7 +7379,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceSearchResultSubtitle
+     * @attr name com.cookit:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
@@ -7283,7 +7392,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceSearchResultTitle
+     * @attr name com.cookit:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
@@ -7296,7 +7405,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:textAppearanceSmallPopupMenu
+     * @attr name com.cookit:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
@@ -7312,7 +7421,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:textColorAlertDialogListItem
+     * @attr name com.cookit:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
@@ -7328,7 +7437,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:textColorSearchUrl
+     * @attr name com.cookit:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
@@ -7341,7 +7450,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:toolbarNavigationButtonStyle
+     * @attr name com.cookit:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
@@ -7354,7 +7463,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:toolbarStyle
+     * @attr name com.cookit:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
@@ -7370,7 +7479,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:tooltipForegroundColor
+     * @attr name com.cookit:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
@@ -7383,17 +7492,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:tooltipFrameBackground
+     * @attr name com.cookit:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:viewInflaterClass
+     * @attr name com.cookit:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
@@ -7405,7 +7514,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:windowActionBar
+     * @attr name com.cookit:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
@@ -7418,7 +7527,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:windowActionBarOverlay
+     * @attr name com.cookit:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
@@ -7430,7 +7539,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:windowActionModeOverlay
+     * @attr name com.cookit:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
@@ -7450,7 +7559,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowFixedHeightMajor
+     * @attr name com.cookit:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
@@ -7470,7 +7579,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowFixedHeightMinor
+     * @attr name com.cookit:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
@@ -7490,7 +7599,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowFixedWidthMajor
+     * @attr name com.cookit:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
@@ -7510,7 +7619,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowFixedWidthMinor
+     * @attr name com.cookit:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
@@ -7531,7 +7640,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowMinWidthMajor
+     * @attr name com.cookit:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
@@ -7552,7 +7661,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.test3:windowMinWidthMinor
+     * @attr name com.cookit:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
@@ -7563,7 +7672,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:windowNoTitle
+     * @attr name com.cookit:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -7573,7 +7682,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.test3:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.cookit:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
      * enough space to lay them out side-by-side.</td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
@@ -7590,9 +7699,224 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:allowStacking
+     * @attr name com.cookit:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
+    /**
+     * Attributes that can be used with a CardView.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.cookit:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.cookit:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.cookit:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.cookit:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.cookit:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.cookit:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.cookit:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.cookit:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.cookit:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.cookit:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.cookit:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
+     * </table>
+     * @see #CardView_android_minWidth
+     * @see #CardView_android_minHeight
+     * @see #CardView_cardBackgroundColor
+     * @see #CardView_cardCornerRadius
+     * @see #CardView_cardElevation
+     * @see #CardView_cardMaxElevation
+     * @see #CardView_cardPreventCornerOverlap
+     * @see #CardView_cardUseCompatPadding
+     * @see #CardView_contentPadding
+     * @see #CardView_contentPaddingBottom
+     * @see #CardView_contentPaddingLeft
+     * @see #CardView_contentPaddingRight
+     * @see #CardView_contentPaddingTop
+     */
+    public static final int[] CardView={
+      0x0101013f, 0x01010140, 0x7f030048, 0x7f030049, 
+      0x7f03004a, 0x7f03004b, 0x7f03004c, 0x7f03004d, 
+      0x7f030068, 0x7f030069, 0x7f03006a, 0x7f03006b, 
+      0x7f03006c
+    };
+    /**
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum width
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minWidth
+     */
+    public static final int CardView_android_minWidth=0;
+    /**
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum height
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minHeight
+     */
+    public static final int CardView_android_minHeight=1;
+    /**
+     * <p>
+     * @attr description
+     * Background color for CardView.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name com.cookit:cardBackgroundColor
+     */
+    public static final int CardView_cardBackgroundColor=2;
+    /**
+     * <p>
+     * @attr description
+     * Corner radius for CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:cardCornerRadius
+     */
+    public static final int CardView_cardCornerRadius=3;
+    /**
+     * <p>
+     * @attr description
+     * Elevation for CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:cardElevation
+     */
+    public static final int CardView_cardElevation=4;
+    /**
+     * <p>
+     * @attr description
+     * Maximum Elevation for CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:cardMaxElevation
+     */
+    public static final int CardView_cardMaxElevation=5;
+    /**
+     * <p>
+     * @attr description
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.cookit:cardPreventCornerOverlap
+     */
+    public static final int CardView_cardPreventCornerOverlap=6;
+    /**
+     * <p>
+     * @attr description
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.cookit:cardUseCompatPadding
+     */
+    public static final int CardView_cardUseCompatPadding=7;
+    /**
+     * <p>
+     * @attr description
+     * Inner padding between the edges of the Card and children of the CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:contentPadding
+     */
+    public static final int CardView_contentPadding=8;
+    /**
+     * <p>
+     * @attr description
+     * Inner padding between the bottom edge of the Card and children of the CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:contentPaddingBottom
+     */
+    public static final int CardView_contentPaddingBottom=9;
+    /**
+     * <p>
+     * @attr description
+     * Inner padding between the left edge of the Card and children of the CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:contentPaddingLeft
+     */
+    public static final int CardView_contentPaddingLeft=10;
+    /**
+     * <p>
+     * @attr description
+     * Inner padding between the right edge of the Card and children of the CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:contentPaddingRight
+     */
+    public static final int CardView_contentPaddingRight=11;
+    /**
+     * <p>
+     * @attr description
+     * Inner padding between the top edge of the Card and children of the CardView.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.cookit:contentPaddingTop
+     */
+    public static final int CardView_contentPaddingTop=12;
     /**
      * Attributes that can be used with a ColorStateListItem.
      * <p>Includes the following attributes:</p>
@@ -7602,7 +7926,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.test3:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.cookit:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -7639,7 +7963,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.test3:alpha
+     * @attr name com.cookit:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -7650,8 +7974,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.test3:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.test3:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.cookit:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.cookit:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -7681,7 +8005,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:buttonTint
+     * @attr name com.cookit:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
@@ -7708,7 +8032,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:buttonTintMode
+     * @attr name com.cookit:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -7718,15 +8042,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.test3:keylines}</code></td><td>A reference to an array of integers representing the
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.cookit:keylines}</code></td><td>A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.test3:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.cookit:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f030094, 0x7f0300ee
+      0x7f0300a0, 0x7f0300fa
     };
     /**
      * <p>
@@ -7742,7 +8066,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:keylines
+     * @attr name com.cookit:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
@@ -7758,7 +8082,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:statusBarBackground
+     * @attr name com.cookit:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -7769,15 +8093,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.test3:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.test3:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.cookit:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.cookit:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.test3:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.cookit:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
      * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.test3:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.test3:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.cookit:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.cookit:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.test3:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.cookit:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -7788,8 +8112,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f030097, 0x7f030098, 0x7f030099, 
-      0x7f03009a, 0x7f03009b, 0x7f03009c
+      0x010100b3, 0x7f0300a3, 0x7f0300a4, 0x7f0300a5, 
+      0x7f0300a6, 0x7f0300a7, 0x7f0300a8
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -7830,7 +8154,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:layout_anchor
+     * @attr name com.cookit:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
@@ -7867,7 +8191,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.test3:layout_anchorGravity
+     * @attr name com.cookit:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
@@ -7879,7 +8203,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:layout_behavior
+     * @attr name com.cookit:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
@@ -7903,7 +8227,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
-     * @attr name com.test3:layout_dodgeInsetEdges
+     * @attr name com.cookit:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
@@ -7927,7 +8251,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
-     * @attr name com.test3:layout_insetEdge
+     * @attr name com.cookit:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
@@ -7939,7 +8263,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:layout_keyline
+     * @attr name com.cookit:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -7949,14 +8273,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.test3:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.test3:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.test3:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.test3:color}</code></td><td>The drawing color for the bars</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.test3:drawableSize}</code></td><td>The total size of the drawable</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.test3:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.test3:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.test3:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.cookit:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.cookit:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.cookit:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.cookit:color}</code></td><td>The drawing color for the bars</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.cookit:drawableSize}</code></td><td>The total size of the drawable</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.cookit:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.cookit:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.cookit:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -7968,8 +8292,8 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f03002c, 0x7f03002d, 0x7f03003a, 0x7f03004e, 
-      0x7f03006d, 0x7f030085, 0x7f0300e8, 0x7f030106
+      0x7f03002c, 0x7f03002d, 0x7f03003a, 0x7f030055, 
+      0x7f030079, 0x7f030091, 0x7f0300f4, 0x7f030112
     };
     /**
      * <p>
@@ -7982,7 +8306,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:arrowHeadLength
+     * @attr name com.cookit:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
@@ -7996,7 +8320,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:arrowShaftLength
+     * @attr name com.cookit:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
@@ -8010,7 +8334,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:barLength
+     * @attr name com.cookit:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
@@ -8022,7 +8346,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:color
+     * @attr name com.cookit:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
@@ -8036,7 +8360,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:drawableSize
+     * @attr name com.cookit:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
@@ -8050,7 +8374,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:gapBetweenBars
+     * @attr name com.cookit:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
@@ -8061,7 +8385,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:spinBars
+     * @attr name com.cookit:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
@@ -8075,7 +8399,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:thickness
+     * @attr name com.cookit:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -8085,12 +8409,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.test3:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.test3:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.test3:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.test3:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.test3:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.test3:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.cookit:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.cookit:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.cookit:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.cookit:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.cookit:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.cookit:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -8100,8 +8424,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f03007c, 0x7f03007d, 0x7f03007e, 0x7f03007f, 
-      0x7f030080, 0x7f030081
+      0x7f030088, 0x7f030089, 0x7f03008a, 0x7f03008b, 
+      0x7f03008c, 0x7f03008d
     };
     /**
      * <p>
@@ -8111,7 +8435,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontProviderAuthority
+     * @attr name com.cookit:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
@@ -8128,7 +8452,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:fontProviderCerts
+     * @attr name com.cookit:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
@@ -8160,7 +8484,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      *
-     * @attr name com.test3:fontProviderFetchStrategy
+     * @attr name com.cookit:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
@@ -8179,7 +8503,7 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
-     * @attr name com.test3:fontProviderFetchTimeout
+     * @attr name com.cookit:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
@@ -8191,7 +8515,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontProviderPackage
+     * @attr name com.cookit:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
@@ -8203,7 +8527,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontProviderQuery
+     * @attr name com.cookit:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -8218,11 +8542,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.test3:font}</code></td><td>The reference to the font file to be used.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.test3:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.test3:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.test3:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.test3:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.cookit:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.cookit:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.cookit:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.cookit:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.cookit:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -8237,8 +8561,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f03007a, 0x7f030082, 0x7f030083, 
-      0x7f030084, 0x7f030121
+      0x01010570, 0x7f030086, 0x7f03008e, 0x7f03008f, 
+      0x7f030090, 0x7f03012d
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -8309,7 +8633,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:font
+     * @attr name com.cookit:font
      */
     public static final int FontFamilyFont_font=5;
     /**
@@ -8329,7 +8653,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:fontStyle
+     * @attr name com.cookit:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
@@ -8343,7 +8667,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontVariationSettings
+     * @attr name com.cookit:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
@@ -8357,7 +8681,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:fontWeight
+     * @attr name com.cookit:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
@@ -8368,7 +8692,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:ttcIndex
+     * @attr name com.cookit:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -8378,35 +8702,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.test3:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.test3:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.test3:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.test3:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.test3:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.test3:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.test3:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.test3:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.test3:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.test3:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.test3:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.test3:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.test3:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.test3:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.test3:roundAsCircle}</code></td><td>Round as circle.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.test3:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.test3:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.test3:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.test3:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.test3:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.test3:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.test3:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.test3:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.test3:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.test3:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.test3:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.test3:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.test3:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.test3:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.cookit:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.cookit:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.cookit:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.cookit:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.cookit:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.cookit:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.cookit:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.cookit:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.cookit:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.cookit:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.cookit:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.cookit:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.cookit:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.cookit:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.cookit:roundAsCircle}</code></td><td>Round as circle.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.cookit:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.cookit:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.cookit:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.cookit:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.cookit:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.cookit:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.cookit:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.cookit:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.cookit:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.cookit:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.cookit:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.cookit:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.cookit:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.cookit:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
      * </table>
      * @see #GenericDraweeHierarchy_actualImageScaleType
      * @see #GenericDraweeHierarchy_backgroundImage
@@ -8439,14 +8763,14 @@ public final class R {
      * @see #GenericDraweeHierarchy_viewAspectRatio
      */
     public static final int[] GenericDraweeHierarchy={
-      0x7f030023, 0x7f030035, 0x7f030076, 0x7f030077, 
-      0x7f030078, 0x7f0300b3, 0x7f0300bb, 0x7f0300bc, 
-      0x7f0300c1, 0x7f0300c2, 0x7f0300c3, 0x7f0300c4, 
+      0x7f030023, 0x7f030035, 0x7f030082, 0x7f030083, 
+      0x7f030084, 0x7f0300bf, 0x7f0300c7, 0x7f0300c8, 
       0x7f0300cd, 0x7f0300ce, 0x7f0300cf, 0x7f0300d0, 
-      0x7f0300d1, 0x7f0300d2, 0x7f0300d3, 0x7f0300d4, 
-      0x7f0300d5, 0x7f0300d6, 0x7f0300d7, 0x7f0300d8, 
       0x7f0300d9, 0x7f0300da, 0x7f0300db, 0x7f0300dc, 
-      0x7f030122
+      0x7f0300dd, 0x7f0300de, 0x7f0300df, 0x7f0300e0, 
+      0x7f0300e1, 0x7f0300e2, 0x7f0300e3, 0x7f0300e4, 
+      0x7f0300e5, 0x7f0300e6, 0x7f0300e7, 0x7f0300e8, 
+      0x7f03012e
     };
     /**
      * <p>
@@ -8471,7 +8795,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:actualImageScaleType
+     * @attr name com.cookit:actualImageScaleType
      */
     public static final int GenericDraweeHierarchy_actualImageScaleType=0;
     /**
@@ -8484,7 +8808,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:backgroundImage
+     * @attr name com.cookit:backgroundImage
      */
     public static final int GenericDraweeHierarchy_backgroundImage=1;
     /**
@@ -8494,7 +8818,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:fadeDuration
+     * @attr name com.cookit:fadeDuration
      */
     public static final int GenericDraweeHierarchy_fadeDuration=2;
     /**
@@ -8507,7 +8831,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:failureImage
+     * @attr name com.cookit:failureImage
      */
     public static final int GenericDraweeHierarchy_failureImage=3;
     /**
@@ -8533,7 +8857,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:failureImageScaleType
+     * @attr name com.cookit:failureImageScaleType
      */
     public static final int GenericDraweeHierarchy_failureImageScaleType=4;
     /**
@@ -8546,7 +8870,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:overlayImage
+     * @attr name com.cookit:overlayImage
      */
     public static final int GenericDraweeHierarchy_overlayImage=5;
     /**
@@ -8559,7 +8883,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:placeholderImage
+     * @attr name com.cookit:placeholderImage
      */
     public static final int GenericDraweeHierarchy_placeholderImage=6;
     /**
@@ -8585,7 +8909,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:placeholderImageScaleType
+     * @attr name com.cookit:placeholderImageScaleType
      */
     public static final int GenericDraweeHierarchy_placeholderImageScaleType=7;
     /**
@@ -8598,7 +8922,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:pressedStateOverlayImage
+     * @attr name com.cookit:pressedStateOverlayImage
      */
     public static final int GenericDraweeHierarchy_pressedStateOverlayImage=8;
     /**
@@ -8608,7 +8932,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:progressBarAutoRotateInterval
+     * @attr name com.cookit:progressBarAutoRotateInterval
      */
     public static final int GenericDraweeHierarchy_progressBarAutoRotateInterval=9;
     /**
@@ -8621,7 +8945,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:progressBarImage
+     * @attr name com.cookit:progressBarImage
      */
     public static final int GenericDraweeHierarchy_progressBarImage=10;
     /**
@@ -8647,7 +8971,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:progressBarImageScaleType
+     * @attr name com.cookit:progressBarImageScaleType
      */
     public static final int GenericDraweeHierarchy_progressBarImageScaleType=11;
     /**
@@ -8660,7 +8984,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:retryImage
+     * @attr name com.cookit:retryImage
      */
     public static final int GenericDraweeHierarchy_retryImage=12;
     /**
@@ -8686,7 +9010,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:retryImageScaleType
+     * @attr name com.cookit:retryImageScaleType
      */
     public static final int GenericDraweeHierarchy_retryImageScaleType=13;
     /**
@@ -8697,7 +9021,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundAsCircle
+     * @attr name com.cookit:roundAsCircle
      */
     public static final int GenericDraweeHierarchy_roundAsCircle=14;
     /**
@@ -8708,7 +9032,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomEnd
+     * @attr name com.cookit:roundBottomEnd
      */
     public static final int GenericDraweeHierarchy_roundBottomEnd=15;
     /**
@@ -8719,7 +9043,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomLeft
+     * @attr name com.cookit:roundBottomLeft
      */
     public static final int GenericDraweeHierarchy_roundBottomLeft=16;
     /**
@@ -8730,7 +9054,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomRight
+     * @attr name com.cookit:roundBottomRight
      */
     public static final int GenericDraweeHierarchy_roundBottomRight=17;
     /**
@@ -8741,7 +9065,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomStart
+     * @attr name com.cookit:roundBottomStart
      */
     public static final int GenericDraweeHierarchy_roundBottomStart=18;
     /**
@@ -8752,7 +9076,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopEnd
+     * @attr name com.cookit:roundTopEnd
      */
     public static final int GenericDraweeHierarchy_roundTopEnd=19;
     /**
@@ -8763,7 +9087,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopLeft
+     * @attr name com.cookit:roundTopLeft
      */
     public static final int GenericDraweeHierarchy_roundTopLeft=20;
     /**
@@ -8774,7 +9098,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopRight
+     * @attr name com.cookit:roundTopRight
      */
     public static final int GenericDraweeHierarchy_roundTopRight=21;
     /**
@@ -8785,7 +9109,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopStart
+     * @attr name com.cookit:roundTopStart
      */
     public static final int GenericDraweeHierarchy_roundTopStart=22;
     /**
@@ -8797,7 +9121,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:roundWithOverlayColor
+     * @attr name com.cookit:roundWithOverlayColor
      */
     public static final int GenericDraweeHierarchy_roundWithOverlayColor=23;
     /**
@@ -8811,7 +9135,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundedCornerRadius
+     * @attr name com.cookit:roundedCornerRadius
      */
     public static final int GenericDraweeHierarchy_roundedCornerRadius=24;
     /**
@@ -8823,7 +9147,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:roundingBorderColor
+     * @attr name com.cookit:roundingBorderColor
      */
     public static final int GenericDraweeHierarchy_roundingBorderColor=25;
     /**
@@ -8837,7 +9161,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundingBorderPadding
+     * @attr name com.cookit:roundingBorderPadding
      */
     public static final int GenericDraweeHierarchy_roundingBorderPadding=26;
     /**
@@ -8851,7 +9175,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundingBorderWidth
+     * @attr name com.cookit:roundingBorderWidth
      */
     public static final int GenericDraweeHierarchy_roundingBorderWidth=27;
     /**
@@ -8861,7 +9185,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.test3:viewAspectRatio
+     * @attr name com.cookit:viewAspectRatio
      */
     public static final int GenericDraweeHierarchy_viewAspectRatio=28;
     /**
@@ -9119,11 +9443,11 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.test3:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.test3:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.test3:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.cookit:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.cookit:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.cookit:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
      * the minimum size of the largest child.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.test3:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.cookit:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -9137,8 +9461,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
       0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f030069, 0x7f03006b, 0x7f0300ac, 
-      0x7f0300e4
+      0x01010128, 0x7f030075, 0x7f030077, 0x7f0300b8, 
+      0x7f0300f0
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -9238,7 +9562,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:divider
+     * @attr name com.cookit:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
@@ -9252,7 +9576,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:dividerPadding
+     * @attr name com.cookit:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
@@ -9265,7 +9589,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:measureWithLargestChild
+     * @attr name com.cookit:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
@@ -9285,7 +9609,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:showDividers
+     * @attr name com.cookit:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -9567,18 +9891,18 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.test3:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.test3:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
+     * <tr><td><code>{@link #MenuItem_actionLayout com.cookit:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.cookit:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
      * and perform operations such as default action for that menu item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.test3:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.cookit:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
      * action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.test3:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.test3:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.test3:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.test3:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.test3:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.test3:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.test3:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.cookit:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.cookit:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.cookit:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.cookit:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.cookit:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.cookit:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.cookit:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -9609,8 +9933,8 @@ public final class R {
       0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
       0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
       0x0101026f, 0x7f03000d, 0x7f03001f, 0x7f030020, 
-      0x7f03002b, 0x7f03005a, 0x7f03008c, 0x7f03008d, 
-      0x7f0300b1, 0x7f0300e3, 0x7f03011d
+      0x7f03002b, 0x7f030061, 0x7f030098, 0x7f030099, 
+      0x7f0300bd, 0x7f0300ef, 0x7f030129
     };
     /**
      * <p>
@@ -9787,7 +10111,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actionLayout
+     * @attr name com.cookit:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
@@ -9801,7 +10125,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:actionProviderClass
+     * @attr name com.cookit:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
@@ -9814,7 +10138,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:actionViewClass
+     * @attr name com.cookit:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
@@ -9837,7 +10161,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:alphabeticModifiers
+     * @attr name com.cookit:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -9848,7 +10172,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:contentDescription
+     * @attr name com.cookit:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
@@ -9860,7 +10184,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:iconTint
+     * @attr name com.cookit:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
@@ -9887,7 +10211,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:iconTintMode
+     * @attr name com.cookit:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
@@ -9910,7 +10234,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:numericModifiers
+     * @attr name com.cookit:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
@@ -9940,7 +10264,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
-     * @attr name com.test3:showAsAction
+     * @attr name com.cookit:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
@@ -9951,7 +10275,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:tooltipText
+     * @attr name com.cookit:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -9968,8 +10292,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.test3:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.test3:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.cookit:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.cookit:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -9983,8 +10307,8 @@ public final class R {
      */
     public static final int[] MenuView={
       0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f0300c0, 
-      0x7f0300ef
+      0x0101012f, 0x01010130, 0x01010131, 0x7f0300cc, 
+      0x7f0300fb
     };
     /**
      * <p>
@@ -10088,7 +10412,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:preserveIconSpacing
+     * @attr name com.cookit:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
@@ -10101,7 +10425,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:subMenuArrow
+     * @attr name com.cookit:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -10113,14 +10437,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.test3:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.cookit:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f0300b2
+      0x01010176, 0x010102c9, 0x7f0300be
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -10157,7 +10481,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:overlapAnchor
+     * @attr name com.cookit:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -10167,12 +10491,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.test3:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.cookit:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f0300ed
+      0x7f0300f9
     };
     /**
      * <p>
@@ -10182,7 +10506,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:state_above_anchor
+     * @attr name com.cookit:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -10192,14 +10516,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.test3:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.test3:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.cookit:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.cookit:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f0300b4, 0x7f0300b7
+      0x7f0300c0, 0x7f0300c3
     };
     /**
      * <p>
@@ -10212,7 +10536,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:paddingBottomNoButtons
+     * @attr name com.cookit:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
@@ -10226,7 +10550,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:paddingTopNoTitle
+     * @attr name com.cookit:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -10240,20 +10564,20 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.test3:closeIcon}</code></td><td>Close button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.test3:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.test3:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
+     * <tr><td><code>{@link #SearchView_closeIcon com.cookit:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.cookit:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.cookit:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.test3:goIcon}</code></td><td>Go button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.test3:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.test3:layout}</code></td><td>The layout to use for the search view.</td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.test3:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.test3:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.test3:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.test3:searchIcon}</code></td><td>Search icon</td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.test3:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.test3:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.test3:voiceIcon}</code></td><td>Voice button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.cookit:goIcon}</code></td><td>Go button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.cookit:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.cookit:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.cookit:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.cookit:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.cookit:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.cookit:searchIcon}</code></td><td>Search icon</td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.cookit:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.cookit:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.cookit:voiceIcon}</code></td><td>Voice button icon</td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -10275,10 +10599,10 @@ public final class R {
      */
     public static final int[] SearchView={
       0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f03004a, 0x7f030059, 0x7f030064, 0x7f030086, 
-      0x7f03008e, 0x7f030096, 0x7f0300c7, 0x7f0300c8, 
-      0x7f0300dd, 0x7f0300de, 0x7f0300f0, 0x7f0300f5, 
-      0x7f030124
+      0x7f030051, 0x7f030060, 0x7f030070, 0x7f030092, 
+      0x7f03009a, 0x7f0300a2, 0x7f0300d3, 0x7f0300d4, 
+      0x7f0300e9, 0x7f0300ea, 0x7f0300fc, 0x7f030101, 
+      0x7f030130
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -10403,7 +10727,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:closeIcon
+     * @attr name com.cookit:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
@@ -10416,7 +10740,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:commitIcon
+     * @attr name com.cookit:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
@@ -10428,7 +10752,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:defaultQueryHint
+     * @attr name com.cookit:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
@@ -10441,7 +10765,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:goIcon
+     * @attr name com.cookit:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
@@ -10453,7 +10777,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:iconifiedByDefault
+     * @attr name com.cookit:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
@@ -10466,7 +10790,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:layout
+     * @attr name com.cookit:layout
      */
     public static final int SearchView_layout=9;
     /**
@@ -10479,7 +10803,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:queryBackground
+     * @attr name com.cookit:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
@@ -10490,7 +10814,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:queryHint
+     * @attr name com.cookit:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
@@ -10503,7 +10827,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:searchHintIcon
+     * @attr name com.cookit:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
@@ -10516,7 +10840,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:searchIcon
+     * @attr name com.cookit:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
@@ -10529,7 +10853,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:submitBackground
+     * @attr name com.cookit:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
@@ -10542,7 +10866,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:suggestionRowLayout
+     * @attr name com.cookit:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
@@ -10555,7 +10879,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:voiceIcon
+     * @attr name com.cookit:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -10565,37 +10889,37 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.test3:actualImageResource}</code></td><td>An image reference</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.test3:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.test3:actualImageUri}</code></td><td>An image uri .</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.test3:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.test3:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.test3:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.test3:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.test3:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.test3:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.test3:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.test3:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.test3:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.test3:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.test3:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.test3:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.test3:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.test3:roundAsCircle}</code></td><td>Round as circle.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.test3:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.test3:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.test3:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.test3:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.test3:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.test3:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.test3:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.test3:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.test3:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.test3:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.test3:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.test3:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.test3:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.test3:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.cookit:actualImageResource}</code></td><td>An image reference</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.cookit:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.cookit:actualImageUri}</code></td><td>An image uri .</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.cookit:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.cookit:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.cookit:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.cookit:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.cookit:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.cookit:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.cookit:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.cookit:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.cookit:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.cookit:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.cookit:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.cookit:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.cookit:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.cookit:roundAsCircle}</code></td><td>Round as circle.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.cookit:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.cookit:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.cookit:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.cookit:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.cookit:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.cookit:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.cookit:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.cookit:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.cookit:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.cookit:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.cookit:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.cookit:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.cookit:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.cookit:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
      * </table>
      * @see #SimpleDraweeView_actualImageResource
      * @see #SimpleDraweeView_actualImageScaleType
@@ -10631,13 +10955,13 @@ public final class R {
      */
     public static final int[] SimpleDraweeView={
       0x7f030022, 0x7f030023, 0x7f030024, 0x7f030035, 
-      0x7f030076, 0x7f030077, 0x7f030078, 0x7f0300b3, 
-      0x7f0300bb, 0x7f0300bc, 0x7f0300c1, 0x7f0300c2, 
-      0x7f0300c3, 0x7f0300c4, 0x7f0300cd, 0x7f0300ce, 
-      0x7f0300cf, 0x7f0300d0, 0x7f0300d1, 0x7f0300d2, 
-      0x7f0300d3, 0x7f0300d4, 0x7f0300d5, 0x7f0300d6, 
-      0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 0x7f0300da, 
-      0x7f0300db, 0x7f0300dc, 0x7f030122
+      0x7f030082, 0x7f030083, 0x7f030084, 0x7f0300bf, 
+      0x7f0300c7, 0x7f0300c8, 0x7f0300cd, 0x7f0300ce, 
+      0x7f0300cf, 0x7f0300d0, 0x7f0300d9, 0x7f0300da, 
+      0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300de, 
+      0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0300e2, 
+      0x7f0300e3, 0x7f0300e4, 0x7f0300e5, 0x7f0300e6, 
+      0x7f0300e7, 0x7f0300e8, 0x7f03012e
     };
     /**
      * <p>
@@ -10649,7 +10973,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:actualImageResource
+     * @attr name com.cookit:actualImageResource
      */
     public static final int SimpleDraweeView_actualImageResource=0;
     /**
@@ -10675,7 +10999,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:actualImageScaleType
+     * @attr name com.cookit:actualImageScaleType
      */
     public static final int SimpleDraweeView_actualImageScaleType=1;
     /**
@@ -10686,7 +11010,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:actualImageUri
+     * @attr name com.cookit:actualImageUri
      */
     public static final int SimpleDraweeView_actualImageUri=2;
     /**
@@ -10699,7 +11023,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:backgroundImage
+     * @attr name com.cookit:backgroundImage
      */
     public static final int SimpleDraweeView_backgroundImage=3;
     /**
@@ -10709,7 +11033,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:fadeDuration
+     * @attr name com.cookit:fadeDuration
      */
     public static final int SimpleDraweeView_fadeDuration=4;
     /**
@@ -10722,7 +11046,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:failureImage
+     * @attr name com.cookit:failureImage
      */
     public static final int SimpleDraweeView_failureImage=5;
     /**
@@ -10748,7 +11072,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:failureImageScaleType
+     * @attr name com.cookit:failureImageScaleType
      */
     public static final int SimpleDraweeView_failureImageScaleType=6;
     /**
@@ -10761,7 +11085,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:overlayImage
+     * @attr name com.cookit:overlayImage
      */
     public static final int SimpleDraweeView_overlayImage=7;
     /**
@@ -10774,7 +11098,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:placeholderImage
+     * @attr name com.cookit:placeholderImage
      */
     public static final int SimpleDraweeView_placeholderImage=8;
     /**
@@ -10800,7 +11124,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:placeholderImageScaleType
+     * @attr name com.cookit:placeholderImageScaleType
      */
     public static final int SimpleDraweeView_placeholderImageScaleType=9;
     /**
@@ -10813,7 +11137,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:pressedStateOverlayImage
+     * @attr name com.cookit:pressedStateOverlayImage
      */
     public static final int SimpleDraweeView_pressedStateOverlayImage=10;
     /**
@@ -10823,7 +11147,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.test3:progressBarAutoRotateInterval
+     * @attr name com.cookit:progressBarAutoRotateInterval
      */
     public static final int SimpleDraweeView_progressBarAutoRotateInterval=11;
     /**
@@ -10836,7 +11160,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:progressBarImage
+     * @attr name com.cookit:progressBarImage
      */
     public static final int SimpleDraweeView_progressBarImage=12;
     /**
@@ -10862,7 +11186,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:progressBarImageScaleType
+     * @attr name com.cookit:progressBarImageScaleType
      */
     public static final int SimpleDraweeView_progressBarImageScaleType=13;
     /**
@@ -10875,7 +11199,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:retryImage
+     * @attr name com.cookit:retryImage
      */
     public static final int SimpleDraweeView_retryImage=14;
     /**
@@ -10901,7 +11225,7 @@ public final class R {
      * <tr><td>none</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.test3:retryImageScaleType
+     * @attr name com.cookit:retryImageScaleType
      */
     public static final int SimpleDraweeView_retryImageScaleType=15;
     /**
@@ -10912,7 +11236,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundAsCircle
+     * @attr name com.cookit:roundAsCircle
      */
     public static final int SimpleDraweeView_roundAsCircle=16;
     /**
@@ -10923,7 +11247,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomEnd
+     * @attr name com.cookit:roundBottomEnd
      */
     public static final int SimpleDraweeView_roundBottomEnd=17;
     /**
@@ -10934,7 +11258,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomLeft
+     * @attr name com.cookit:roundBottomLeft
      */
     public static final int SimpleDraweeView_roundBottomLeft=18;
     /**
@@ -10945,7 +11269,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomRight
+     * @attr name com.cookit:roundBottomRight
      */
     public static final int SimpleDraweeView_roundBottomRight=19;
     /**
@@ -10956,7 +11280,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundBottomStart
+     * @attr name com.cookit:roundBottomStart
      */
     public static final int SimpleDraweeView_roundBottomStart=20;
     /**
@@ -10967,7 +11291,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopEnd
+     * @attr name com.cookit:roundTopEnd
      */
     public static final int SimpleDraweeView_roundTopEnd=21;
     /**
@@ -10978,7 +11302,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopLeft
+     * @attr name com.cookit:roundTopLeft
      */
     public static final int SimpleDraweeView_roundTopLeft=22;
     /**
@@ -10989,7 +11313,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopRight
+     * @attr name com.cookit:roundTopRight
      */
     public static final int SimpleDraweeView_roundTopRight=23;
     /**
@@ -11000,7 +11324,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:roundTopStart
+     * @attr name com.cookit:roundTopStart
      */
     public static final int SimpleDraweeView_roundTopStart=24;
     /**
@@ -11012,7 +11336,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:roundWithOverlayColor
+     * @attr name com.cookit:roundWithOverlayColor
      */
     public static final int SimpleDraweeView_roundWithOverlayColor=25;
     /**
@@ -11026,7 +11350,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundedCornerRadius
+     * @attr name com.cookit:roundedCornerRadius
      */
     public static final int SimpleDraweeView_roundedCornerRadius=26;
     /**
@@ -11038,7 +11362,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:roundingBorderColor
+     * @attr name com.cookit:roundingBorderColor
      */
     public static final int SimpleDraweeView_roundingBorderColor=27;
     /**
@@ -11052,7 +11376,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundingBorderPadding
+     * @attr name com.cookit:roundingBorderPadding
      */
     public static final int SimpleDraweeView_roundingBorderPadding=28;
     /**
@@ -11066,7 +11390,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:roundingBorderWidth
+     * @attr name com.cookit:roundingBorderWidth
      */
     public static final int SimpleDraweeView_roundingBorderWidth=29;
     /**
@@ -11076,7 +11400,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.test3:viewAspectRatio
+     * @attr name com.cookit:viewAspectRatio
      */
     public static final int SimpleDraweeView_viewAspectRatio=30;
     /**
@@ -11090,7 +11414,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.test3:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Spinner_popupTheme com.cookit:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
      * </table>
      * @see #Spinner_android_entries
@@ -11101,7 +11425,7 @@ public final class R {
      */
     public static final int[] Spinner={
       0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f0300be
+      0x7f0300ca
     };
     /**
      * <p>
@@ -11179,7 +11503,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:popupTheme
+     * @attr name com.cookit:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -11319,17 +11643,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.test3:showText}</code></td><td>Whether to draw on/off text.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.test3:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.test3:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.test3:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.test3:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.test3:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.test3:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.test3:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.test3:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.test3:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.test3:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.cookit:showText}</code></td><td>Whether to draw on/off text.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.cookit:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.cookit:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.cookit:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.cookit:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.cookit:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.cookit:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.cookit:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.cookit:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.cookit:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.cookit:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -11347,10 +11671,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f0300e5, 
-      0x7f0300eb, 0x7f0300f6, 0x7f0300f7, 0x7f0300f9, 
-      0x7f030107, 0x7f030108, 0x7f030109, 0x7f03011e, 
-      0x7f03011f, 0x7f030120
+      0x01010124, 0x01010125, 0x01010142, 0x7f0300f1, 
+      0x7f0300f7, 0x7f030102, 0x7f030103, 0x7f030105, 
+      0x7f030113, 0x7f030114, 0x7f030115, 0x7f03012a, 
+      0x7f03012b, 0x7f03012c
     };
     /**
      * <p>
@@ -11395,7 +11719,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:showText
+     * @attr name com.cookit:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
@@ -11406,7 +11730,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:splitTrack
+     * @attr name com.cookit:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
@@ -11420,7 +11744,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:switchMinWidth
+     * @attr name com.cookit:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
@@ -11434,7 +11758,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:switchPadding
+     * @attr name com.cookit:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
@@ -11447,7 +11771,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:switchTextAppearance
+     * @attr name com.cookit:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
@@ -11461,7 +11785,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:thumbTextPadding
+     * @attr name com.cookit:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
@@ -11473,7 +11797,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:thumbTint
+     * @attr name com.cookit:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
@@ -11500,7 +11824,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:thumbTintMode
+     * @attr name com.cookit:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
@@ -11513,7 +11837,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:track
+     * @attr name com.cookit:track
      */
     public static final int SwitchCompat_track=11;
     /**
@@ -11525,7 +11849,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:trackTint
+     * @attr name com.cookit:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
@@ -11552,7 +11876,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:trackTintMode
+     * @attr name com.cookit:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -11573,8 +11897,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.test3:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.test3:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.cookit:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.cookit:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -11593,8 +11917,8 @@ public final class R {
     public static final int[] TextAppearance={
       0x01010095, 0x01010096, 0x01010097, 0x01010098, 
       0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
-      0x01010163, 0x01010164, 0x010103ac, 0x7f03007b, 
-      0x7f0300fa
+      0x01010163, 0x01010164, 0x010103ac, 0x7f030087, 
+      0x7f030106
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -11747,7 +12071,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:fontFamily
+     * @attr name com.cookit:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
@@ -11762,7 +12086,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.test3:textAllCaps
+     * @attr name com.cookit:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -11774,40 +12098,40 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.test3:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.test3:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.test3:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.test3:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.test3:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.cookit:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.cookit:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.cookit:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.cookit:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.cookit:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.test3:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.test3:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.test3:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.test3:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.cookit:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.cookit:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.cookit:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.cookit:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.test3:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.test3:logoDescription}</code></td><td>A content description string to describe the appearance of the
+     * <tr><td><code>{@link #Toolbar_logo com.cookit:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.cookit:logoDescription}</code></td><td>A content description string to describe the appearance of the
      * associated logo image.</td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.test3:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.test3:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.cookit:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.cookit:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
      * located at the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.test3:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.cookit:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
      * the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.test3:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Toolbar_popupTheme com.cookit:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.test3:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.test3:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.test3:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.test3:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.test3:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
+     * <tr><td><code>{@link #Toolbar_subtitle com.cookit:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.cookit:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.cookit:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.cookit:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.cookit:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
      * of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.test3:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.test3:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.test3:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.test3:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.test3:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.test3:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.test3:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.cookit:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.cookit:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.cookit:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.cookit:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.cookit:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.cookit:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.cookit:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -11841,14 +12165,14 @@ public final class R {
      */
     @Deprecated
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f030041, 0x7f03004c, 
-      0x7f03004d, 0x7f03005b, 0x7f03005c, 0x7f03005d, 
-      0x7f03005e, 0x7f03005f, 0x7f030060, 0x7f0300a9, 
-      0x7f0300aa, 0x7f0300ab, 0x7f0300ae, 0x7f0300af, 
-      0x7f0300be, 0x7f0300f1, 0x7f0300f2, 0x7f0300f3, 
-      0x7f03010f, 0x7f030110, 0x7f030111, 0x7f030112, 
-      0x7f030113, 0x7f030114, 0x7f030115, 0x7f030116, 
-      0x7f030117
+      0x010100af, 0x01010140, 0x7f030041, 0x7f030053, 
+      0x7f030054, 0x7f030062, 0x7f030063, 0x7f030064, 
+      0x7f030065, 0x7f030066, 0x7f030067, 0x7f0300b5, 
+      0x7f0300b6, 0x7f0300b7, 0x7f0300ba, 0x7f0300bb, 
+      0x7f0300ca, 0x7f0300fd, 0x7f0300fe, 0x7f0300ff, 
+      0x7f03011b, 0x7f03011c, 0x7f03011d, 0x7f03011e, 
+      0x7f03011f, 0x7f030120, 0x7f030121, 0x7f030122, 
+      0x7f030123
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -11893,7 +12217,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11906,7 +12230,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.test3:buttonGravity
+     * @attr name com.cookit:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
@@ -11917,7 +12241,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:collapseContentDescription
+     * @attr name com.cookit:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
@@ -11930,7 +12254,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:collapseIcon
+     * @attr name com.cookit:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
@@ -11945,7 +12269,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetEnd
+     * @attr name com.cookit:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
@@ -11960,7 +12284,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetEndWithActions
+     * @attr name com.cookit:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
@@ -11975,7 +12299,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetLeft
+     * @attr name com.cookit:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
@@ -11990,7 +12314,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetRight
+     * @attr name com.cookit:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
@@ -12005,7 +12329,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetStart
+     * @attr name com.cookit:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
@@ -12020,7 +12344,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:contentInsetStartWithNavigation
+     * @attr name com.cookit:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
@@ -12034,7 +12358,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:logo
+     * @attr name com.cookit:logo
      */
     public static final int Toolbar_logo=11;
     /**
@@ -12046,11 +12370,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:logoDescription
+     * @attr name com.cookit:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12059,7 +12383,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:maxButtonHeight
+     * @attr name com.cookit:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
@@ -12071,7 +12395,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:navigationContentDescription
+     * @attr name com.cookit:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
@@ -12085,7 +12409,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:navigationIcon
+     * @attr name com.cookit:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
@@ -12099,7 +12423,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:popupTheme
+     * @attr name com.cookit:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
@@ -12110,11 +12434,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:subtitle
+     * @attr name com.cookit:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12122,7 +12446,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:subtitleTextAppearance
+     * @attr name com.cookit:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
@@ -12134,17 +12458,17 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:subtitleTextColor
+     * @attr name com.cookit:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.test3:title
+     * @attr name com.cookit:title
      */
     public static final int Toolbar_title=20;
     /**
@@ -12159,7 +12483,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMargin
+     * @attr name com.cookit:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
@@ -12175,7 +12499,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMarginBottom
+     * @attr name com.cookit:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
@@ -12191,7 +12515,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMarginEnd
+     * @attr name com.cookit:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
@@ -12207,7 +12531,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMarginStart
+     * @attr name com.cookit:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
@@ -12223,7 +12547,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMarginTop
+     * @attr name com.cookit:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
@@ -12237,12 +12561,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:titleMargins
+     * @attr name com.cookit:titleMargins
      */
     @Deprecated
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.test3.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.cookit.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12250,7 +12574,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:titleTextAppearance
+     * @attr name com.cookit:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
@@ -12262,7 +12586,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:titleTextColor
+     * @attr name com.cookit:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -12274,9 +12598,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.test3:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.test3:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_theme com.test3:theme}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.cookit:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.cookit:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_theme com.cookit:theme}</code></td><td>Deprecated.</td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -12285,8 +12609,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f0300b5, 0x7f0300b6, 
-      0x7f030105
+      0x01010000, 0x010100da, 0x7f0300c1, 0x7f0300c2, 
+      0x7f030111
     };
     /**
      * <p>
@@ -12338,7 +12662,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:paddingEnd
+     * @attr name com.cookit:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
@@ -12352,7 +12676,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.test3:paddingStart
+     * @attr name com.cookit:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
@@ -12365,7 +12689,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.test3:theme
+     * @attr name com.cookit:theme
      */
     public static final int View_theme=4;
     /**
@@ -12376,8 +12700,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.test3:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.test3:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.cookit:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.cookit:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -12410,7 +12734,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.test3:backgroundTint
+     * @attr name com.cookit:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
@@ -12437,7 +12761,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.test3:backgroundTintMode
+     * @attr name com.cookit:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

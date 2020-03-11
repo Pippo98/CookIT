@@ -1,0 +1,4 @@
+#Sat Feb 29 23:15:57 CET 2020
+base.0=/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

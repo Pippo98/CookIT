@@ -5,7 +5,9 @@ INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/
 INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:1:1-31:12
 INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:1:1-31:12
 MERGED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:1:1-31:12
+MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-vector-icons] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-wheel-picker] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-wheel-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.61.5] /home/filippo/.gradle/caches/transforms-2/files-2.1/b2d4a058d0b074710184f33620425eb8/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r245459] /home/filippo/.gradle/caches/transforms-2/files-2.1/3368abbfa929ec172c6df7ae5b2963cc/AndroidManifest.xml:2:1-11:12
@@ -18,6 +20,7 @@ MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/filippo/.gradle/cach
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/93e17fcf81b546dd9984ca139211d610/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/90e453c12f525393709d59018037048d/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/48299392ff28f71ffe1bc772fe2872e3/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/1bfd2967d800f280b701a248afc59274/AndroidManifest.xml:17:1-22:12
 MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /home/filippo/.gradle/caches/transforms-2/files-2.1/8726db6f0fc37c8703ca7bd2d7f4ba98/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/84c75825b6d8f42e7994909e92e309e3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/3a66d9695181cc1a119d79d77b4dd1e3/AndroidManifest.xml:17:1-22:12
@@ -159,8 +162,12 @@ uses-sdk
 INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml
 INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-wheel-picker] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-wheel-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-wheel-picker] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-wheel-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.61.5] /home/filippo/.gradle/caches/transforms-2/files-2.1/b2d4a058d0b074710184f33620425eb8/AndroidManifest.xml:7:5-9:41
@@ -185,6 +192,8 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/filippo/.gradle
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/90e453c12f525393709d59018037048d/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/48299392ff28f71ffe1bc772fe2872e3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/48299392ff28f71ffe1bc772fe2872e3/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/1bfd2967d800f280b701a248afc59274/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/1bfd2967d800f280b701a248afc59274/AndroidManifest.xml:20:5-44
 MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /home/filippo/.gradle/caches/transforms-2/files-2.1/8726db6f0fc37c8703ca7bd2d7f4ba98/AndroidManifest.xml:8:5-10:41
 MERGED from [cn.aigestudio.wheelpicker:WheelPicker:1.0.3] /home/filippo/.gradle/caches/transforms-2/files-2.1/8726db6f0fc37c8703ca7bd2d7f4ba98/AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.fragment:fragment:1.0.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/84c75825b6d8f42e7994909e92e309e3/AndroidManifest.xml:20:5-44

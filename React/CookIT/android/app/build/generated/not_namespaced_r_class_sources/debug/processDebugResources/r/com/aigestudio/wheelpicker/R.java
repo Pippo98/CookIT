@@ -19,16 +19,16 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int wheel_data = 0x7f030125;
-        public static final int wheel_direction = 0x7f030126;
-        public static final int wheel_item_count = 0x7f030127;
-        public static final int wheel_item_index = 0x7f030128;
-        public static final int wheel_item_same_size = 0x7f030129;
-        public static final int wheel_item_space = 0x7f03012a;
-        public static final int wheel_style = 0x7f03012b;
-        public static final int wheel_text_color = 0x7f03012c;
-        public static final int wheel_text_color_current = 0x7f03012d;
-        public static final int wheel_text_size = 0x7f03012e;
+        public static final int wheel_data = 0x7f030131;
+        public static final int wheel_direction = 0x7f030132;
+        public static final int wheel_item_count = 0x7f030133;
+        public static final int wheel_item_index = 0x7f030134;
+        public static final int wheel_item_same_size = 0x7f030135;
+        public static final int wheel_item_space = 0x7f030136;
+        public static final int wheel_style = 0x7f030137;
+        public static final int wheel_text_color = 0x7f030138;
+        public static final int wheel_text_color_current = 0x7f030139;
+        public static final int wheel_text_size = 0x7f03013a;
     }
     public static final class color {
         private color() {}
@@ -61,7 +61,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] AbstractWheelPicker = { 0x7f030125, 0x7f030126, 0x7f030127, 0x7f030128, 0x7f030129, 0x7f03012a, 0x7f03012b, 0x7f03012c, 0x7f03012d, 0x7f03012e };
+        public static final int[] AbstractWheelPicker = { 0x7f030131, 0x7f030132, 0x7f030133, 0x7f030134, 0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 0x7f030139, 0x7f03013a };
         public static final int AbstractWheelPicker_wheel_data = 0;
         public static final int AbstractWheelPicker_wheel_direction = 1;
         public static final int AbstractWheelPicker_wheel_item_count = 2;

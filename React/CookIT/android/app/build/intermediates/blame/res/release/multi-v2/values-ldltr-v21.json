@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/58b16e273f23ea735a7e61f1be7e13bb/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

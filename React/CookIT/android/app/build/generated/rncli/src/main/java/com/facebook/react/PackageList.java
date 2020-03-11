@@ -14,8 +14,12 @@ import java.util.ArrayList;
 import com.test3.BuildConfig;
 import com.test3.R;
 
+// react-native-cardview
+import com.kishanjvaghela.cardview.RNCardViewPackage;
 // react-native-fetch-blob
 import com.RNFetchBlob.RNFetchBlobPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-wheel-picker
 import com.zyu.ReactNativeWheelPickerPackage;
 
@@ -63,7 +67,9 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new RNCardViewPackage(),
       new RNFetchBlobPackage(),
+      new VectorIconsPackage(),
       new ReactNativeWheelPickerPackage()
     ));
   }
