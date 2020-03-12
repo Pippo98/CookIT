@@ -18,13 +18,14 @@ export const styles = StyleSheet.create({
     },
     card: {
         flex: 1,
-        marginHorizontal: 8,
-        marginVertical: 4,
-        backgroundColor: colors.cardBackground
+        marginHorizontal: 16,
+        marginVertical: 8,
+        backgroundColor: colors.cardBackground,
+        shadowColor: colors.pallette2.c1,
+        padding: 8
     },
     image: {
         height: 270,
-        margin: 8,
         width: null,
     },
     title1: {
@@ -33,7 +34,6 @@ export const styles = StyleSheet.create({
         color: Colors.black,
         textAlign: "center",
         marginHorizontal: 8,
-        marginBottom: 16
     },
     title2: {
         fontSize: 32,
@@ -42,6 +42,13 @@ export const styles = StyleSheet.create({
         textAlign: "center",
         marginHorizontal: 8,
         marginTop: 8
+    },
+    ingredients: {
+        fontSize: 20,
+        fontWeight: '600',
+        color: Colors.black,
+        textAlign: "left",
+        margin: 4,
     },
     paragraph1: {
         fontSize: 24,
@@ -77,11 +84,11 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
-        opacity: 6,
-        bottom: 10,
-        right: 10,
-        width: 70,
-        height: 70,
+        opacity: 0.9,
+        bottom: 15,
+        right: 15,
+        width: 60,
+        height: 60,
         borderRadius: 100
     },
     floatingIcon: {

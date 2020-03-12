@@ -47,7 +47,7 @@ class Divider extends Component {
         color: 'rgba(0,0,0,.85)',
         borderColor: '#e8e8e8',
         padding: 10,
-        textStyle: styles.text
+        textStyle: styles.text,
     };
 
     render() {

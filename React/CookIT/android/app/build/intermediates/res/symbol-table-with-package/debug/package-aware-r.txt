@@ -1,4 +1,4 @@
-com.test3
+com.cookit
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -17,9 +17,6 @@ anim catalyst_push_up_in
 anim catalyst_push_up_out
 anim catalyst_slide_down
 anim catalyst_slide_up
-array WheelArrayConstellation
-array WheelArrayDefault
-array WheelArrayZodiac
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -325,16 +322,6 @@ attr ttcIndex
 attr viewAspectRatio
 attr viewInflaterClass
 attr voiceIcon
-attr wheel_data
-attr wheel_direction
-attr wheel_item_count
-attr wheel_item_index
-attr wheel_item_same_size
-attr wheel_item_space
-attr wheel_style
-attr wheel_text_color
-attr wheel_text_color_current
-attr wheel_text_size
 attr windowActionBar
 attr windowActionBarOverlay
 attr windowActionModeOverlay
@@ -348,9 +335,6 @@ attr windowNoTitle
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
-color ColorButtonDisable
-color ColorButtonPressed
-color ColorButtonRelease
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -440,10 +424,6 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
-dimen WheelItemSpace
-dimen WheelLabelTextSize
-dimen WheelPadding
-dimen WheelTextSize
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -645,7 +625,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable bg_btn
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -714,7 +693,6 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
-id curved
 id custom
 id customPanel
 id decor_content_parent
@@ -738,7 +716,6 @@ id fps_text
 id group_divider
 id home
 id homeAsUp
-id horizontal
 id icon
 id icon_group
 id ifRoom
@@ -801,7 +778,6 @@ id src_atop
 id src_in
 id src_over
 id start
-id straight
 id submenuarrow
 id submit_area
 id tabMode
@@ -821,7 +797,6 @@ id topPanel
 id uniform
 id up
 id useLogo
-id vertical
 id view_tag_instance_handle
 id view_tag_native_id
 id withText
@@ -1344,7 +1319,6 @@ style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Support_CoordinatorLayout
 style redboxButton
-styleable AbstractWheelPicker wheel_data wheel_direction wheel_item_count wheel_item_index wheel_item_same_size wheel_item_space wheel_style wheel_text_color wheel_text_color_current wheel_text_size
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

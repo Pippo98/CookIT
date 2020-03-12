@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 11 20:34:46 CET 2020
+#Thu Mar 12 14:49:59 CET 2020
 60.set=ASSET
 52.set=NATIVE_RESOURCE
 53.base=/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

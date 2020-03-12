@@ -11,8 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import com.test3.BuildConfig;
-import com.test3.R;
+import com.cookit.BuildConfig;
+import com.cookit.R;
 
 // react-native-cardview
 import com.kishanjvaghela.cardview.RNCardViewPackage;
@@ -20,8 +20,6 @@ import com.kishanjvaghela.cardview.RNCardViewPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
-// react-native-wheel-picker
-import com.zyu.ReactNativeWheelPickerPackage;
 
 public class PackageList {
   private Application application;
@@ -69,8 +67,7 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new RNCardViewPackage(),
       new RNFetchBlobPackage(),
-      new VectorIconsPackage(),
-      new ReactNativeWheelPickerPackage()
+      new VectorIconsPackage()
     ));
   }
 }

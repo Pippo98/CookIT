@@ -1,17 +1,17 @@
 // UI Kitten
 
 import React, { createContext, Component } from 'react';
-import RNFetchBlob from 'react-native-fetch-blob'
 import { styles } from "./Theme"
-import { FloatingAction } from 'react-native-floating-action'
 import CardView from 'react-native-cardview'
-import Icon from "react-native-vector-icons/FontAwesome5"
+import Icon from "react-native-vector-icons/FontAwesome"
+import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component'
 
 // Custom
 import { RecipeOperation } from "./RecipeOperation"
 import { graphicsAttributes } from "./Attrs"
 import { colors } from './Colors'
 import Divider from './Components/Divider'
+
 
 var ro = new RecipeOperation()
 
@@ -28,6 +28,7 @@ import {
   Image,
   SectionList,
   Vibration,
+  Animated,
   Picker,
   TouchableOpacity,
   ColorPropType
@@ -50,13 +51,23 @@ export default class app extends Component {
         "Antipasti"
       ],
       itemIndex: 0,
-      item: ""
+      item: "",
+      tableData: []
     }
   }
 
   cllbck(mainClass, ret) {
     const data = ret
     mainClass.setState({ data })
+    mainClass.setIngredients()
+  }
+
+  setIngredients() {
+    var tableData = []
+    this.state.data.recipeIngredient.forEach(el => {
+      tableData.push([el.type, el.quantity, el.unit])
+    });
+    this.setState({ tableData })
   }
 
   componentDidMount() {
@@ -69,7 +80,7 @@ export default class app extends Component {
     return (
       <>
         <StatusBar backgroundColor={colors.pallette2.c4} />
-        <View style={styles.screen}>
+        <Animated.View style={styles.screen}>
           <Picker
             style={styles.picker}
             mode={"dialog"}
@@ -84,17 +95,24 @@ export default class app extends Component {
             ))}
           </Picker>
           <ScrollView>
+
+            {/*--------------------------------------------------------------------------------*/}
+
             <CardView style={styles.card}
               cardElevation={4}
               cardMaxElevation={4}
               cornerRadius={8}
-              attrs={graphicsAttributes.imageContainer} onTouchStart={() => {
-                const data = ro.getNextRecipe()
-                ro.preloadImages()
-                if (data) {
-                  this.setState({ data })
+              attrs={graphicsAttributes.imageContainer}
+              onTouchEnd={
+                () => {
+                  const data = ro.getNextRecipe()
+                  ro.preloadImages()
+                  if (data) {
+                    this.setState({ data })
+                  }
+                  this.setIngredients()
                 }
-              }}>
+              }>
               <Image
                 source={{ uri: this.state.data ? this.state.data.image : "" }}
                 style={styles.image}
@@ -104,44 +122,64 @@ export default class app extends Component {
               </Text>
             </CardView>
 
+
+            {/*--------------------------------------------------------------------------------*/}
+
+
             <CardView style={styles.card}
               cardElevation={4}
               cardMaxElevation={4}
               cornerRadius={8}
               attrs={graphicsAttributes.imageContainer}>
 
-              <View style={{ marginTop: 8, marginBottom: 8 }} />
               <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Porzioni</Divider>
 
               <Text style={styles.title2}>
                 {this.state.data.recipeYield ? this.state.data.recipeYield.toString() : ""}
               </Text>
 
-              <View style={{ marginTop: 8, marginBottom: 8 }} />
               <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Tempo</Divider>
 
               <Text style={styles.title2}>
                 {this.state.data.prepTime ? (this.state.data.prepTime + this.state.data.cookTime).toString() + " Minuti" : ""}
               </Text>
 
-              <View style={{ marginTop: 8, marginBottom: 8 }} />
+            </CardView>
+
+
+            {/*--------------------------------------------------------------------------------*/}
+
+            <CardView style={styles.card}
+              cardElevation={16}
+              cardMaxElevation={16}
+              cornerRadius={8}>
+              <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Ingredienti</Divider>
+
+              <Table style={{ margin: 8 }} borderStyle={{ borderWidth: 1, borderColor: colors.cardBackground }}>
+                <Rows data={this.state.tableData} flexArr={[4, 1, 1]} textStyle={styles.ingredients} />
+              </Table>
 
             </CardView>
+
+            {/*--------------------------------------------------------------------------------*/}
+
+
             <CardView style={styles.card}
-              cardElevation={4}
-              cardMaxElevation={4}
-              cornerRadius={8}
-              attrs={graphicsAttributes.imageContainer}>
-              <View style={{ marginTop: 8, marginBottom: 8 }} />
+              cardElevation={16}
+              cardMaxElevation={16}
+              cornerRadius={8}>
               <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Istruzioni</Divider>
-              <View style={{ marginTop: 8, marginBottom: 8 }} />
               <Text
                 style={styles.paragraph1}>
                 {this.state.data.recipeInstructions ? this.state.data.recipeInstructions : ""}
               </Text>
             </CardView>
+
+            {/*--------------------------------------------------------------------------------*/}
+            <View style={{ marginVertical: 8 }}></View>
           </ScrollView>
-        </View>
+        </Animated.View>
+
         <TouchableOpacity style={styles.floatingBtn} onPress={() => {
           const data = ro.getPreviousRecipe()
           if (data != null) {
