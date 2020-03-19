@@ -1,4 +1,3 @@
-import RNFetchBlob from 'react-native-fetch-blob'
 import { Image } from 'react-native';
 
 function setUrlParameter(url, key, value) {
@@ -71,8 +70,19 @@ export class RecipeOperation {
     }
 
     async apiReq() {
-        var ret = await RNFetchBlob.fetch('GET', 'https://cookit-server.herokuapp.com/randomRecipe/' + this.state.recipeType)
-        ret = await JSON.parse(ret.data)
+        var ret = await fetch('https://cookit-server.herokuapp.com/randomRecipe/' + this.state.recipeType, { method: 'GET' })
+        ret = await ret.json()
+        return ret
+    }
+
+    async apiReqParam(route, params) {
+        var url = 'https://cookit-server.herokuapp.com/' + route
+        for (param in params) {
+            url = setUrlParameter(url, param, params[param])
+        }
+        console.log(url)
+        var ret = await fetch(url, { method: 'GET' })
+        ret = await ret.json()
         return ret
     }
 
@@ -81,7 +91,8 @@ export class RecipeOperation {
         for (param in params) {
             url = setUrlParameter(url, param, params[param])
         }
-        RNFetchBlob.fetch('GET', url)
+        console.log(url)
+        fetch(url)
     }
 
     async fillFuture(func, callback) {

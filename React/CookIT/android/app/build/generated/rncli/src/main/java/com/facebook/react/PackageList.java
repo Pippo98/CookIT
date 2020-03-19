@@ -18,8 +18,6 @@ import com.cookit.R;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-cardview
 import com.kishanjvaghela.cardview.RNCardViewPackage;
-// react-native-fetch-blob
-import com.RNFetchBlob.RNFetchBlobPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-reanimated
@@ -77,7 +75,6 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new RNCMaskedViewPackage(),
       new RNCardViewPackage(),
-      new RNFetchBlobPackage(),
       new RNGestureHandlerPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),

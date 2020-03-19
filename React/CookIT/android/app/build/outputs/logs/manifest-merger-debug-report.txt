@@ -7,7 +7,6 @@ INJECTED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/
 MERGED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from [:react-native-community_masked-view] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-gesture-handler] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -80,8 +79,6 @@ application
 ADDED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [com.facebook.react:react-native:0.61.5] /home/filippo/.gradle/caches/transforms-2/files-2.1/b2d4a058d0b074710184f33620425eb8/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.5] /home/filippo/.gradle/caches/transforms-2/files-2.1/b2d4a058d0b074710184f33620425eb8/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/filippo/.gradle/caches/transforms-2/files-2.1/9d8444eeb5426ec11ac50e416f3d969e/AndroidManifest.xml:22:5-20
@@ -150,8 +147,6 @@ MERGED from [:react-native-community_masked-view] /media/filippo/label/Codes/Git
 MERGED from [:react-native-community_masked-view] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-cardview] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-cardview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /media/filippo/label/Codes/Github/CookIT/React/CookIT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41

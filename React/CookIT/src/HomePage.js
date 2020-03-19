@@ -1,12 +1,12 @@
 
 
 import React, { createContext, Component } from 'react';
-import { styles } from "./Res/Theme"
 import CardView from 'react-native-cardview'
 import Icon from "react-native-vector-icons/FontAwesome"
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component'
 
 // Custom
+import { styles } from "./Res/Theme"
 import { RecipeOperation } from "./RecipeOperation"
 import { graphicsAttributes } from "./Res/Attrs"
 import { colors } from './Res/Colors'
@@ -79,12 +79,6 @@ class HomePage extends Component {
     render() {
         return (
             <>
-                <Button
-                    title="SearchPage"
-                    onPress={() =>
-                        this.props.navigation.navigate('SearchPage')
-                    }
-                />
                 <Animated.View style={styles.screen}>
                     <Picker
                         style={styles.picker}

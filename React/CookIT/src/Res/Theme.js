@@ -12,6 +12,9 @@ import {
 import { colors } from "./Colors"
 
 export const styles = StyleSheet.create({
+    statBar: {
+        color: colors.pallette2.c3
+    },
     screen: {
         flex: 1,
         flexDirection: "column",
@@ -103,5 +106,11 @@ export const styles = StyleSheet.create({
         bottom: 16,
         right: 16,
         flex: 1,
+    },
+    searchTextInput: {
+        borderRadius: 2,
+        borderWidth: 1,
+        borderColor: colors.pallette2.c1,
+        margin: 8
     }
 })

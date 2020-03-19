@@ -2,32 +2,46 @@
 
 import React, { createContext, Component } from 'react';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { BottomNavigation, Text } from 'react-native-paper';
 
 import HomePage from './HomePage'
 import SearchPage from './SearchPage'
+import IngredientPage from './IngredientPage'
 
-const Stack = createStackNavigator();
+import { colors } from './Res/Colors';
+
+import { StatusBar } from 'react-native'
+import { styles } from './Res/Theme';
 
 export default class app extends Component {
+
+  state = {
+    index: 0,
+    routes: [
+      { key: 'propose', title: 'Propose', icon: 'shuffle', color: colors.pallette2.c1 },
+      { key: 'search', title: 'Search', icon: 'magnify', color: colors.pallette2.c3 },
+      { key: 'ingredient', title: 'Ingredient', icon: 'magnify', color: colors.pallette2.c4 },
+    ],
+  };
+
+  _handleIndexChange = index => this.setState({ index });
+
+  _renderScene = BottomNavigation.SceneMap({
+    propose: HomePage,
+    search: SearchPage,
+    ingredient: IngredientPage,
+  });
 
   render() {
     return (
       <>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen
-              name="HomePage"
-              component={HomePage}
-              options={{ title: 'HomePage' }}
-            />
-            <Stack.Screen
-              name="SearchPage"
-              component={SearchPage}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <StatusBar backgroundColor={this.state.routes[this.state.index].color}></StatusBar>
+        <BottomNavigation
+          navigationState={this.state}
+          onIndexChange={this._handleIndexChange}
+          renderScene={this._renderScene}
+          shifting={true}
+        />
       </>
     );
   }
