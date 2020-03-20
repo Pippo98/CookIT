@@ -114,4 +114,18 @@ export const styles = StyleSheet.create({
         margin: 8,
         padding: 8,
     },
+    recipeTable: {
+        margin: 8
+    },
+    recipeRow: {
+        flexDirection: "row",
+        height: 200
+    },
+    recipeCard: {
+        marginHorizontal: 16,
+        marginVertical: 8,
+        backgroundColor: colors.cardBackground,
+        shadowColor: colors.pallette2.c1,
+        padding: 8,
+    },
 })

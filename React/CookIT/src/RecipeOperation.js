@@ -61,7 +61,7 @@ export class RecipeOperation {
     }
 
     reloadFuture() {
-        this.clearFuture()
+        this.clearFuture(false)
         this.fillFuture()
     }
 
@@ -95,11 +95,11 @@ export class RecipeOperation {
         fetch(url)
     }
 
-    async fillFuture(func, callback) {
+    async fillFuture(caller, callback, forceCallback) {
         while (this.state.queue.length < this.state.past_len + this.state.future_len) {
             this.state.queue.push(await this.apiReq())
-            if (this.state.queue.length == 1 && callback) {
-                callback(func, this.state.queue[this.state.index])
+            if ((this.state.queue.length == 1 && callback) || forceCallback == true) {
+                callback(caller, this.state.queue[this.state.index])
             }
         }
     }
@@ -121,7 +121,7 @@ export class RecipeOperation {
         })
     }
 
-    clearFuture() {
+    async clearFuture(deleteCurrent) {
         this.state.queue = this.state.queue.slice(0, this.state.index)
     }
 

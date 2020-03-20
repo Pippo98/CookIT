@@ -8,7 +8,7 @@ import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-ta
 import { styles } from "./Res/Theme"
 import { RecipeOperation } from "./RecipeOperation"
 import RecyclerItem from './Components/recyclerItem'
-import Page from './HomePage'
+import Page from './RecipePage'
 import Divider from './Components/Divider'
 import { colors } from './Res/Colors'
 
