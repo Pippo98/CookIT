@@ -32,7 +32,8 @@ import {
     Animated,
     Picker,
     TouchableOpacity,
-    ColorPropType
+    ColorPropType,
+    Item,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
@@ -66,7 +67,7 @@ class HomePage extends Component {
         var tableData = []
         this.state.data.recipeIngredient.forEach(el => {
             tableData.push([el.type, el.quantity, el.unit])
-        });
+        })
         this.setState({ tableData })
     }
 
@@ -79,16 +80,16 @@ class HomePage extends Component {
     render() {
         return (
             <>
-                <Animated.View style={styles.screen}>
+                <Animated.View style={styles.screen}
+                >
                     <Picker
-                        style={styles.picker}
-                        mode={"dialog"}
-                        selectedValue={this.state.itemList[this.state.itemIndex]}
                         onValueChange={(itemValue, itemIndex) => {
                             this.setState({ itemIndex })
                             ro.setRecipeType(itemValue)
                             ro.reloadFuture()
-                        }}>
+                        }}
+                        selectedValue={this.state.itemList[this.state.itemIndex]}
+                    >
                         {this.state.itemList.map((value, i) => (
                             <Picker.Item key={i} label={value} value={value} />
                         ))}

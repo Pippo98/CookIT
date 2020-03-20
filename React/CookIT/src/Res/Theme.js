@@ -67,12 +67,12 @@ export const styles = StyleSheet.create({
         textAlign: "center"
     },
     picker: {
-        fontSize: 40,
-        alignItems: "center",
-        textAlign: "center"
+        color: colors.pallette2.c1,
     },
     pickerItem: {
-        textAlign: "center"
+        textAlign: "center",
+        fontSize: 50,
+        backgroundColor: colors.pallette2.c1,
     },
     divider: {
         fontSize: 36,
@@ -108,9 +108,10 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     searchTextInput: {
-        borderRadius: 2,
-        borderWidth: 1,
+        borderRadius: 8,
+        borderWidth: 2,
         borderColor: colors.pallette2.c1,
-        margin: 8
-    }
+        margin: 8,
+        padding: 8,
+    },
 })
