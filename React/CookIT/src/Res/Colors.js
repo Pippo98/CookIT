@@ -14,5 +14,11 @@ export const colors = {
         c2: "#d4f8e8",
         c3: "#ffa34d",
         c4: "#f67575"
-    }
+    },
+    homePage: [
+        ["#1eb2a6", "#5b8c85"],
+        ["#d4f8e8", "#434e52"],
+        ["#ffa34d", "#b0a160"],
+        ["#f67575", "#ecce6d"]
+    ]
 }

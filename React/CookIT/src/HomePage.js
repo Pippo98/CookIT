@@ -34,6 +34,7 @@ import {
     ColorPropType,
     FlatList,
     SplashScreen,
+    ImageBackground,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -44,92 +45,110 @@ class HomePage extends Component {
             data: {
             },
             itemList: [
-                "Primi",
-                "Secondi",
-                "Contorni",
-                "Dolci",
-                "Antipasti"
+                ["", "Primi"],
+                ["", "Secondi"],
+                ["", "Contorni"],
+                ["", "Dolci"],
+                ["", "Antipasti"],
             ],
             itemIndex: 0,
-            item: "",
-            tableHead: ['Head', 'Head2', 'Head3', 'Head4'],
-            tableData: [
-                ['1', '2', '3', '4'],
-                ['a', 'b', 'c', 'd'],
-                ['1', '2', '3', '4'],
-                ['a', 'b', 'c', 'd']
-            ]
+            item: "Primi",
+            headerMode: "none",
         }
     }
 
     componentDidMount() {
     }
 
-    onTouch(item) {
-        this.setState({ item: item })
-    }
+    Home({ route, navigation }) {
 
-    Home({ navigation }) {
-        // console.log(params.route.params)
         var itemList = [
-            "Primi",
-            "Secondi",
-            "Contorni",
-            "Dolci",
-            "Antipasti"
+            ["Random"],
+            ["Primi", "Secondi"],
+            ["Dolci", "Contorni"],
+            ["Piatti Unici", "Antipasti"],
         ]
+
+        const element = (cellData, cellIndex) => (
+            <TouchableOpacity
+                style={{
+                    backgroundColor: colors.homePage[cellIndex[0]][cellIndex[1]],
+                    shadowColor: colors.pallette2.c1,
+                    margin: 8,
+                    padding: 4,
+                    borderRadius: 16,
+                    height: 170,
+                    justifyContent: "center",
+                }}
+                onPress={() => {
+                    route.params.mainClass.setState({ item: cellData })
+                    navigation.navigate('Recipe', {
+                        type: cellData,
+                        mainClass: route.params.mainClass
+                    })
+                }}
+            >
+                <View style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    justifyContent: "center",
+                }}>
+                    <Image
+                        style={{
+                            flex: 1,
+                            resizeMode: "contain",
+                            opacity: 0.0,
+                        }}
+                        source={{ uri: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" }}
+                    />
+                </View>
+                <Text style={{
+                    fontSize: 54,
+                    fontWeight: '600',
+                    color: "white",
+                    textAlign: "center",
+                    textAlignVertical: "top"
+                }}>{cellData}</Text>
+            </TouchableOpacity>
+        )
+
         return (
             <>
-                <View style={{ margin: 8, padding: 8 }}>
-                    <FlatList
-                        data={itemList}
-                        renderItem={(item) =>
-                            <>
-                                <CardView
-                                    style={{
-                                        marginHorizontal: 16,
-                                        marginVertical: 8,
-                                        backgroundColor: colors.pallette2.c1,
-                                        shadowColor: colors.pallette2.c1,
-                                        padding: 8,
-                                        paddingVertical: 16
-                                    }}
-                                    cardElevation={16}
-                                    cardMaxElevation={16}
-                                    cornerRadius={8}
-                                    onTouchEnd={() => {
-                                        navigation.navigate('Recipe', {
-                                            type: item.item
-                                        })
-                                    }}
-                                >
-                                    <Text style={styles.paragraph1}>{item.item}</Text>
-                                </CardView>
-                            </>
+                <View style={{ padding: 8 }}>
+                    <Table borderStyle={{ borderColor: 'transparent' }}>
+                        {
+                            itemList.map((rowData, index) => (
+                                <TableWrapper key={index} style={{ flexDirection: 'row' }}>
+                                    {
+                                        rowData.map((cellData, cellIndex) => (
+                                            < Cell key={cellIndex} data={element(cellData, [index, cellIndex])} textStyle={styles.text} />
+                                        ))
+                                    }
+                                </TableWrapper>
+                            ))
                         }
-                    />
+                    </Table>
                 </View>
             </>
         )
     }
 
     render() {
-        var state = this.state
         return (
             <>
-                <NavigationContainer >
-                    <Stack.Navigator headerMode="none" initialRouteName="Home">
-                        <Stack.Screen name="Home" initialParams={this}>
+                <NavigationContainer style={styles.screen}>
+                    <Stack.Navigator initialRouteName="Home">
+                        <Stack.Screen name="Home" initialParams={{ mainClass: this }} options={{ headerShown: false }} >
                             {this.Home}
                         </Stack.Screen>
-                        <Stack.Screen name="Recipe" component={RecipePage} />
+                        <Stack.Screen name="Recipe" component={RecipePage} options={{ title: this.state.item }} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </>
         )
-        {
-            //{"_reactInternalFiber": {"_debugHookTypes": null, "_debugID": 20163, "_debugIsCurrentlyTiming": false, "_debugNeedsRemount": false, "_debugOwner": null, "_debugSource": null, "actualDuration": 4, "actualStartTime": 1584729223638, "alternate": null, "child": {"_debugHookTypes": [Array], "_debugID": 20165, "_debugIsCurrentlyTiming": false, "_debugNeedsRemount": false, "_debugOwner": [Circular], "_debugSource": [Object], "actualDuration": 2, "actualStartTime": 1584729223642, "alternate": null, "child": [FiberNode], "childExpirationTime": 0, "dependencies": null, "effectTag": 517, "elementType": [Object], "expirationTime": 0, "firstEffect": null, "index": 0, "key": null, "lastEffect": null, "memoizedProps": [Object], "memoizedState": [Object], "mode": 8, "nextEffect": null, "pendingProps": [Object], "ref": null, "return": [Circular], "selfBaseDuration": 2, "sibling": null, "stateNode": null, "tag": 11, "treeBaseDuration": 0, "type": [Object], "updateQueue": [Object]}, "childExpirationTime": 0, "dependencies": null, "effectTag": 7, "elementType": [Function HomePage], "expirationTime": 0, "firstEffect": null, "index": 0, "key": null, "lastEffect": null, "memoizedProps": {"jumpTo": [Function anonymous], "route": [Object]}, "memoizedState": {"data": [Object], "item": "", "itemIndex": 0, "itemList": [Array], "tableData": [Array], "tableHead": [Array]}, "mode": 8, "nextEffect": null, "pendingProps": {"jumpTo": [Function anonymous], "route": [Object]}, "ref": null, "return": {"_debugHookTypes": null, "_debugID": 16381, "_debugIsCurrentlyTiming": false, "_debugNeedsRemount": false, "_debugOwner": [FiberNode], "_debugSource": [Object], "actualDuration": 0, "actualStartTime": 1584729223638, "alternate": [FiberNode], "child": [Circular], "childExpirationTime": 1073741823, "dependencies": null, "effectTag": 0, "elementType": [Function SceneComponent], "expirationTime": 0, "firstEffect": [FiberNode], "index": 0, "key": "home", "lastEffect": [FiberNode], "memoizedProps": [Object], "memoizedState": null, "mode": 8, "nextEffect": null, "pendingProps": [Object], "ref": null, "return": [FiberNode], "selfBaseDuration": 1, "sibling": null, "stateNode": [SceneComponent], "tag": 1, "treeBaseDuration": 92, "type": [Function SceneComponent], "updateQueue": null}, "selfBaseDuration": 4, "sibling": null, "stateNode": {"_reactInternalFiber": [Circular], "_reactInternalInstance": [Object], "context": [Object], "props": [Object], "refs": [Object], "state": [Object], "updater": [Object]}, "tag": 1, "treeBaseDuration": 0, "type": [Function HomePage], "updateQueue": null}, "_reactInternalInstance": {}, "context": {}, "props": {"jumpTo": [Function anonymous], "route": {"color": "#1eb2a6", "icon": "shuffle", "key": "home", "title": "Home"}}, "refs": {}, "state": {"data": {}, "item": "", "itemIndex": 0, "itemList": ["Primi", "Secondi", "Contorni", "Dolci", "Antipasti"], "tableData": [[Array], [Array], [Array], [Array]], "tableHead": ["Head", "Head2", "Head3", "Head4"]}, "updater": {"enqueueForceUpdate": [Function enqueueForceUpdate], "enqueueReplaceState": [Function enqueueReplaceState], "enqueueSetState": [Function enqueueSetState], "isMounted": [Function isMounted]}}
-        }
     }
 }
 

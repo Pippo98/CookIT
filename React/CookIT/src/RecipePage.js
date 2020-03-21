@@ -59,6 +59,7 @@ class RecipePage extends Component {
     }
 
     componentDidMount() {
+
         console.log("NewMount " + this.ro.getQueueLen() + this.props.route.params.type)
         this.ro.setRecipeType(this.props.route.params.type)
         if (this.ro.getQueueLen() >= 1) {

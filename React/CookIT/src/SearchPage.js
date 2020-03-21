@@ -65,90 +65,100 @@ class SearchPage extends Component {
         this.setState({ tableData })
     }
 
-    drawMainPage() {
-        return (
-            <CardView style={styles.card}
-                cardElevation={4}
-                cardMaxElevation={4}
-                cornerRadius={8}>
-                <TextInput style={styles.searchTextInput}
-                    defaultValue={this.state.searchText}
-                    onFocus={() => {
-                        if (this.state.firstFocus) {
-                            this.setState({ firstFocus: false, searchText: "" })
-                        }
-                    }}
-                    onSubmitEditing={async (obj) => {
-                        var text = obj.nativeEvent.text
-                        var route = "recipe/byName"
-                        var params = {
-                            name: text,
-                            shrink: "true",
-                            perfectMatch: "false"
-                        }
-                        var ret = await ro.apiReqParam(route, params)
-                        if (ret.length > 20) {
-                            ret = ret.slice(0, 20)
-                        }
-                        this.setState({ recipes: ret, searchText: text })
-                    }}
-                    clearButtonMode='always'>
-                </TextInput>
+    drawMainPage({ route, navigation }) {
+        var recipes = []
 
-                <FlatList
-                    data={this.state.recipes}
-                    renderItem={(item) =>
-                        <>
-                            <CardView
-                                style={styles.card}
-                                cardElevation={4}
-                                cardMaxElevation={4}
-                                cornerRadius={8}
-                            >
-                                <View
-                                    onTouchEnd={async () => {
-                                        this.setState({ selectedRecipe: item.item, recipeIsSelected: true })
-                                        var route = "recipe/byName"
-                                        var params = {
-                                            name: item.item.name,
-                                            shrink: "false",
-                                            perfectMatch: "true"
-                                        }
-                                        var ret = await ro.apiReqParam(route, params)
-                                        console.log(ret)
-                                        console.log(ret[0])
-                                        if (ret.length > 0) {
-                                            ret = ret[0]
-                                            this.setState({ selectedRecipe: ret, recipeIsSelected: true })
-                                        }
-                                    }}
-                                    style={{ flexDirection: "row", justifyContent: "flex-start" }}>
-                                    <Image
-                                        source={{ uri: item.item.image }}
-                                        style={{ height: 80, flex: 2 }}
-                                        resizeMode="contain"
-                                        fadeDuration={200} />
+        return (
+            <>
+                <CardView style={styles.card}
+                    cardElevation={4}
+                    cardMaxElevation={4}
+                    cornerRadius={8}>
+                    <TextInput style={styles.searchTextInput}
+                        defaultValue={route.params.mainClass.state.searchText}
+                        onFocus={() => {
+                            if (route.params.mainClass.state.firstFocus) {
+                                route.params.mainClass.setState({ firstFocus: false, searchText: "" })
+                            }
+                            console.log(route.params.mainClass.state)
+                        }}
+                        onSubmitEditing={async (obj) => {
+
+                            var text = obj.nativeEvent.text
+                            var url_route = "recipe/byName"
+                            var url_params = {
+                                name: text,
+                                shrink: "true",
+                                perfectMatch: "false"
+                            }
+                            var ret = await ro.apiReqParam(url_route, url_params)
+                            if (ret.length > 20) {
+                                ret = ret.slice(0, 20)
+                            }
+                            route.params.mainClass.setState({ recipes: ret, searchText: text, refresh: true })
+                            recipes = ret
+                        }}
+                        clearButtonMode='always'>
+                    </TextInput>
+
+                    <FlatList
+                        data={recipes}
+                        renderItem={(item) =>
+                            <>
+                                <TouchableOpacity
+                                    style={styles.card}
+                                    cardElevation={4}
+                                    cardMaxElevation={4}
+                                    cornerRadius={8}
+                                >
                                     <View
-                                        style={{ flex: 3, flexDirection: "column", justifyContent: "flex-start" }}>
-                                        <Text style={{ flex: 3 }}>
-                                            {item.item.name}
+                                        onTouchEnd={async () => {
+                                            route.params.mainClass.setState({ selectedRecipe: item.item, recipeIsSelected: true })
+                                            var route = "recipe/byName"
+                                            var params = {
+                                                name: item.item.name,
+                                                shrink: "false",
+                                                perfectMatch: "true"
+                                            }
+                                            var ret = await ro.apiReqParam(route, params)
+                                            console.log(ret)
+                                            console.log(ret[0])
+                                            if (ret.length > 0) {
+                                                ret = ret[0]
+                                                route.params.mainClass.setState({ selectedRecipe: ret, recipeIsSelected: true })
+                                                navigation.navigate('recipePage', {
+                                                    mainClass: route.params.mainClass
+                                                })
+                                            }
+                                        }}
+                                        style={{ flexDirection: "row", justifyContent: "flex-start" }}>
+                                        <Image
+                                            source={{ uri: item.item.image }}
+                                            style={{ height: 80, flex: 2 }}
+                                            resizeMode="contain"
+                                            fadeDuration={200} />
+                                        <View
+                                            style={{ flex: 3, flexDirection: "column", justifyContent: "flex-start" }}>
+                                            <Text style={{ flex: 3 }}>
+                                                {item.item.name}
+                                            </Text>
+                                            <Text style={{ flex: 3 }}>
+                                                {item.item.prepTime} Minuti
                                         </Text>
-                                        <Text style={{ flex: 3 }}>
-                                            {item.item.prepTime} Minuti
-                                        </Text>
+                                        </View>
                                     </View>
-                                </View>
-                            </CardView>
-                        </>
-                    }
-                    keyExtractor={item => item.name}
-                    onEndReached={() => { }}
-                />
-            </CardView>
+                                </TouchableOpacity>
+                            </>
+                        }
+                        keyExtractor={item => item.name}
+                        onEndReached={() => { }}
+                    />
+                </CardView>
+            </>
         )
     }
 
-    drawRecipePage() {
+    drawRecipePage({ route, navigation }) {
         return (
             <>
                 <Animated.View style={styles.screen}>
@@ -161,12 +171,12 @@ class SearchPage extends Component {
                             cardMaxElevation={4}
                             cornerRadius={8}>
                             <Image
-                                source={{ uri: this.state.selectedRecipe ? this.state.selectedRecipe.image : "" }}
+                                source={{ uri: route.params.mainClass.state.selectedRecipe ? route.params.mainClass.state.selectedRecipe.image : "" }}
                                 style={styles.image}
                                 resizeMode="contain"
                                 fadeDuration={200} />
                             <Text style={styles.title1}>
-                                {this.state.selectedRecipe ? this.state.selectedRecipe.name : ""}
+                                {route.params.mainClass.state.selectedRecipe ? route.params.mainClass.state.selectedRecipe.name : ""}
                             </Text>
                         </CardView>
 
@@ -182,13 +192,13 @@ class SearchPage extends Component {
                             <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Porzioni</Divider>
 
                             <Text style={styles.title2}>
-                                {this.state.selectedRecipe.recipeYield ? this.state.selectedRecipe.recipeYield.toString() : ""}
+                                {route.params.mainClass.state.selectedRecipe.recipeYield ? route.params.mainClass.state.selectedRecipe.recipeYield.toString() : ""}
                             </Text>
 
                             <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Tempo</Divider>
 
                             <Text style={styles.title2}>
-                                {this.state.selectedRecipe.prepTime ? (this.state.selectedRecipe.prepTime + this.state.selectedRecipe.cookTime).toString() + " Minuti" : ""}
+                                {route.params.mainClass.state.selectedRecipe.prepTime ? (route.params.mainClass.state.selectedRecipe.prepTime + route.params.mainClass.state.selectedRecipe.cookTime).toString() + " Minuti" : ""}
                             </Text>
 
                         </CardView>
@@ -203,7 +213,7 @@ class SearchPage extends Component {
                             <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Ingredienti</Divider>
 
                             <Table style={{ margin: 8 }} borderStyle={{ borderWidth: 1, borderColor: colors.cardBackground }}>
-                                <Rows data={this.state.tableData} flexArr={[4, 1, 1]} textStyle={styles.ingredients} />
+                                <Rows data={route.params.mainClass.state.tableData} flexArr={[4, 1, 1]} textStyle={styles.ingredients} />
                             </Table>
 
                         </CardView>
@@ -218,7 +228,7 @@ class SearchPage extends Component {
                             <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Istruzioni</Divider>
                             <Text
                                 style={styles.paragraph1}>
-                                {this.state.selectedRecipe.recipeInstructions ? this.state.selectedRecipe.recipeInstructions : ""}
+                                {route.params.mainClass.state.selectedRecipe.recipeInstructions ? route.params.mainClass.state.selectedRecipe.recipeInstructions : ""}
                             </Text>
                         </CardView>
 
@@ -230,7 +240,7 @@ class SearchPage extends Component {
                 <View style={styles.floatingView}>
 
                     <TouchableOpacity style={styles.floatingBtn} onPress={() => {
-                        this.setState({ recipeIsSelected: false })
+                        route.params.mainClass.setState({ recipeIsSelected: false })
                     }}>
                         <Icon name="arrow-left" size={30} style={styles.floatingIcon} />
                     </TouchableOpacity>
@@ -241,15 +251,17 @@ class SearchPage extends Component {
 
 
     render() {
-        var MainPage = this.drawMainPage()
-
-        if (this.state.recipeIsSelected) {
-            MainPage = this.drawRecipePage()
-        }
 
         return (
             <>
-                {MainPage}
+                <NavigationContainer style={styles.screen}>
+                    <Stack.Navigator initialRouteName="mainPage">
+                        <Stack.Screen name="mainPage" initialParams={{ mainClass: this }} options={{ headerShown: false }} >
+                            {this.drawMainPage}
+                        </Stack.Screen>
+                        <Stack.Screen name="recipePage" component={this.drawRecipePage} initialParams={{ mainClass: this }} options={{ title: this.state.selectedRecipe.name }} />
+                    </Stack.Navigator>
+                </NavigationContainer>
             </>
         )
     }

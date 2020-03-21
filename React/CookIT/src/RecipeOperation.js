@@ -70,7 +70,7 @@ export class RecipeOperation {
     }
 
     async apiReq() {
-        var ret = await fetch('https://cookit-server.herokuapp.com/randomRecipe/' + this.state.recipeType, { method: 'GET' })
+        var ret = await fetch('https://cookit-server.herokuapp.com/randomRecipe/' + this.state.recipeType.replace(" ", "-"), { method: 'GET' })
         ret = await ret.json()
         return ret
     }
@@ -80,7 +80,6 @@ export class RecipeOperation {
         for (param in params) {
             url = setUrlParameter(url, param, params[param])
         }
-        console.log(url)
         var ret = await fetch(url, { method: 'GET' })
         ret = await ret.json()
         return ret
