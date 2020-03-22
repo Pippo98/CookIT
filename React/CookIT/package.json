@@ -22,9 +22,9 @@
     "react-native-gesture-handler": "^1.6.0",
     "react-native-paper": "^3.6.0",
     "react-native-reanimated": "^1.7.0",
-    "react-native-recyclerview-list": "^0.3.4",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.3.0",
+    "react-native-snackbar": "^2.2.0",
     "react-native-table-component": "^1.2.1",
     "react-native-vector-icons": "^6.6.0"
   },

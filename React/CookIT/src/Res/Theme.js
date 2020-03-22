@@ -18,18 +18,27 @@ export const styles = StyleSheet.create({
     screen: {
         flex: 1,
         flexDirection: "column",
+        marginTop: 8,
+        marginHorizontal: 8,
     },
     card: {
         flex: 1,
-        marginHorizontal: 16,
+        marginHorizontal: 8,
         marginVertical: 8,
         backgroundColor: colors.cardBackground,
         shadowColor: colors.pallette2.c1,
-        padding: 8
+        padding: 8,
+        borderRadius: 8,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 6, // Android
     },
-    image: {
+    recipeImage: {
         height: 270,
         width: null,
+        borderRadius: 4,
     },
     title1: {
         fontSize: 40,
@@ -60,11 +69,12 @@ export const styles = StyleSheet.create({
         marginHorizontal: 8,
         textAlign: "center"
     },
-    link: {
-        fontSize: 20,
+    resultsText: {
+        fontSize: 15,
         fontWeight: '600',
-        color: "blue",
-        textAlign: "center"
+        color: "grey",
+        textAlign: "center",
+        opacity: 0.8
     },
     picker: {
         color: colors.pallette2.c1,
@@ -114,18 +124,59 @@ export const styles = StyleSheet.create({
         margin: 8,
         padding: 8,
     },
-    recipeTable: {
-        margin: 8
+    searchListItem: {
+        flex: 1,
+        marginHorizontal: 8,
+        marginVertical: 8,
+        backgroundColor: colors.cardBackground,
+        padding: 8,
+        borderRadius: 8,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 6, // Android
     },
-    recipeRow: {
+    searchListImage: {
+        height: 80,
+        flex: 2,
+        borderRadius: 8,
+    },
+    homeCard: {
+        backgroundColor: "black",
+        shadowColor: colors.pallette2.c1,
+        margin: 8,
+        padding: 4,
+        borderRadius: 16,
+        height: 170,
+        justifyContent: "center",
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 6, // Android
+    },
+    backgroundIcon: {
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        right: 0,
+        left: 0,
+        resizeMode: "contain",
+        opacity: 0.04
+    },
+    ingredientItemCard: {
         flexDirection: "row",
-        height: 200
-    },
-    recipeCard: {
-        marginHorizontal: 16,
+        marginHorizontal: 8,
         marginVertical: 8,
         backgroundColor: colors.cardBackground,
         shadowColor: colors.pallette2.c1,
         padding: 8,
-    },
+        borderRadius: 8,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 1, // IOS
+        shadowRadius: 1, //IOS
+        elevation: 6, // Android
+    }
 })

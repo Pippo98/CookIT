@@ -45,11 +45,16 @@ class HomePage extends Component {
             data: {
             },
             itemList: [
-                ["", "Primi"],
-                ["", "Secondi"],
-                ["", "Contorni"],
-                ["", "Dolci"],
-                ["", "Antipasti"],
+                ["Random", "Primi"],
+                ["Secondi", "Dolci"],
+                ["Lievitati", "Contorni"],
+                ["Piatti Unici", "Antipasti"],
+            ],
+            imageList: [
+                [require("./Res/Images/Home/Random.jpg"), require("./Res/Images/Home/Primi.jpg")],
+                [require("./Res/Images/Home/Secondi.jpg"), require("./Res/Images/Home/Dolci.jpg")],
+                [require("./Res/Images/Home/Lievitati.jpg"), require("./Res/Images/Home/Contorni.jpg")],
+                [require("./Res/Images/Home/Piatti-Unici.jpg"), require("./Res/Images/Home/Antipasti.jpg")],
             ],
             itemIndex: 0,
             item: "Primi",
@@ -62,65 +67,58 @@ class HomePage extends Component {
 
     Home({ route, navigation }) {
 
-        var itemList = [
-            ["Random"],
-            ["Primi", "Secondi"],
-            ["Dolci", "Contorni"],
-            ["Piatti Unici", "Antipasti"],
-        ]
-
-        const element = (cellData, cellIndex) => (
-            <TouchableOpacity
-                style={{
-                    backgroundColor: colors.homePage[cellIndex[0]][cellIndex[1]],
-                    shadowColor: colors.pallette2.c1,
-                    margin: 8,
-                    padding: 4,
-                    borderRadius: 16,
-                    height: 170,
-                    justifyContent: "center",
-                }}
-                onPress={() => {
-                    route.params.mainClass.setState({ item: cellData })
-                    navigation.navigate('Recipe', {
-                        type: cellData,
-                        mainClass: route.params.mainClass
-                    })
-                }}
-            >
-                <View style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    justifyContent: "center",
-                }}>
-                    <Image
-                        style={{
-                            flex: 1,
-                            resizeMode: "contain",
-                            opacity: 0.0,
-                        }}
-                        source={{ uri: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" }}
-                    />
-                </View>
-                <Text style={{
-                    fontSize: 54,
-                    fontWeight: '600',
-                    color: "white",
-                    textAlign: "center",
-                    textAlignVertical: "top"
-                }}>{cellData}</Text>
-            </TouchableOpacity>
-        )
+        const element = (cellData, cellIndex) => {
+            const backgorundImage = "./Res/Images/Home/" + cellData.replace(" ", "-") + ".jpg"
+            console.log(backgorundImage)
+            return (
+                < TouchableOpacity
+                    style={styles.homeCard}
+                    onPress={() => {
+                        route.params.mainClass.setState({ item: cellData })
+                        navigation.navigate('Recipe', {
+                            type: cellData != "Random" ? cellData : "",
+                            mainClass: route.params.mainClass
+                        })
+                    }
+                    }
+                >
+                    <View style={{
+                        justifyContent: "center",
+                        position: "absolute",
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        borderRadius: 16,
+                    }}>
+                        <Image
+                            style={{
+                                height: 170,
+                                width: null,
+                                resizeMode: "cover",
+                                opacity: 0.7,
+                                borderRadius: 16,
+                            }}
+                            source={route.params.mainClass.state.imageList[cellIndex[0]][cellIndex[1]]}
+                        />
+                    </View>
+                    <Text style={{
+                        fontSize: 54,
+                        fontWeight: '600',
+                        color: "white",
+                        textAlign: "center",
+                        textAlignVertical: "top",
+                    }}>{cellData}</Text>
+                </TouchableOpacity >
+            )
+        }
 
         return (
             <>
-                <View style={{ padding: 8 }}>
-                    <Table borderStyle={{ borderColor: 'transparent' }}>
+                <ScrollView style={{ paddingTop: 16, padding: 8, backgroundColor: colors.cardBackground }}>
+                    <Table style={{ paddingVertical: 8 }} borderStyle={{ borderColor: 'transparent' }}>
                         {
-                            itemList.map((rowData, index) => (
+                            route.params.mainClass.state.itemList.map((rowData, index) => (
                                 <TableWrapper key={index} style={{ flexDirection: 'row' }}>
                                     {
                                         rowData.map((cellData, cellIndex) => (
@@ -131,7 +129,7 @@ class HomePage extends Component {
                             ))
                         }
                     </Table>
-                </View>
+                </ScrollView>
             </>
         )
     }
@@ -141,10 +139,8 @@ class HomePage extends Component {
             <>
                 <NavigationContainer style={styles.screen}>
                     <Stack.Navigator initialRouteName="Home">
-                        <Stack.Screen name="Home" initialParams={{ mainClass: this }} options={{ headerShown: false }} >
-                            {this.Home}
-                        </Stack.Screen>
-                        <Stack.Screen name="Recipe" component={RecipePage} options={{ title: this.state.item }} />
+                        <Stack.Screen name="Home" component={this.Home} initialParams={{ mainClass: this }} options={{ headerShown: false }} />
+                        <Stack.Screen name="Recipe" component={RecipePage} options={{ title: this.state.item, headerTintColor: "#fff", headerStyle: { backgroundColor: colors.pallette2.c1 } }} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </>

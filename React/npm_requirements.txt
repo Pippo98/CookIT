@@ -13,4 +13,4 @@ react-native-safe-area-context
 
 react-native-paper
 
-react-native-recyclerview-list
+react-native-snackbar
