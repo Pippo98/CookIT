@@ -55,6 +55,14 @@ export const styles = StyleSheet.create({
         marginHorizontal: 8,
         marginTop: 8
     },
+    portions: {
+        fontSize: 32,
+        fontWeight: '600',
+        color: Colors.black,
+        textAlign: "center",
+        marginHorizontal: 8,
+        marginVertical: 4,
+    },
     ingredients: {
         fontSize: 20,
         fontWeight: '600',

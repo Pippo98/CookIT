@@ -4,7 +4,7 @@
             "outputFile": "/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/09e2c98f4038eaac5335f61a212ae2f5/res/values-v17/values-v17.xml",
+                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/48940b9d5373c88822499731a51ff7d5/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

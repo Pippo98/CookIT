@@ -14,3 +14,4 @@ react-native-safe-area-context
 react-native-paper
 
 react-native-snackbar
+@react-navigation/material-top-tabs react-native-tab-view

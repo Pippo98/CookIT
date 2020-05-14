@@ -31,6 +31,7 @@ import {
     Item,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { FlatList } from 'react-native-gesture-handler';
 
 class RecipePage extends Component {
     constructor() {
@@ -42,7 +43,8 @@ class RecipePage extends Component {
             },
             forceCallback: false,
             tableData: [],
-            isSpecificRecipe: false
+            isSpecificRecipe: false,
+            portions: [2, 4, 6, 8],
         }
     }
 
@@ -57,6 +59,31 @@ class RecipePage extends Component {
             tableData.push([el.type, el.quantity, el.unit])
         })
         this.setState({ tableData })
+    }
+
+    setPortions() {
+
+    }
+
+    nextRecipe() {
+        const data = this.ro.getNextRecipe()
+        this.ro.preloadImages()
+        if (data) {
+            this.setState({ data })
+        }
+        this.setIngredients()
+    }
+
+    previousRecipe() {
+        const data = this.ro.getPreviousRecipe()
+        if (data != null) {
+            this.setState({ data })
+        } else {
+            Snackbar.show({
+                text: 'Nessuna ricetta precedente',
+                duration: Snackbar.LENGTH_SHORT,
+            })
+        }
     }
 
     componentDidMount() {
@@ -87,17 +114,12 @@ class RecipePage extends Component {
             <>
                 <ScrollView style={styles.screen}>
 
-                    {/*--------------------------------------------------------------------------------*/}
+                    {/*---------------------------------------- IMAGE ----------------------------------------*/}
 
                     <View style={styles.card}
                         onTouchEnd={() => {
                             if (!this.state.isSpecificRecipe) {
-                                const data = this.ro.getNextRecipe()
-                                this.ro.preloadImages()
-                                if (data) {
-                                    this.setState({ data })
-                                }
-                                this.setIngredients()
+                                this.nextRecipe()
                             }
                         }}>
                         <Image
@@ -111,16 +133,46 @@ class RecipePage extends Component {
                     </View>
 
 
-                    {/*--------------------------------------------------------------------------------*/}
+                    {/*---------------------------------------- INFO ----------------------------------------*/}
 
 
                     <View style={styles.card}>
 
-                        <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Porzioni</Divider>
+                        {this.state.data.recipeYield != "" &&
+                            <View>
+                                <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Porzioni</Divider>
+                                {
+                                    true &&
+                                    <View style={{ alignItems: "center" }} >
+                                        <FlatList
+                                            data={this.state.portions}
+                                            horizontal={true}
+                                            keyExtractor={item => item.name}
+                                            renderItem={(item) =>
+                                                <>
+                                                    <View
+                                                        style={{
+                                                            borderRadius: 8,
+                                                            margin: 4,
+                                                            backgroundColor: colors.pallette2.c2,
+                                                            borderRadius: 2,
+                                                            borderColor: item.item.toFixed() == this.state.data.recipeYield ? colors.pallette2.c3 : colors.pallette2.c2,
+                                                        }}
+                                                    >
+                                                        <Text style={styles.portions}>
+                                                            {item.item}
+                                                        </Text>
+                                                    </View>
+                                                </>
+                                            }
+                                        />
+                                    </View>
+                                }
 
-                        <Text style={styles.title2}>
-                            {this.state.data.recipeYield ? this.state.data.recipeYield.toString() : ""}
-                        </Text>
+                                < Text style={styles.title2}>
+                                    {this.state.data.recipeYield ? this.state.data.recipeYield.toString() : ""}
+                                </Text>
+                            </View>}
 
                         <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Tempo</Divider>
 
@@ -131,7 +183,7 @@ class RecipePage extends Component {
                     </View>
 
 
-                    {/*--------------------------------------------------------------------------------*/}
+                    {/*---------------------------------------- INGREDIENTS ----------------------------------------*/}
 
                     <View style={styles.card}>
                         <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Ingredienti</Divider>
@@ -142,14 +194,14 @@ class RecipePage extends Component {
 
                     </View>
 
-                    {/*--------------------------------------------------------------------------------*/}
+                    {/*---------------------------------------- INSTRUCTIONS ----------------------------------------*/}
 
 
                     <View style={styles.card}>
                         <Divider borderColor={colors.cardBackground} textStyle={styles.divider} orientation="center" padding={10}>Istruzioni</Divider>
                         <Text
                             style={styles.paragraph1}>
-                            {this.state.data.recipeInstructions ? this.state.data.recipeInstructions : ""}
+                            {this.state.data.recipeInstructions ? this.state.data.recipeInstructions.replace(/\./g, ".\n") : ""}
                         </Text>
                     </View>
                 </ScrollView>
@@ -167,15 +219,7 @@ class RecipePage extends Component {
                             style={styles.floatingBtn}
                             activeOpacity={0.5}
                             onPress={() => {
-                                const data = this.ro.getPreviousRecipe()
-                                if (data != null) {
-                                    this.setState({ data })
-                                } else {
-                                    Snackbar.show({
-                                        text: 'Nessuna ricetta precedente',
-                                        duration: Snackbar.LENGTH_SHORT,
-                                    })
-                                }
+                                this.previousRecipe()
                             }}>
                             <Icon name="arrow-left" size={30} style={styles.floatingIcon} />
                         </TouchableOpacity>

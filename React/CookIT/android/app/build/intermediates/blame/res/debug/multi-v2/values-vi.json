@@ -4,7 +4,7 @@
             "outputFile": "/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml",
             "map": [
                 {
-                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/5a167b1b402c82f5d9452321d39d6be8/res/values-vi/values-vi.xml",
+                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/e5d67c6405473111c32ff094a9041a45/core-1.1.0/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/09e2c98f4038eaac5335f61a212ae2f5/res/values-vi/values-vi.xml",
+                    "source": "/home/filippo/.gradle/caches/transforms-2/files-2.1/48940b9d5373c88822499731a51ff7d5/appcompat-1.1.0/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

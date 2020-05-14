@@ -41,13 +41,14 @@ class SearchPageBase extends Component {
             selectedRecipe: {},
             recipeIsSelected: false,
             foundRecipes: false,
-            selectedMode: "nome",
+            searchMode: "nome",
             ingredientsList: []
 
         }
     }
 
     componentDidMount() {
+        this.setState({ searchMode: this.props.route.params.searchMode })
     }
 
     render() {
@@ -58,20 +59,7 @@ class SearchPageBase extends Component {
                     cardMaxElevation={4}
                     cornerRadius={8}>
 
-
-                    <Button
-                        title={this.state.selectedMode == "nome" ? "per ingredienti" : "per nome"}
-                        color={colors.pallette2.c1}
-                        onPress={() => {
-                            if (this.state.selectedMode == "nome") {
-                                this.setState({ selectedMode: "ingredienti" })
-                            } else {
-                                this.setState({ selectedMode: "nome" })
-                            }
-                        }} />
-
-
-                    <Text style={styles.title2}>{"Ricerca per " + this.state.selectedMode}</Text>
+                    <Text style={styles.title2}>{"Ricerca per " + this.state.searchMode}</Text>
                     <TextInput style={styles.searchTextInput}
                         defaultValue={this.state.searchText}
                         onFocus={() => {
@@ -81,7 +69,7 @@ class SearchPageBase extends Component {
                         }}
                         onSubmitEditing={async (obj) => {
                             var text = obj.nativeEvent.text
-                            if (this.state.selectedMode == "nome") {
+                            if (this.state.searchMode == "nome") {
                                 var url_route = "recipe/byName"
                                 var url_params = {
                                     name: text,
@@ -137,14 +125,14 @@ class SearchPageBase extends Component {
                         }
                     </Text>
 
-                    {this.state.selectedMode == "ingredienti" &&
+                    {this.state.searchMode == "ingredienti" &&
                         <FlatList
                             data={this.state.ingredientsList}
                             keyExtractor={item => item.name}
                             renderItem={(item) =>
                                 <>
                                     <View style={styles.ingredientItemCard}>
-                                        <Text style={{ flex: 1 }} >{item.item}</Text>
+                                        <Text style={{ flex: 1, margin: 0, textAlignVertical: "center" }} >{item.item}</Text>
                                         <TouchableOpacity onPress={() => {
                                             var list = this.state.ingredientsList
                                             const idx = list.indexOf(item.item)

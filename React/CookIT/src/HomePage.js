@@ -69,7 +69,6 @@ class HomePage extends Component {
 
         const element = (cellData, cellIndex) => {
             const backgorundImage = "./Res/Images/Home/" + cellData.replace(" ", "-") + ".jpg"
-            console.log(backgorundImage)
             return (
                 < TouchableOpacity
                     style={styles.homeCard}
@@ -79,8 +78,7 @@ class HomePage extends Component {
                             type: cellData != "Random" ? cellData : "",
                             mainClass: route.params.mainClass
                         })
-                    }
-                    }
+                    }}
                 >
                     <View style={{
                         justifyContent: "center",

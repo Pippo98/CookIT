@@ -21,7 +21,7 @@ export default class app extends Component {
     routes: [
       { key: 'home', title: 'Home', icon: 'shuffle', color: colors.pallette2.c1 },
       { key: 'search', title: 'Search', icon: 'magnify', color: colors.pallette2.c3 },
-      { key: 'ingredient', title: 'Ingredient', icon: 'bookmark-multiple', color: colors.pallette2.c4 },
+      { key: 'bookmarks', title: 'Preferiti', icon: 'bookmark-multiple', color: colors.pallette2.c4 },
     ],
   };
 

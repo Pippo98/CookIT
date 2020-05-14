@@ -37,10 +37,12 @@ import {
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { Card } from 'react-native-paper';
 
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import { NavigationContainer, ThemeProvider } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
+const Tab = createMaterialTopTabNavigator();
 
 class SearchPage extends Component {
     constructor() {
@@ -51,13 +53,21 @@ class SearchPage extends Component {
     componentDidMount() {
     }
 
-    render() {
+    LoadPage({ route, navigation }) {
+        return (
+            <Tab.Navigator tabBarOptions={{ activeTintColor: "#fff", style: { backgroundColor: route.params.backgroundColor }, indicatorStyle: { backgroundColor: "#fff" } }}>
+                <Tab.Screen name="Nome" component={SearchPageBase} initialParams={{ searchMode: "nome", backgroundColor: route.params.backgroundColor }} />
+                <Tab.Screen name="Ingredienti" component={SearchPageBase} initialParams={{ searchMode: "ingredienti" }} />
+            </Tab.Navigator>
+        )
+    }
 
+    render() {
         return (
             <>
-                <NavigationContainer style={styles.screen}>
+                <NavigationContainer>
                     <Stack.Navigator initialRouteName="mainPage">
-                        <Stack.Screen name="mainPage" initialParams={{ mainClass: this }} options={{ headerShown: false }} component={SearchPageBase} />
+                        <Stack.Screen name="mainPage" component={this.LoadPage} options={{ headerShown: false }} initialParams={{ backgroundColor: this.props.route.color }} />
                         <Stack.Screen name="recipePage" component={RecipePage} options={{ headerTintColor: "#fff", headerStyle: { backgroundColor: this.props.route.color } }} />
                     </Stack.Navigator>
                 </NavigationContainer>

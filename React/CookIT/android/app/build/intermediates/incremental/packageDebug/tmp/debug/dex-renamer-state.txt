@@ -1,4 +1,4 @@
-#Sun Mar 22 18:42:26 CET 2020
-base.0=/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Wed Apr 08 13:13:47 CEST 2020
+base.0=/media/filippo/label/Codes/Github/CookIT/React/CookIT/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
