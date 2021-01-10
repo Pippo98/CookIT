@@ -15,6 +15,12 @@ export const colors = {
         c3: "#ffa34d",
         c4: "#f67575"
     },
+    pallette3: {
+        c1: "#2c3e50",
+        c2: "#d4f8e8",
+        c3: "#1abc9c",
+        c4: "#ffa34d",
+    },
     homePage: [
         ["#1eb2a6", "#5b8c85"],
         ["#d4f8e8", "#434e52"],

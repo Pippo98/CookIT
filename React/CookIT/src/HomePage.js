@@ -135,10 +135,10 @@ class HomePage extends Component {
     render() {
         return (
             <>
-                <NavigationContainer style={styles.screen}>
+                <NavigationContainer style={styles.screen} >
                     <Stack.Navigator initialRouteName="Home">
-                        <Stack.Screen name="Home" component={this.Home} initialParams={{ mainClass: this }} options={{ headerShown: false }} />
-                        <Stack.Screen name="Recipe" component={RecipePage} options={{ title: this.state.item, headerTintColor: "#fff", headerStyle: { backgroundColor: colors.pallette2.c1 } }} />
+                        <Stack.Screen name="Home" component={this.Home} initialParams={{ mainClass: this }} options={{ headerShown: false, animationEnabled: false}} />
+                        <Stack.Screen name="Recipe" component={RecipePage} options={{ title: this.state.item, headerTintColor: "#fff", headerStyle: { backgroundColor: colors.pallette3.c1 } , animationEnabled: false }} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </>

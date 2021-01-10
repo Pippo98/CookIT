@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
@@ -35,7 +35,7 @@ typedef dispatch_block_t RCTImageLoaderCancellationBlock;
  * has finished. The method should also return a cancellation block, if
  * applicable.
  */
-- (RCTImageLoaderCancellationBlock)loadImageForURL:(NSURL *)imageURL
+- (nullable RCTImageLoaderCancellationBlock)loadImageForURL:(NSURL *)imageURL
                                               size:(CGSize)size
                                              scale:(CGFloat)scale
                                         resizeMode:(RCTResizeMode)resizeMode

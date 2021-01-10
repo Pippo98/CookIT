@@ -13,7 +13,7 @@ import { colors } from "./Colors"
 
 export const styles = StyleSheet.create({
     statBar: {
-        color: colors.pallette2.c3
+        color: colors.pallette3.c3
     },
     screen: {
         flex: 1,
@@ -26,14 +26,14 @@ export const styles = StyleSheet.create({
         marginHorizontal: 8,
         marginVertical: 8,
         backgroundColor: colors.cardBackground,
-        shadowColor: colors.pallette2.c1,
+        shadowColor: colors.pallette3.c1,
         padding: 8,
         borderRadius: 8,
         shadowColor: 'rgba(0,0,0, .4)', // IOS
         shadowOffset: { height: 1, width: 1 }, // IOS
         shadowOpacity: 1, // IOS
         shadowRadius: 1, //IOS
-        elevation: 6, // Android
+        elevation: 3, // Android
     },
     recipeImage: {
         height: 270,
@@ -54,6 +54,14 @@ export const styles = StyleSheet.create({
         textAlign: "center",
         marginHorizontal: 8,
         marginTop: 8
+    },
+    title: {
+        fontSize: 40,
+        fontWeight: '900',
+        color: colors.pallette3.c3,
+        textAlign: "center",
+        marginHorizontal: 8,
+        margin: 8
     },
     portions: {
         fontSize: 32,
@@ -85,37 +93,38 @@ export const styles = StyleSheet.create({
         opacity: 0.8
     },
     picker: {
-        color: colors.pallette2.c1,
+        color: colors.pallette3.c1,
     },
     pickerItem: {
         textAlign: "center",
         fontSize: 50,
-        backgroundColor: colors.pallette2.c1,
+        backgroundColor: colors.pallette3.c1,
     },
     divider: {
         fontSize: 36,
         fontWeight: '900',
-        color: colors.pallette2.c3,
+        color: colors.pallette3.c3,
         textAlign: "center"
     },
     floatingBtn: {
-        borderWidth: 3,
-        borderColor: colors.pallette2.c3,
-        backgroundColor: colors.pallette2.c1,
-        alignItems: 'center',
+        backgroundColor: colors.pallette3.c1,
+        flex: 1,
+        flexDirection: "row",
         justifyContent: 'center',
+        alignItems: 'center',
         opacity: 0.9,
         width: 60,
         height: 60,
-        borderRadius: 100
+        borderRadius: 60
     },
     floatingIcon: {
-        color: colors.pallette2.c3
+        color: colors.pallette3.c3,
+        margin: 0,
     },
     likeIcon: {
         opacity: 0.9,
         marginBottom: 4,
-        color: colors.pallette2.c3
+        color: colors.pallette3.c3
     },
     floatingView: {
         position: 'absolute',
@@ -128,7 +137,7 @@ export const styles = StyleSheet.create({
     searchTextInput: {
         borderRadius: 8,
         borderWidth: 2,
-        borderColor: colors.pallette2.c1,
+        borderColor: colors.pallette3.c1,
         margin: 8,
         padding: 8,
     },
@@ -152,7 +161,7 @@ export const styles = StyleSheet.create({
     },
     homeCard: {
         backgroundColor: "black",
-        shadowColor: colors.pallette2.c1,
+        shadowColor: colors.pallette3.c1,
         margin: 8,
         padding: 4,
         borderRadius: 16,
@@ -178,7 +187,7 @@ export const styles = StyleSheet.create({
         marginHorizontal: 8,
         marginVertical: 8,
         backgroundColor: colors.cardBackground,
-        shadowColor: colors.pallette2.c1,
+        shadowColor: colors.pallette3.c1,
         padding: 8,
         borderRadius: 8,
         shadowColor: 'rgba(0,0,0, .4)', // IOS
@@ -186,5 +195,8 @@ export const styles = StyleSheet.create({
         shadowOpacity: 1, // IOS
         shadowRadius: 1, //IOS
         elevation: 6, // Android
+    },
+    m_8: {
+      margin: 8
     }
 })

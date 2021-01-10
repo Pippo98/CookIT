@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
@@ -25,6 +25,17 @@
 - (NSURL *)redirectAssetsURL:(NSURL *)URL;
 
 @end
+
+/**
+ * Image Downloading priority.
+ * Use PriorityImmediate to download images at the highest priority.
+ * Use PriorityPrefetch to prefetch images at a lower priority.
+ * The priority logic is up to each @RCTImageLoaderProtocol implementation
+ */
+typedef NS_ENUM(NSUInteger, RCTImageLoaderPriority) {
+  RCTImageLoaderPriorityImmediate,
+  RCTImageLoaderPriorityPrefetch
+};
 
 @protocol RCTImageLoaderProtocol<RCTURLRequestHandler>
 
@@ -57,26 +68,32 @@
  * Loads the specified image at the highest available resolution.
  * Can be called from any thread, will call back on an unspecified thread.
  */
-- (RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                  callback:(RCTImageLoaderCompletionBlock)callback;
+- (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
+                                                           callback:(RCTImageLoaderCompletionBlock)callback;
+/**
+ * As above, but includes download `priority`.
+ */
+- (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
+                                                           priority:(RCTImageLoaderPriority)priority
+                                                           callback:(RCTImageLoaderCompletionBlock)callback;
 
 /**
- * As above, but includes target `size`, `scale` and `resizeMode`, which are used to
- * select the optimal dimensions for the loaded image. The `clipped` option
- * controls whether the image will be clipped to fit the specified size exactly,
- * or if the original aspect ratio should be retained.
- * `partialLoadBlock` is meant for custom image loaders that do not ship with the core RN library.
- * It is meant to be called repeatedly while loading the image as higher quality versions are decoded,
- * for instance with progressive JPEGs.
- */
-- (RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
-                                                      size:(CGSize)size
-                                                     scale:(CGFloat)scale
-                                                   clipped:(BOOL)clipped
-                                                resizeMode:(RCTResizeMode)resizeMode
-                                             progressBlock:(RCTImageLoaderProgressBlock)progressBlock
-                                          partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
-                                           completionBlock:(RCTImageLoaderCompletionBlock)completionBlock;
+* As above, but includes target `size`, `scale` and `resizeMode`, which are used to
+* select the optimal dimensions for the loaded image. The `clipped` option
+* controls whether the image will be clipped to fit the specified size exactly,
+* or if the original aspect ratio should be retained.
+* `partialLoadBlock` is meant for custom image loaders that do not ship with the core RN library.
+* It is meant to be called repeatedly while loading the image as higher quality versions are decoded,
+* for instance with progressive JPEGs.
+*/
+- (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
+                                                               size:(CGSize)size
+                                                              scale:(CGFloat)scale
+                                                            clipped:(BOOL)clipped
+                                                         resizeMode:(RCTResizeMode)resizeMode
+                                                      progressBlock:(RCTImageLoaderProgressBlock)progressBlock
+                                                   partialLoadBlock:(RCTImageLoaderPartialLoadBlock)partialLoadBlock
+                                                    completionBlock:(RCTImageLoaderCompletionBlock)completionBlock;
 
 /**
  * Finds an appropriate image decoder and passes the target `size`, `scale` and
@@ -113,4 +130,5 @@
  * protocol. This method should be called in bridgeDidInitializeModule.
  */
 - (void)setImageCache:(id<RCTImageCache>)cache;
+
 @end
